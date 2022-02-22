@@ -1,0 +1,22 @@
+
+.TopBar {
+    text-align: right;
+    margin: 80px;
+  }
+  
+  a.Resume {
+    font-size: 40px;
+    font-family: "Marker Felt";
+    font-weight: normal;
+    letter-spacing: 2px;
+    line-height: 40px;
+    padding: 40px;
+    text-decoration: none;
+    color: rgb(67, 89, 136)
+  }
+  
+  a.Resume:hover, a.Resume:active {
+    text-decoration: none;
+    color: rgb(146, 174, 232);
+  
+  }
