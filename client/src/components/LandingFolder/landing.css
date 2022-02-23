@@ -1,14 +1,14 @@
 
 .TopBar {
     text-align: right;
-    margin: 80px;
+    margin: 30px;
   }
   
   a.Resume {
     font-size: 40px;
     font-family: "Marker Felt";
     font-weight: normal;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     line-height: 40px;
     padding: 40px;
     text-decoration: none;
@@ -19,4 +19,40 @@
     text-decoration: none;
     color: rgb(146, 174, 232);
   
+  }
+
+  .me {
+    width: 145px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;
+    display: block;
+  }
+
+  .remus {
+    width: 175px;
+    margin-right: auto;
+    margin-left: auto;
+    padding:10px;
+    display: block;
+  }
+
+  .blurb {
+    width: 350px;
+    font-size: 18px;
+    font-family: "Marker Felt";
+    font-weight: normal;
+    letter-spacing: 2px;
+    line-height: 40px;
+    margin-top: -800px;
+    padding: 50px;
+    color: rgb(67, 89, 136);
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    backdrop-filter: blur(6px);
+  }
+  @keyframes fadeInAnimation {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
   }

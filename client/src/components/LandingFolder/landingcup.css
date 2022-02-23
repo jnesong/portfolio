@@ -24,6 +24,11 @@
     margin-right: auto;
     display: block;
     margin-top: -125px;
+    transition: transform .4s;
+}
+
+.jenny:hover {
+    transform: scale(1.25); 
 }
 
 .scroll {
@@ -34,4 +39,9 @@
     margin-right: auto;
     display: block;
     margin-top: -90px;
+    transition: transform .4s;
+}
+
+.scroll:hover {
+    transform: scale(1.2); 
 }
