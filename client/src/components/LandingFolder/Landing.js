@@ -1,6 +1,8 @@
 import { useState } from 'react';
+import { Outlet } from "react-router-dom";
 import TopBar from './TopBar';
 import JennyBlurb from './JennyBlurb';
+import CupNavBar from './CupNavBar';
 import smoke from '../doodles/smoke.gif';
 import cup from '../doodles/cup.png';
 import jenny from '../doodles/jenny.png';
@@ -27,11 +29,20 @@ function Landing() {
                 />
                 <img className="scroll" src={scroll} alt="scroll png" />
 
+                <CupNavBar />
+
             </div>
-            {show && (<div className="blurb">
+
+            {show && (<div>
                 <JennyBlurb />
             </div>
             )}
+
+            <div className="blank">
+
+            <Outlet />
+
+            </div>
 
         </>
     );

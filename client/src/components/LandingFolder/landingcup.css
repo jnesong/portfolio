@@ -45,3 +45,28 @@
 .scroll:hover {
     transform: scale(1.2); 
 }
+
+.navCup {
+    display: block;
+    position: relative;
+    font-size: 18px;
+    font-family: "Marker Felt";
+    font-weight: bold;
+    letter-spacing: 5px;
+    line-height: 35px;
+    text-decoration: none;
+    color: rgb(67, 89, 136);
+  }
+
+  .navCup:hover{
+    color: rgb(146, 174, 232);
+  }
+
+  #navDiv {
+    position: relative;
+    margin-top: -240px;
+    width: 190px;
+    margin-left: auto;
+    left: 95px;
+    margin-right: auto;
+  }
