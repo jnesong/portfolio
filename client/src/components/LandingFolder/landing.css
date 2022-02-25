@@ -1,66 +1,22 @@
-.blank {
-  display: block;
-  margin-top: 200px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
+.TopBar {
+  text-align: left;
+  margin-top: 30px;
+  margin-left: 70px;
+  padding-bottom: 10px;
 }
 
-.TopBar {
-    text-align: right;
-    margin: 30px;
-  }
-  
-  a.Resume {
-    font-size: 40px;
-    font-family: "Marker Felt";
-    font-weight: normal;
-    letter-spacing: 4px;
-    line-height: 40px;
-    padding: 40px;
-    text-decoration: none;
-    color: rgb(67, 89, 136)
-  }
-  
-  a.Resume:hover, a.Resume:active {
-    text-decoration: none;
-    color: rgb(146, 174, 232);
-  
-  }
+a.Resume {
+  font-size: 40px;
+  font-family: "Optima";
+  font-weight: normal;
+  letter-spacing: 4px;
+  line-height: 40px;
+  padding: 40px;
+  text-decoration: none;
+  color: rgb(67, 89, 136);
+}
 
-  .me {
-    width: 145px;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 10px;
-    display: block;
-  }
-
-  .remus {
-    width: 175px;
-    margin-right: auto;
-    margin-left: auto;
-    padding:10px;
-    display: block;
-  }
-
-  .blurb {
-    width: 350px;
-    font-size: 18px;
-    font-family: "Marker Felt";
-    font-weight: normal;
-    letter-spacing: 2px;
-    line-height: 40px;
-    margin-top: -700px;
-    padding-top: 60px;
-    padding-left: 100px;
-    color: rgb(67, 89, 136);
-    animation: fadeInAnimation ease 2s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    backdrop-filter: blur(6px);
-  }
-  @keyframes fadeInAnimation {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
+a.Resume:hover, a.Resume:active {
+  text-decoration: none;
+  color: rgb(146, 174, 232);
+}

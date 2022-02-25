@@ -1,3 +1,26 @@
 p {
   color: rgb(121, 163, 255);
 }
+
+h1 {
+  background-color: rgb(240, 249, 255);
+}
+
+body {
+	background: linear-gradient(-45deg,  rgb(255, 255, 255),  rgb(217, 237, 250),  rgb(255, 255, 255),  rgb(210, 237, 255));
+	background-size: 400% 400%;
+	animation: gradient 20s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}

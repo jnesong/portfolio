@@ -1,44 +1,46 @@
-.container {
+.cupContainer {
     position: relative;
-}
+    margin-top: -40px;
+  }
+
 .smoke {
-    width: 300px;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    width: 310px;
+    position: absolute;
+    left: 37px;
     padding: 5px;
+    margin-top: 25px;
 }
 
 .cup {
-    width: 320px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    margin-top: -140px;
+    width: 280px;
+    height: 400px;
+    position: absolute;
+    left: 52px;
+    margin-top: 305px;
 }
 
 .jenny {
-    width: 190px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    margin-top: -125px;
+    font-size: 40px;
+    font-family: "Optima";
+    width: 150px;
+    height: auto;
+    position: absolute;
+    left: 122px;
+    margin-top: 525px;
+    color: rgb(67, 89, 136);
     transition: transform .4s;
 }
 
 .jenny:hover {
-    transform: scale(1.25); 
+    transform: scale(1.2); 
+    color: rgb(146, 174, 232);
 }
 
 .scroll {
     width: 70px;
-    position: relative;
-    margin-left: auto;
-    left: 75px;
-    margin-right: auto;
-    display: block;
-    margin-top: -90px;
+    position: absolute;
+    left: 225px;
+    margin-top: 595px;
     transition: transform .4s;
 }
 
@@ -46,27 +48,64 @@
     transform: scale(1.2); 
 }
 
+#navDiv{
+    margin-top: 468px;
+    position: absolute;
+}
+
 .navCup {
     display: block;
     position: relative;
-    font-size: 18px;
-    font-family: "Marker Felt";
+    left: 210px;
+    line-height: 37px;
+    font-size: 17px;
+    font-family: "Optima";
     font-weight: bold;
-    letter-spacing: 5px;
-    line-height: 35px;
+    letter-spacing: 20px;
     text-decoration: none;
-    color: rgb(67, 89, 136);
-  }
+    color: rgb(67, 89, 136)
+}
 
-  .navCup:hover{
+.navCup:hover, .navCup:active {
+    text-decoration: none;
     color: rgb(146, 174, 232);
   }
 
-  #navDiv {
+.blurbContainer {
     position: relative;
-    margin-top: -240px;
-    width: 190px;
-    margin-left: auto;
-    left: 95px;
+    z-index: 10;
+    border-radius: 25px;
+    left: 50%;
     margin-right: auto;
+    margin-left: auto;
+    align-items: left;
+    padding: 20px;
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    backdrop-filter: blur(6px);
+  }
+  @keyframes fadeInAnimation {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  .blurb{
+    font-size: 16px;
+    font-family: "Optima";
+    color: rgb(67, 89, 136);
+    letter-spacing: 2px;
+    line-height: 30px;
+    width: 500px;
+    text-align: left;
+  }
+
+  .me {
+      width: 140px;
+      padding: 5px;
+  }
+  .remus {
+    width: 150px;
+    height: auto;
+    margin-top: -25px;
   }

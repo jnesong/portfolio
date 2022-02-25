@@ -1,12 +1,8 @@
-function AboutProjects () {
-
-    stackBank = {
-        "enneadrink" : "React, Rails, primarily custom CSS, semantic UI library (custom stylized)",
-        "triage": "React, primarily custom CSS, semantic UI library (custom stylized)",
-    }
+function AboutProjects ( {aboutContent} ) {
 
     return (
-        <div>
+        <div className="about">
+            {aboutContent}
         </div>
     );
 

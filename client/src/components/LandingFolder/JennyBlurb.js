@@ -4,19 +4,16 @@ import remus from '../doodles/remus.png';
 function JennyBlurb() {
 
     return (
-        <div className="blurb">
+        <div className="blurbContainer">
             <img className="me" src={me} alt="jenny smiling" />
-
+            <p className="blurb">
             Hi! ☀️ I'm Jenny, a fullstack software developer,
             born, raised, and developing in Northern Virginia's Fairfax County. 🏡
             I live with my husband and our gentle giant Remus.  🌻🌻 🐕‍🦺 🌻🌻
-            {<br/>}
             I enjoy coding 👩🏻‍💻, writing 👩🏻‍💻, reading 📖, rock climbing 🧗🏻‍♀️, and hiking 🌄. 
-            {<br/>}
             Thank you for visiting my portfolio!
-
+            </p>
             <img className="remus" src={remus} alt="jenny's dog Remus" />
-
         </div>
     );
 

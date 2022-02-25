@@ -1,28 +1,39 @@
 import { NavLink } from 'react-router-dom';
+import { useState } from 'react';
 
-function CupNavBar () {
+function CupNavBar({ holdCupDisplay }) {
+
+    const [showEnneadrink, setShowEnneadrink] = useState(false);
+    showEnneadrink && (holdCupDisplay(""))
+
+    const [showTriage, setShowTriage] = useState(false);
+    showTriage && (holdCupDisplay(""))
 
     return (
         <div id="navDiv">
-        <nav>
+            <nav>
 
-            <NavLink to="/enneadrink" className="navCup">
-                X Enneadrink
-            </NavLink>
+                <NavLink to="/enneadrink" className="navCup"
+                    onMouseEnter={() => setShowEnneadrink(true)}
+                    onMouseLeave={() => setShowEnneadrink(false)}>
+                    
+                </NavLink>
 
-            <NavLink to="/triage" className="navCup">
-                X Triage Tool
-            </NavLink>
+                <NavLink to="/triage" className="navCup"
+                    onMouseEnter={() => setShowTriage(true)}
+                    onMouseLeave={() => setShowTriage(false)}>
+                    
+                </NavLink>
 
-            <NavLink to="/template" className="navCup">
-                X Coming Soon
-            </NavLink>
+                <NavLink to="/template" className="navCup">
+                     
+                </NavLink>
 
-            <NavLink to="/gift" className="navCup">
-                X Coming Soon
-            </NavLink>
+                <NavLink to="/gift" className="navCup">
+                     
+                </NavLink>
 
-        </nav>
+            </nav>
         </div>
     );
 
