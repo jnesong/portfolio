@@ -1,0 +1,24 @@
+.column {
+    position: relative;
+    float: left;
+    width: 400px;
+    padding: 10px;
+    padding-top: 100px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.horizontal {
+    display: flexbox;
+    margin: 0 auto;
+    width: 900px;
+}
+
+@media screen and (max-width: 400px) {
+    .column-left {
+      width: 100%;
+    }
+    .column-right {
+        width: 100%;
+      }
+}
