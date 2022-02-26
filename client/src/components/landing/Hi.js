@@ -14,7 +14,7 @@ function Hi() {
                 born, raised, and living in Northern Virginia's Fairfax County.
             </p>
             <p className="thankyou">
-                Thank you for visiting my portfolio!
+                Thank you for checking out my website!
 
             </p>
             <ul className="hi-list">

@@ -6,7 +6,7 @@
     letter-spacing: 2px;
     padding: 40px;
     width: 300px;
-    margin-top: 350px;
+    margin-top: 300px;
 }
 
 .hi {
@@ -19,7 +19,7 @@
     text-indent: 10px;
 }
 
-.thankyou{
+.thankyou {
     font-size: 16px;
     font-family: Optima;
     color: black;
@@ -28,7 +28,7 @@
     padding: 15px;
 }
 
-#hi-div{
+#hi-div {
     margin-top: 90px;
 }
 
@@ -54,7 +54,7 @@
     height:auto;
 }
 
-.dog-text{
+.dog-text {
     margin-top: 190px;
     font-size: 16px;
     font-family: Optima;
@@ -63,4 +63,48 @@
     letter-spacing: 2px;
     padding: 10px;
     text-indent: 10px;
+}
+
+.project-gif {
+    width: 406px;
+    height:auto;
+}
+
+.projects-div {
+    width: 405px;
+    height: auto;
+    display:block;
+    margin-top: 200px;
+    margin-left:auto;
+    margin-right:auto;
+    border-style: ridge;
+    border-width: 2px;
+}
+
+.controls-row {
+    display: inline-flex;
+    margin-left: 5px;
+    margin-top: 20px;
+}
+
+.icon {
+    width: 40px;
+    height: auto;
+    margin: 20px;
+}
+
+.info {
+    font-size: 14px;
+    font-family: Optima;
+    color: black;
+    line-height: 16px;
+    letter-spacing: 2px;
+    text-align: left;
+    margin-top: 150px;
+}
+
+.icon-button {
+    background:none;
+    border: none;
+    cursor: pointer;
 }

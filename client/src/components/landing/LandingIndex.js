@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 function LandingIndex() {
 
     const [greeting, setGreeting] = useState("")
+    const [infoHi, setInfoHi] = useState("ℹ️")
 
     const date = new Date()
     const timeHr = date.getHours()
@@ -27,9 +28,15 @@ function LandingIndex() {
         <>
             <p className="greeting"> {greeting}
                 {<br />}
-                Let's catchup, over coffee.
+                Thanks for being here!
                 {<br />}
-                Please click around 🤗
+                Let's grab coffee 🤗
+            </p>
+            <p
+                className="info"
+                onMouseEnter={() => setInfoHi("ℹ️: click on the coffee cup options!")}
+                onMouseLeave={() => setInfoHi("ℹ️")}
+            > {infoHi}
             </p>
         </>
     )
