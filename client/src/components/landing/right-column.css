@@ -1,0 +1,56 @@
+.greeting {
+    font-size: 18px;
+    font-family: Optima;
+    color: black;
+    line-height: 38px;
+    letter-spacing: 2px;
+    padding: 40px;
+    width: 200px;
+    margin-top: 350px;
+}
+
+.hi {
+    font-size: 16px;
+    font-family: Optima;
+    color: black;
+    line-height: 38px;
+    letter-spacing: 2px;
+    padding: 10px;
+    text-indent: 10px;
+}
+
+.thankyou{
+    font-size: 16px;
+    font-family: Optima;
+    color: black;
+    line-height: 38px;
+    letter-spacing: 2px;
+    padding: 15px;
+}
+
+#hi-div{
+    margin-top: 90px;
+}
+
+.hi-list {
+    list-style: none;
+    font-size: 16px;
+    font-family: Optima;
+    color: black;
+    line-height: 38px;
+    letter-spacing: 2px;
+    text-align: left;
+    text-indent: 35px;
+}
+
+.hi-image {
+    border-radius: 50%;
+    height: 150px;
+    width: auto;
+}
+
+.remus-pic {
+    width: 280px;
+    height:auto;
+    margin-top: 290px;
+}

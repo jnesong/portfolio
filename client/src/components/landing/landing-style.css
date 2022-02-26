@@ -14,11 +14,53 @@
     width: 900px;
 }
 
-@media screen and (max-width: 400px) {
+#cup {
+    height: 400px;
+    width: 270px;
+    margin-top: -124px;
+    z-index: -1;
+}
+
+#smoke {
+    height: 370px;
+    width: auto;
+    margin-right: 30px;
+}
+
+#checkboxes{
+    display: block;
+    position: relative;
+    left: 20px;
+    margin-top: -250px;
+}
+
+.cup-link {
+    height: 40px;
+    width: auto;
+}
+
+.nav-link {
+    line-height: 10px;
+    transition: transform .4s;
+}
+
+a.resume-link{
+    height: 40px;
+    transition: transform .4s;
+}
+
+a.resume-link:hover,
+a.resume-link:active,
+nav a.nav-link:active, 
+nav a.nav-link:hover {
+    transform: scale(1.5); 
+}
+
+/* @media screen and (max-width: 400px) {
     .column-left {
       width: 100%;
     }
     .column-right {
         width: 100%;
       }
-}
+} */
