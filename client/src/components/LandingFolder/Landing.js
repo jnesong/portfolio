@@ -39,14 +39,14 @@ function Landing() {
 
                 <CupNavBar holdCupDisplay={holdCupDisplay} />
 
-                {show && (<div>
+            </div>
+
+            {show && (<div>
                     <JennyBlurb />
                 </div>
                 )}
 
                 <AboutProjects aboutContent={displayCupContent} />
-
-            </div>
 
 
             <div className="outlet">
