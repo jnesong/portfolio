@@ -5,7 +5,7 @@
     line-height: 38px;
     letter-spacing: 2px;
     padding: 40px;
-    width: 200px;
+    width: 300px;
     margin-top: 350px;
 }
 
@@ -52,5 +52,15 @@
 .remus-pic {
     width: 280px;
     height:auto;
-    margin-top: 290px;
+}
+
+.dog-text{
+    margin-top: 190px;
+    font-size: 16px;
+    font-family: Optima;
+    color: black;
+    line-height: 38px;
+    letter-spacing: 2px;
+    padding: 10px;
+    text-indent: 10px;
 }

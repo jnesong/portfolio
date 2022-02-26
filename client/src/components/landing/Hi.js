@@ -1,11 +1,13 @@
 // graphics
-import burkelake from '../graphics/burkelake.JPG'
+// import burkelake from '../graphics/burkelake.JPG'
+import tree from '../graphics/tree.jpg'
+
 
 function Hi() {
 
     return (
         <div id="hi-div">
-            <img className="hi-image" src={burkelake} alt="jenny at lake" />
+            <img className="hi-image" src={tree} alt="jenny at lake" />
 
             <p className="hi">
                 Hi, I'm Jenny, a fullstack software developer, 

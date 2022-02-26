@@ -14,18 +14,25 @@ function LandingIndex() {
         } else if (timeHr < 17 && timeHr > 11) {
             // console.log('good afternoon')
             setGreeting("Good afternoon ☀️")
-        } else if (timeHr < 20 && timeHr > 17){
+        } else if (timeHr < 20 && timeHr > 17) {
             // console.log('good evening')
             setGreeting("Good evening 🌃")
         } else {
-        // console.log('good evening')
-        setGreeting("Good evening 🌙")
-    }
+            // console.log('good evening')
+            setGreeting("Good evening 🌙")
+        }
     }, [timeHr])
 
-return (
-    <p className="greeting"> {greeting} please click around 🤗 </p>
-)
+    return (
+        <>
+            <p className="greeting"> {greeting}
+                {<br />}
+                Let's catchup, over coffee.
+                {<br />}
+                Please click around 🤗
+            </p>
+        </>
+    )
 }
 
 export default LandingIndex;
