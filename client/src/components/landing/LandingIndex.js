@@ -11,16 +11,16 @@ function LandingIndex() {
     useEffect(() => {
         if (timeHr < 12 && timeHr > 3) {
             // console.log('good morning')
-            setGreeting("Good morning 🌄")
+            setGreeting("Good morning,")
         } else if (timeHr < 17 && timeHr > 11) {
             // console.log('good afternoon')
-            setGreeting("Good afternoon ☀️")
+            setGreeting("Good afternoon,")
         } else if (timeHr < 20 && timeHr > 17) {
             // console.log('good evening')
-            setGreeting("Good evening 🌃")
+            setGreeting("Good evening,")
         } else {
             // console.log('good evening')
-            setGreeting("Good evening 🌙")
+            setGreeting("Good evening,")
         }
     }, [timeHr])
 
@@ -28,9 +28,9 @@ function LandingIndex() {
         <>
             <p className="greeting"> {greeting}
                 {<br />}
-                Thanks for being here!
+                thanks for being here!
                 {<br />}
-                Let's grab coffee 🤗
+                Let's grab some coffee ☕️
             </p>
             <p
                 className="info"
