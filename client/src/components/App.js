@@ -43,13 +43,13 @@ function App() {
 
         <Route path="enneadrink/*" element={<EnneaHome />}>
           <Route index element={<EnneaHomeIndex />} />
-          <Route path="enneadrink/:enneadrinkID" element={<EnneadrinkInfo holdDisplay={holdDisplay} />}>
+          <Route path=":enneadrinkID" element={<EnneadrinkInfo holdDisplay={holdDisplay} />}>
             <Route index element={<EnneadrinkIndex />} />
-            <Route path="enneadrink/about" element={<Description content={displayedContent} />} />
-            <Route path="enneadrink/strengths" element={<Description content={displayedContent} />} />
-            <Route path="enneadrink/weaknesses" element={<Description content={displayedContent} />} />
-            <Route path="enneadrink/practices" element={<PracticesDescription content={displayedContent} />} />
-            <Route path="enneadrink/health" element={<HealthDescription content={displayedContent} />} />
+            <Route path="about" element={<Description content={displayedContent} />} />
+            <Route path="strengths" element={<Description content={displayedContent} />} />
+            <Route path="weaknesses" element={<Description content={displayedContent} />} />
+            <Route path="practices" element={<PracticesDescription content={displayedContent} />} />
+            <Route path="health" element={<HealthDescription content={displayedContent} />} />
           </Route>
         </Route>
 

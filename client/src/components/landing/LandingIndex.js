@@ -25,7 +25,7 @@ function LandingIndex() {
     }, [timeHr])
 
     return (
-        <>
+        <div className="dog-index-div">
             <p className="landing-greeting"> {greeting}
                 {<br />}
                 thanks for being here!
@@ -38,7 +38,7 @@ function LandingIndex() {
                 onMouseLeave={() => setInfoHi("ℹ️")}
             > {infoHi}
             </p>
-        </>
+        </div>
     )
 }
 

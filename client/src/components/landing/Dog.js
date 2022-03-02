@@ -24,11 +24,11 @@ function Dog() {
     }, [])
 
     return (
-        <>
+        <div className="dog-index-div">
             <p className="dog-text"> I live in the suburbs with my husband and our friendly gentle giant 🐕‍🦺:</p>
 
             <img className="remus-pic" src={dogPic} alt="jenny's dog, at random" />
-        </>
+        </div>
     )
 }
 

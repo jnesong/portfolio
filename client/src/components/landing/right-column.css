@@ -6,7 +6,6 @@
     letter-spacing: 2px;
     padding: 40px;
     width: 300px;
-    margin-top: 320px;
 }
 
 .hi {
@@ -29,7 +28,7 @@
 }
 
 #hi-div {
-    margin-top: 140px;
+    margin-top: 190px;
 }
 
 .hi-list {
@@ -66,7 +65,7 @@
 }
 
 .project-gif {
-    width: 406px;
+    width: 402px;
     height:auto;
 }
 
@@ -127,4 +126,8 @@
     background:none;
     border: none;
     cursor: pointer;
+}
+
+.dog-index-div {
+    margin-top: 290px;
 }

@@ -10,9 +10,9 @@ import projects from '../graphics/projects.png'
 function CupNav() {
 
     return (
-        <nav className="block">
+        <nav>
 
-            <NavLink className="nav-link" to="/hi">
+            <NavLink className="cup-link" to="/hi">
                 <img src={hi} alt="hi text" className="cup-link" />
             </NavLink>
             {<br/>}

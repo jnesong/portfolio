@@ -3,7 +3,7 @@
     float: left;
     width: 400px;
     padding: 10px;
-    padding-top: 30px;
+    padding-top: 5px;
     text-align: center;
     margin: 0 auto;
 }
@@ -15,14 +15,14 @@
 }
 
 #cup {
-    height: 500px;
-    width: 350px;
-    margin-top: -136px;
+    height: 520px;
+    width: 370px;
+    margin-top: -155px;
     z-index: -1;
 }
 
 #smoke {
-    height: 400px;
+    height: 450px;
     width: auto;
     margin-right: 30px;
 }
@@ -31,29 +31,18 @@
     display: block;
     position: relative;
     left: -5px;
-    margin-top: -325px;
+    margin-top: -345px;
 }
 
 .cup-link {
-    height: 45px;
+    height: 55px;
     width: auto;
     padding: 5px;
     transition: transform .4s;
-
 }
 
 .cup-link:hover {
-    transform: scale(1.5); 
-}
-
-.nav-link {
-    line-height: 10px;
-    transition: transform .4s;
-}
-
-a.resume-link{
-    height: 40px;
-    transition: transform .4s;
+    transform: scale(1.2); 
 }
 
 /* @media screen and (max-width: 400px) {

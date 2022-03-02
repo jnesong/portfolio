@@ -49,9 +49,11 @@ nav a {
     margin: 200px;
     margin-top: 30px;
     margin-bottom: 30px;
-    font-family: "Optima", sans-serif;
-    line-height: 40px;
+    font-family: "Optima";
+    font-size: 30px;
+    line-height: 20px;
 }
+
 
 li.health {
     margin: 40px;
@@ -97,6 +99,13 @@ ul.healths, ol.practices {
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     white-space: pre-wrap;
+    line-height: 40px;
+    color: 23, 57, 39;
+    margin: 200px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: "Optima";
+    font-size: 20px;
     line-height: 40px;
   }
  @keyframes fadeInAnimation {

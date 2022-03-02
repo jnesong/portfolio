@@ -37,7 +37,6 @@ function Projects() {
     ]
 
     function handleNextClick() {
-        console.log(projectID)
         let x = projectID + 1
         if (x < projectBank.length) {
             setProjectID(x)
@@ -53,7 +52,8 @@ function Projects() {
     }
 
     function handleOpenClick(){
-        console.log(projectBank.path)
+        console.log(projectBank[projectID].path)
+        navigate(projectBank[projectID].path)
     }
 
     return (

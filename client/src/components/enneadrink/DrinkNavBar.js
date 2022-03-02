@@ -16,31 +16,31 @@ import './enneadrink.css';
 function DrinkNavBar() {
     return (
         <nav className="drink-nav-bar" >
-            <NavLink className="main-nav" to="/1">
+            <NavLink className="main-nav" to="1">
                 <img src={enneadrink1} alt="water" className="drink-icon"/>
             </NavLink>
-            <NavLink className="main-nav" to="/2">
+            <NavLink className="main-nav" to="2">
                 <img src={enneadrink2} alt="tea" className="drink-icon" />
             </NavLink>
-            <NavLink className="main-nav" to="/3">
+            <NavLink className="main-nav" to="3">
                 <img src={enneadrink3} alt="sparkling water" className="drink-icon" />
             </NavLink>
-            <NavLink className="main-nav" to="/4">
+            <NavLink className="main-nav" to="4">
                 <img src={enneadrink4} alt="espresso" className="drink-icon" />
             </NavLink>
-            <NavLink className="main-nav" to="/5">
+            <NavLink className="main-nav" to="5">
                 <img src={enneadrink5} alt="latte" className="drink-icon" />
             </NavLink>
-            <NavLink className="main-nav" to="/6">
+            <NavLink className="main-nav" to="6">
                 <img src={enneadrink6} alt="lemon water" className="drink-icon" />
             </NavLink>
-            <NavLink className="main-nav" to="/7">
+            <NavLink className="main-nav" to="7">
                 <img src={enneadrink7} alt="smoothie" className="drink-icon" />
             </NavLink>
-            <NavLink className="main-nav" to="/8">
+            <NavLink className="main-nav" to="8">
                 <img src={enneadrink8} alt="juice" className="drink-icon" />
             </NavLink>
-            <NavLink className="main-nav" to="/9">
+            <NavLink className="main-nav" to="9">
                 <img src={enneadrink9} alt="hot cocoa" className="drink-icon" />
             </NavLink>
 
