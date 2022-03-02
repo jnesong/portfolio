@@ -1,0 +1,117 @@
+.quiz-button {
+    text-align: center;
+    font-family: "Optima", sans-serif;
+    border: none;
+    background-color:transparent;
+    color: rgb(7, 36, 21);
+    padding: 40px;
+    font-size: 20px;
+    display: inline-block;
+    transition-duration: 0.4s;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 2px;
+  }
+  
+.quiz-button:hover {
+    background-color:white;
+    color: rgb(166, 186, 178);
+  }
+
+a.quiz-link {
+    display: block;
+    border-bottom: none;
+    color: rgb(7, 36, 21);
+    background-color:transparent;
+    text-decoration: none;
+    text-align: left;
+    margin-left: 140px;
+    margin-right: auto;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-family: "Optima", sans-serif;
+  }
+  
+a.quiz-link:hover {
+    border-bottom: none;
+    background-color:white;
+    color: rgb(166, 186, 178);
+  }
+
+li.health {
+    margin: 40px;
+    font-family: "Optima", sans-serif;
+  }
+
+.quiz-result-top-margin {
+    margin-top: 80px;
+  }
+
+a.quiz-link {
+    display: block;
+    border-bottom: none;
+    color: rgb(7, 36, 21);
+    background-color:transparent;
+    text-decoration: none;
+    text-align: left;
+    margin-left: 140px;
+    margin-right: auto;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-family: "Optima", sans-serif;
+  }
+  
+a.quiz-link:hover {
+    border-bottom: none;
+    background-color:white;
+    color: rgb(166, 186, 178);
+  }
+
+.enneadrink-result {
+    font-size: 40px;
+    color:  rgb(23, 57, 39);
+    letter-spacing: 4px;
+    font-weight: normal;
+    text-transform: capitalize;
+    font-family: "Optima", sans-serif;
+  }
+  
+.enneadrink-result-title {
+    font-size: 30px;
+    color:  rgb(23, 57, 39);
+    letter-spacing: 4px;
+    font-weight: normal;
+    font-family: "Optima", sans-serif;
+  }
+
+.enneadrink-nav {
+    display: inline-block;
+    padding: 30px;
+    color: black;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: "Optima", sans-serif;
+    font-size: 25px;
+    letter-spacing: 4px;
+    text-align: center;
+    transition: transform .7s;
+  }
+
+.enneadrink-nav:hover {
+    color: rgb(166, 186, 178);
+    transform: scale(1.2);
+  }
+
+.emoji {
+    font-size: 100px;
+  }
+
+  body {
+    background-color: white;
+    font-family: "Optima", sans-serif;
+    text-align: center;
+    justify-content: center;
+    align-items: center;  
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }

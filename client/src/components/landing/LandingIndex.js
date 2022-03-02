@@ -26,7 +26,7 @@ function LandingIndex() {
 
     return (
         <>
-            <p className="greeting"> {greeting}
+            <p className="landing-greeting"> {greeting}
                 {<br />}
                 thanks for being here!
                 {<br />}

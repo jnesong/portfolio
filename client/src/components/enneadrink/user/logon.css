@@ -1,0 +1,147 @@
+.login {
+  font-size: 25px;
+  font-family: "Optima", sans-serif;
+  background-color: rgb(166, 186, 178);
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+}
+
+.input-login {
+  width: 20%;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  padding: 10px;
+  background-color: rgb(166, 186, 178);
+  font-family: "Optima", sans-serif;
+}
+
+::placeholder {
+  color: rgb(23, 57, 39);
+  font-family: "Optima", sans-serif;
+  text-align: center
+}
+
+input[type=text],
+input[type=password] {
+  border: none;
+  font-size: 20px;
+  font-family: "Optima", sans-serif;
+  text-align: center;
+  background-color: transparent
+}
+
+input[type=text]:focus,
+input[type=password]:focus {
+  outline:none ;
+}
+
+.fade-logon {
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  white-space: pre-wrap;
+  line-height: 40px;
+}
+@keyframes fadeInAnimation {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.logon-button {
+  text-align: center;
+  font-family: "Optima", sans-serif;
+  border: none;
+  background-color:transparent;
+  color: rgb(7, 36, 21);
+  padding: 40px;
+  font-size: 20px;
+  display: block;
+  transition-duration: 0.4s;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: 2px;
+}
+.logon-button:hover {
+  background-color:166, 186, 178;
+  color: white;
+}
+
+.plant {
+  display: block;
+  margin: auto;
+  height: 200px;
+  width: auto;
+}
+
+.logon-background {
+  background-color:rgb(166, 186, 178);
+  padding-top: 150px;
+  padding-bottom: 150px;
+  font-family: "Optima", sans-serif;
+}
+
+.logon-nav {
+  transition: transform .7s;
+  text-align: center;
+  font-family: "Optima", sans-serif;
+  color: black;
+  font-size: 25px;
+  display: inline-block;
+  margin-right: auto;
+  margin-left: auto;
+  letter-spacing: 4px;
+  padding: 30px;
+}
+
+.logon-nav:hover {
+  color: white;
+  transform: scale(1.2); 
+}
+
+.logout-button {
+  font-family: "Optima", sans-serif;
+  border: none;
+  background-color:transparent;
+  color: rgb(7, 36, 21);
+  padding: 40px;
+  font-size: 20px;
+  display: block;
+  transition-duration: 0.4s;
+  margin-right: 100px;
+  margin-left: auto;
+  letter-spacing: 2px;
+
+}
+.logout-button:hover {
+  background-color:white;
+  color: rgb(166, 186, 178);
+}
+
+.user-greeting {
+  font-size: 30px;
+  color:  rgb(23, 57, 39);
+  letter-spacing: 4px;
+  font-family: "Optima", sans-serif;
+  font-weight: normal;
+}
+
+.user-nav {
+  transition: transform .7s;
+  margin: 50px;
+}
+.user-nav:hover {
+  transform: scale(2.1); 
+  color: rgb(74, 103, 90);
+}
+
+body {
+  background-color: white;
+  font-family: "Optima", sans-serif;
+  text-align: center;
+  justify-content: center;
+  align-items: center;  
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
