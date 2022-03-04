@@ -1,10 +1,10 @@
 
 function EnneadrinkIndex () {
 
-    const descriptionMessage = "Enneadrink is designed to encourage routine self-reflection, through inviting us to \n sit down, have a drink, and deeply process our values and experiences."
+    const descriptionMessage = "Enneadrink is designed to encourage routine self-reflection, through inviting us to \n sit down, have an uplifting drink, and process our values and experiences."
 
     return(
-        <p> {descriptionMessage} </p>
+        <p className="fade-home"> {descriptionMessage} </p>
     )
 }
 

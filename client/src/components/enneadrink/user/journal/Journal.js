@@ -24,8 +24,8 @@ function Journal() {
     return (
         <>
             <Logout />
-            <Link className="quiz-link" to="/home/quiz"> Quiz </Link>
-            <p> {user.displayname}'s journal </p>
+            <Link className="quiz-link" to="/home/enneadrink/quiz"> Quiz </Link>
+            <p className="journal-title"> {user.displayname}'s journal </p>
             <nav>
                 <NavLink className="journal-nav" to="new"> New Entry </NavLink>
                 <NavLink className="journal-nav" to="history"> History </NavLink>

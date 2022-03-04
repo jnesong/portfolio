@@ -51,9 +51,9 @@ function EnneadrinkResult( {holdDisplay} ) {
         <>
             <div className="quiz-result-top-margin">
             <Logout />
-            <Link className="quiz-link" to="/home/quiz" > restart quiz </Link>
+            <Link className="quiz-link" to="/home/enneadrink/quiz" > restart quiz </Link>
             {<br />}
-            <Link className="quiz-link" to="/journal" > journal </Link>
+            <Link className="quiz-link" to="/enneadrink/journal" > journal </Link>
                 <h2 className="enneadrink-result"> result: {enneadrinkResult.drink} </h2>
                 {<br />}
                 <h3 className="enneadrink-result-title">  {enneadrinkResult.title} </h3>

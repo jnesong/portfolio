@@ -10,7 +10,7 @@ class Api::JourneysController < ApplicationController
     end
 
     def create
-        new_journey = @current_user.journeys.create!(journey_params)
+        new_journey = Journey.create!(journey_params)
         render json: new_journey, status: :created 
     end
     
@@ -33,7 +33,7 @@ class Api::JourneysController < ApplicationController
     end
 
     def journey_params 
-        params.permit(:date, :drink, :level, :entry)
+        params.permit(:date, :drink_id, :drink, :level, :entry, :month, :year)
     end
 
 end

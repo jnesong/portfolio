@@ -5,7 +5,7 @@
     line-height: 38px;
     letter-spacing: 2px;
     padding: 40px;
-    width: 300px;
+    width: 400px;
 }
 
 .hi {
@@ -14,7 +14,7 @@
     color: black;
     line-height: 38px;
     letter-spacing: 2px;
-    padding: 10px;
+    padding: 20px;
     text-indent: 10px;
 }
 
@@ -25,6 +25,7 @@
     line-height: 38px;
     letter-spacing: 2px;
     padding: 15px;
+    width: 400px;
 }
 
 #hi-div {
@@ -77,7 +78,8 @@
     letter-spacing: 2px;
     padding: 5px;
     text-indent: 15px;
-    text-align: left;
+    text-align: center;
+    width: 400px;
 }
 
 .project-title {
@@ -87,6 +89,7 @@
     line-height: 38px;
     letter-spacing: 3px;
     padding: 5px;
+    width: 400px;
 }
 
 .projects-div {
@@ -102,12 +105,18 @@
 
 .controls-row {
     display: inline-flex;
-    margin-left: 5px;
+    margin-left: 25px;
     margin-top: 20px;
 }
 
 .icon {
     width: 40px;
+    height: auto;
+    margin: 20px;
+}
+
+.icon-open{
+    width: 60px;
     height: auto;
     margin: 20px;
 }

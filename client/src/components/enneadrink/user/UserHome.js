@@ -24,19 +24,23 @@ function UserHome() {
     // console.log(user)
     const date = new Date()
     const timeHr = date.getHours()
-    
-    useEffect ( () => {
+
+    useEffect(() => {
         if (timeHr < 12 && timeHr > 3) {
             // console.log('good morning')
             setGreetingUser("Good morning")
-          } else if (timeHr < 18 && timeHr > 11) {
+        } else if (timeHr < 18 && timeHr > 11) {
             // console.log('good afternoon')
             setGreetingUser("Good afternoon")
-          } else {
+        } else {
             // console.log('good evening')
             setGreetingUser("Good evening")
-          }
+        }
     }, [timeHr])
+
+    let activeStyle = {
+        transform: "scale(1.5) translateY(20px)"
+    }
 
     return (
         <>
@@ -44,8 +48,11 @@ function UserHome() {
             {<br />}
             <h1 className="user-greeting"> {greetingUser} {user.displayname}, how are you? </h1>
             <nav id="quizNav">
-            <NavLink className="user-nav" to="quiz"> Quiz </NavLink>
-            <NavLink className="user-nav" to="/journal"> Skip Quiz </NavLink>
+                <NavLink className="user-nav" to="quiz"
+                    style={({ isActive }) =>
+                        isActive ? activeStyle : undefined}
+                > Quiz </NavLink>
+                <NavLink className="user-nav" to="/enneadrink/journal"> Skip Quiz </NavLink>
             </nav>
             <Outlet />
         </>

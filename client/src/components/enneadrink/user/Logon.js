@@ -9,14 +9,7 @@ import plant2 from '../icons/plant2.gif';
 import './logon.css';
 
 function LogOn() {
-
-    function handleScroll() {
-        window.scroll({
-          top: document.body.offsetHeight,
-          behavior: 'smooth',
-        });
-      }
-
+    
     return (
         <>
             <img className="plant" src={plant2} alt="plant gif" />
@@ -28,15 +21,16 @@ function LogOn() {
             <div className="logon-background">
 
                 <nav>
-                    <NavLink className="logon-nav" onClick={handleScroll} to="user/login"> Login </NavLink>
-                    <NavLink className="logon-nav" onClick={handleScroll} to="user/signup"> Signup </NavLink>
+                    <NavLink className="logon-nav" to="login"> Login </NavLink>
+                    <NavLink className="logon-nav" to="signup"> Signup </NavLink>
                 </nav>
 
                 {<br />}
+                {<br />}
                 
                 <Routes>
-                    <Route path="user/login" element={<Login />} />
-                    <Route path="user/signup" element={<Signup />} />
+                    <Route path="login" element={<Login />} />
+                    <Route path="signup" element={<Signup />} />
                 </Routes>
 
             </div>

@@ -1,3 +1,10 @@
+.journal-title {
+  font-family: "Optima", sans-serif;
+  font-size: 28px;
+  padding: 20px;
+  letter-spacing: 4px;
+}
+
 .input-entry {
     width: 90%;
     height: 300px;
@@ -83,7 +90,7 @@ input[type=text] {
     color: rgb(166, 186, 178);
   }
 
-  journal-nav {
+  .journal-nav {
     display: inline-block;
     padding: 30px;
     color: black;
@@ -96,7 +103,7 @@ input[type=text] {
     transition: transform .7s;
   }
 
-  journal-nav:hover {
+  .journal-nav:hover {
     color: rgb(166, 186, 178);
     transform: scale(1.2);
   }

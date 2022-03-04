@@ -53,21 +53,21 @@ function App() {
           </Route>
         </Route>
 
-        <Route path="enneadrink/home" element={<UserHome />}>
-          <Route path="enneadrink/quiz" element={<Quiz />} />
+        <Route path="home/enneadrink" element={<UserHome />}>
+          <Route path="quiz" element={<Quiz />} />
         </Route>
 
         <Route path="enneadrink/result/:enneadrinkID" element={<Result holdDisplay={holdDisplay} />} >
-          <Route path="enneadrink/about" element={<Description content={displayedContent} />} />
-          <Route path="enneadrink/strengths" element={<Description content={displayedContent} />} />
-          <Route path="enneadrink/weaknesses" element={<Description content={displayedContent} />} />
-          <Route path="enneadrink/practices" element={<PracticesDescription content={displayedContent} />} />
-          <Route path="enneadrink/health" element={<HealthDescription content={displayedContent} />} />
+          <Route path="about" element={<Description content={displayedContent} />} />
+          <Route path="strengths" element={<Description content={displayedContent} />} />
+          <Route path="weaknesses" element={<Description content={displayedContent} />} />
+          <Route path="practices" element={<PracticesDescription content={displayedContent} />} />
+          <Route path="health" element={<HealthDescription content={displayedContent} />} />
         </Route>
 
         <Route path="enneadrink/journal" element={<Journal />}>
-          <Route path="enneadrink/new" element={<NewEntry />} />
-          <Route path="enneadrink/history" element={<History />} />
+          <Route path="new" element={<NewEntry />} />
+          <Route path="history" element={<History />} />
         </Route>
 
       </Routes>

@@ -15,6 +15,23 @@ function NewEntry() {
         entry: ""
     });
 
+    function convertMonth(date) {
+        const names = { '01': "january", '02': "february", '03': "march", '04': "april", '05': "may", '06': "june", '07': "july", '08': "august", '09': "september", '10': "october", '11': "november", '12': "december" }
+        let arr = date.split("-")
+        return names[arr[1]]
+    }
+
+    function convertYear(date) {
+        let arr = date.split("-")
+        return arr[0]
+    }
+
+    function convertDrink(string) {
+        const numbers = {'water':1, 'tea':2, 'sparkling water':3, 'espresso':4, 'latte':5, 'lemon water':6, 'smoothie':7, 'juice':8, 'hot cocoa':9}
+        let drink = string.toLowerCase()
+        return numbers[drink]
+    }
+
     const handleChange = (e) => {
         setJournalData({
             ...journalData,
@@ -25,13 +42,20 @@ function NewEntry() {
 
     function handleSubmit(e) {
         e.preventDefault()
+        const postData = { ...journalData,
+            month:convertMonth(journalData.date),
+            year:convertYear(journalData.date),
+            drink_id: convertDrink(journalData.drink)
+        }
+
+        console.log(postData)
 
         fetch("/api/journeys", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
             },
-            body: JSON.stringify(journalData),
+            body: JSON.stringify(postData),
         }).then(response => {
             if (response.ok) {
                 response.json().then((data) => console.log(data));

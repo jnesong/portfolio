@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 
 function Signup({ }) {
     const [user, setUser] = useState(null);
-    const [buttonDisplay, setButtonDisplay] = useState("Signup");
+    const [buttonDisplay, setButtonDisplay] = useState("signup");
 
     const navigate = useNavigate();
     const [formData, setFormData] = useState({
@@ -32,7 +32,7 @@ function Signup({ }) {
             if (response.ok) {
                 response.json().then((user) => setUser(user));
                 setButtonDisplay("✔ signup confirmed, thank you!");
-                setTimeout(() => { navigate("/home") }, 900);
+                setTimeout(() => { navigate("/home/enneadrink") }, 900);
             } else {
                 response.json().then((errors) => {
                     console.error(errors);

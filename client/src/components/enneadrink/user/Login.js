@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 
 function Login({ }) {
     const [user, setUser] = useState(null);
-    const [buttonDisplay, setButtonDisplay] = useState("Login");
+    const [buttonDisplay, setButtonDisplay] = useState("login");
 
     const navigate = useNavigate();
     const [formData, setFormData] = useState({
@@ -32,7 +32,7 @@ function Login({ }) {
             if (response.ok) {
                 response.json().then((user) => setUser(user));
                 setButtonDisplay("✔ login confirmed, thank you!");
-                setTimeout(() => {navigate("/home")}, 900);
+                setTimeout(() => {navigate("/home/enneadrink")}, 900);
             } else {
                 setButtonDisplay("𝕩 incorrect username or password, please try again. 𝕩")
             };

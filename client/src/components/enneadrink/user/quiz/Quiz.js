@@ -26,12 +26,12 @@ function Quiz (){
         console.log("b clicked")
         const nextQ = QuizBank.find(question => question.id === currentQ.idNextQuestionB)
         if (nextQ) {setCurrentQ(nextQ)}
-        else {navigate(`/result/${currentQ.drinkResultB}`)}
+        else {navigate(`/enneadrink/result/${currentQ.drinkResultB}`)}
     }
 
     return (
         <>
-        <p> {currentQ.question} </p>
+        <p className="question-p"> {currentQ.question} </p>
 
         <button className="quiz-button" onClick={handleClickA}> {currentQ.answerA} </button>
 

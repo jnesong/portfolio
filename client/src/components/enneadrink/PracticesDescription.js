@@ -3,8 +3,6 @@ import './enneadrink.css';
 
 function PracticesDescription({ content }) {
 
-    console.log(content)
-
     let displayedContent = <ol className="practices">{content}</ol>
 
     return (
