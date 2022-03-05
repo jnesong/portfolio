@@ -29,7 +29,7 @@ function PastEntry({ journey, holdDeletedID, holdEdit }) {
 
     return (
         <>
-            <button className="toggle" onClick={() => setIsOpen(!isOpen)}> {journey.date} - {journey.drink} </button>
+            <button className="toggle" onClick={() => setIsOpen(!isOpen)}> {journey.date} - {journey.drink} - {journey.level}</button>
             {isOpen && <div className="past-entry">
                 {journey.entry}
                 {<br />}

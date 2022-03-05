@@ -60,7 +60,7 @@ function NewEntry() {
             if (response.ok) {
                 response.json().then((data) => console.log(data));
                 setButtonDisplay("✔");
-                setTimeout(() => { navigate("/journal/history") }, 900);
+                setTimeout(() => { navigate("/enneadrink/journal/history") }, 900);
             } else {
                 response.json().then((errors) => {
                     console.error(errors);

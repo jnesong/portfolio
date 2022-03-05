@@ -83,7 +83,7 @@ hotcocoa = Enneadrink.create(drink: "hot cocoa", number: 9, title: "the peaceful
 
 puts "🌱 Seeding practice data..."
 
-practice101 = Practice.create(enneadrink_id: water.id, title: "Making things better", description: "Waters feel useful when they are able to speak into things, reform things, and make things better.")
+practice101 = Practice.create(enneadrink_id: water.id, title: "Improvement projects", description: "Waters feel useful when they are able to speak into things, reform things, and make things better.")
 practice102 = Practice.create(enneadrink_id: water.id, title: "Nature walks", description: "A walk through nature can be a calming and emotionally healing discipline for Waters, quieting their inner anger and reorienting them around goodness and beauty.")
 practice103 = Practice.create(enneadrink_id: water.id, title: "Receive love through", description: "Verbal reassurance, sharing work loads, encouragement to have fun and take vacations/breaks.")
 practice104 = Practice.create(enneadrink_id: water.id, title: "Give love through", description: "Listen without fixing, embrace reality over idealism.")

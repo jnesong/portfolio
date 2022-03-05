@@ -19,7 +19,7 @@ function Quiz (){
         console.log("a clicked")
         const nextQ = QuizBank.find(question => question.id === currentQ.idNextQuestionA)
         if (nextQ) {setCurrentQ(nextQ)}
-        else {navigate(`/result/${currentQ.drinkResultA}`)}
+        else {navigate(`/enneadrink/result/${currentQ.drinkResultA}`)}
     }
 
     function handleClickB (){
