@@ -5,6 +5,13 @@
   letter-spacing: 4px;
 }
 
+.month-title {
+  font-family: "Optima", sans-serif;
+  font-size: 28px;
+  letter-spacing: 4px;
+  margin-right: 600px;
+}
+
 .input-entry {
     width: 90%;
     height: 300px;
@@ -52,7 +59,7 @@ input[type=text] {
     line-height: 40px;
   }
 
-  .submit-edit {
+.submit-edit {
     border: none;
     background-color:transparent;
     color: rgb(7, 36, 21);
@@ -65,6 +72,7 @@ input[type=text] {
     letter-spacing: 2px;
     transition-duration: 0.4s;
   }
+
   .submit-edit:hover {
     background-color:white;
     color: rgb(166, 186, 178);
@@ -134,6 +142,7 @@ input[type=text] {
     text-align: center;
     transition-duration: 0.4s;
   }
+
   .button-submit:hover {
     background-color:white;
     color: rgb(166, 186, 178);
@@ -142,15 +151,15 @@ input[type=text] {
   .toggle {
     display: block;
     border: none;
-    padding: 30px;
+    padding: 10px;
     background-color:transparent;
     color: 7, 36, 21;
     margin-right: auto;
     margin-left: 100px;
     font-family: "Optima", sans-serif;
-    font-size: 22px;
+    font-size: 20px;
     letter-spacing: 2px;
-    text-align: center;
+    text-align: left;
     transition-duration: 0.2s;
   }
   .toggle:hover {
@@ -186,3 +195,48 @@ input[type=text] {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+
+  .history-column-left {
+    position: relative;
+    float: left;
+    width: 400px;
+    padding: 10px;
+    padding-top: 5px;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.history-column-right {
+  position: relative;
+  float: left;
+  width: 1000px;
+  padding: 10px;
+  padding-top: 5px;
+  text-align: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.history-row {
+    display: flexbox;
+    margin: 0 auto;
+    width: 1500px;
+}
+
+#history-calendar{
+  margin-left: 100px;
+}
+
+button, .react-calendar__month-view__weekdays {
+  background: none;
+  border: none;
+  font-family: "Optima", sans-serif;
+  font-size: 18px;
+  padding: 10px;
+}
+
+button:hover {
+  font-weight: bold;
+  cursor: pointer;
+}

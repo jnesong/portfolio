@@ -5,7 +5,7 @@
   background-color:transparent;
   color: rgb(7, 36, 21);
   padding: 40px;
-  font-size: 26px;
+  font-size: 22px;
   display: block;
   margin-top:20px;
   margin-left: auto;
@@ -19,7 +19,7 @@
     background-color:transparent;
     color: rgb(7, 36, 21);
     padding: 40px;
-    font-size: 26px;
+    font-size: 25px;
     display: inline-block;
     transition-duration: 0.4s;
     margin-left: auto;
@@ -51,7 +51,7 @@ a.quiz-link {
     margin-left: 140px;
     margin-right: auto;
     letter-spacing: 2px;
-    font-size: 26px;
+    font-size: 25px;
     font-family: "Optima", sans-serif;
   }
   

@@ -95,8 +95,13 @@ input[type=password]:focus {
   padding: 30px;
 }
 
-.logon-nav:hover, .logon-nav:focus {
+.logon-nav:hover {
   color: white;
+  transform: scale(1.3); 
+}
+
+.logon-nav:focus {
+  color: black;
   transform: scale(1.3) translateY(30px); 
 }
 
@@ -152,7 +157,7 @@ input[type=password]:focus {
   transition: transform .7s;
   margin: 50px;
   font-family: "Optima", sans-serif;
-  font-size: 30px;
+  font-size: 25px;
   color:black;
 }
 .user-nav:hover {

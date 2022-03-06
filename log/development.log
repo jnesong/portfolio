@@ -5874,3 +5874,2135 @@ Processing by Api::UsersController#show as */*
 Completed 200 OK in 5ms (Views: 1.6ms | ActiveRecord: 0.2ms | Allocations: 1541)
 
 
+Started GET "/api/enneadrinks/login" for 127.0.0.1 at 2022-03-05 15:21:01 -0500
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::EnneadrinksController#show as */*
+  Parameters: {"id"=>"login"}
+  [1m[36mEnneadrink Load (5.0ms)[0m  [1m[34mSELECT "enneadrinks".* FROM "enneadrinks" WHERE "enneadrinks"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/enneadrinks_controller.rb:9:in `show'
+  [1m[36mUser Load (3.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Completed 404 Not Found in 64ms (Views: 12.2ms | ActiveRecord: 43.2ms | Allocations: 10502)
+
+
+Started GET "/api/enneadrinks/signup" for 127.0.0.1 at 2022-03-05 15:21:12 -0500
+Processing by Api::EnneadrinksController#show as */*
+  Parameters: {"id"=>"signup"}
+  [1m[36mEnneadrink Load (0.8ms)[0m  [1m[34mSELECT "enneadrinks".* FROM "enneadrinks" WHERE "enneadrinks"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/enneadrinks_controller.rb:9:in `show'
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Completed 404 Not Found in 10ms (Views: 3.2ms | ActiveRecord: 1.7ms | Allocations: 1217)
+
+
+Started GET "/api/enneadrinks/login" for 127.0.0.1 at 2022-03-05 15:21:14 -0500
+Processing by Api::EnneadrinksController#show as */*
+  Parameters: {"id"=>"login"}
+  [1m[36mEnneadrink Load (1.0ms)[0m  [1m[34mSELECT "enneadrinks".* FROM "enneadrinks" WHERE "enneadrinks"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/enneadrinks_controller.rb:9:in `show'
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Completed 404 Not Found in 8ms (Views: 3.3ms | ActiveRecord: 2.3ms | Allocations: 1206)
+
+
+Started GET "/api/enneadrinks/signup" for 127.0.0.1 at 2022-03-05 15:22:20 -0500
+Processing by Api::EnneadrinksController#show as */*
+  Parameters: {"id"=>"signup"}
+  [1m[36mEnneadrink Load (0.3ms)[0m  [1m[34mSELECT "enneadrinks".* FROM "enneadrinks" WHERE "enneadrinks"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/enneadrinks_controller.rb:9:in `show'
+  [1m[36mUser Load (7.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.06ms)
+Completed 404 Not Found in 12ms (Views: 1.5ms | ActiveRecord: 8.0ms | Allocations: 1215)
+
+
+Started GET "/api/enneadrinks/login" for 127.0.0.1 at 2022-03-05 15:22:21 -0500
+Processing by Api::EnneadrinksController#show as */*
+  Parameters: {"id"=>"login"}
+  [1m[36mEnneadrink Load (0.2ms)[0m  [1m[34mSELECT "enneadrinks".* FROM "enneadrinks" WHERE "enneadrinks"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/enneadrinks_controller.rb:9:in `show'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Completed 404 Not Found in 5ms (Views: 2.1ms | ActiveRecord: 0.5ms | Allocations: 1211)
+
+
+Started POST "/api/login" for 127.0.0.1 at 2022-03-05 15:22:28 -0500
+Processing by Api::SessionsController#create as */*
+  Parameters: {"username"=>"barry5", "password"=>"[FILTERED]", "session"=>{"username"=>"barry5", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "barry5"], ["LIMIT", 1]]
+  ↳ app/controllers/api/sessions_controller.rb:5:in `create'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.24ms)
+Completed 200 OK in 283ms (Views: 6.6ms | ActiveRecord: 0.8ms | Allocations: 2673)
+
+
+Started GET "/api/me" for 127.0.0.1 at 2022-03-05 15:22:29 -0500
+Processing by Api::UsersController#show as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.19ms)
+Completed 200 OK in 8ms (Views: 3.2ms | ActiveRecord: 0.1ms | Allocations: 1562)
+
+
+Started GET "/api/me" for 127.0.0.1 at 2022-03-05 15:22:35 -0500
+Processing by Api::UsersController#show as */*
+  [1m[36mUser Load (4.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.19ms)
+Completed 200 OK in 35ms (Views: 1.6ms | ActiveRecord: 5.0ms | Allocations: 1559)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 15:22:36 -0500
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (5.8ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.56ms)
+Completed 200 OK in 72ms (Views: 23.2ms | ActiveRecord: 23.0ms | Allocations: 9955)
+
+
+Started GET "/api/me" for 127.0.0.1 at 2022-03-05 15:22:39 -0500
+Processing by Api::UsersController#show as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.24ms)
+Completed 200 OK in 9ms (Views: 3.1ms | ActiveRecord: 0.4ms | Allocations: 1555)
+
+
+Started GET "/api/me" for 127.0.0.1 at 2022-03-05 15:22:41 -0500
+Processing by Api::UsersController#show as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.52ms)
+Completed 200 OK in 8ms (Views: 2.1ms | ActiveRecord: 0.3ms | Allocations: 1557)
+
+
+Started GET "/api/me" for 127.0.0.1 at 2022-03-05 15:22:43 -0500
+Processing by Api::UsersController#show as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (2.55ms)
+Completed 200 OK in 12ms (Views: 5.4ms | ActiveRecord: 0.2ms | Allocations: 1561)
+
+
+Started GET "/api/me" for 127.0.0.1 at 2022-03-05 15:22:52 -0500
+Processing by Api::UsersController#show as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.11ms)
+Completed 200 OK in 26ms (Views: 5.3ms | ActiveRecord: 0.2ms | Allocations: 1554)
+
+
+Started GET "/api/me" for 127.0.0.1 at 2022-03-05 15:23:00 -0500
+Processing by Api::UsersController#show as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.45ms)
+Completed 200 OK in 5ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 1558)
+
+
+Started GET "/api/me" for 127.0.0.1 at 2022-03-05 15:23:14 -0500
+Processing by Api::UsersController#show as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.34ms)
+Completed 200 OK in 6ms (Views: 2.0ms | ActiveRecord: 0.4ms | Allocations: 1561)
+
+
+Started GET "/api/me" for 127.0.0.1 at 2022-03-05 15:23:24 -0500
+Processing by Api::UsersController#show as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.35ms)
+Completed 200 OK in 5ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 1565)
+
+
+Started GET "/api/me" for 127.0.0.1 at 2022-03-05 15:23:27 -0500
+Processing by Api::UsersController#show as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.25ms)
+Completed 200 OK in 6ms (Views: 1.8ms | ActiveRecord: 0.3ms | Allocations: 1559)
+
+
+Started GET "/api/me" for 127.0.0.1 at 2022-03-05 15:24:39 -0500
+Processing by Api::UsersController#show as */*
+  [1m[36mUser Load (6.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.62ms)
+Completed 200 OK in 20ms (Views: 2.4ms | ActiveRecord: 6.4ms | Allocations: 1555)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 15:25:16 -0500
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (22.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (23.9ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.91ms)
+Completed 200 OK in 72ms (Views: 6.3ms | ActiveRecord: 46.8ms | Allocations: 2163)
+
+
+Started GET "/api/me" for 127.0.0.1 at 2022-03-05 15:25:25 -0500
+Processing by Api::UsersController#show as */*
+  [1m[36mUser Load (8.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (1.08ms)
+Completed 200 OK in 22ms (Views: 2.6ms | ActiveRecord: 8.7ms | Allocations: 1561)
+
+
+Started GET "/api/me" for 127.0.0.1 at 2022-03-05 15:25:32 -0500
+Processing by Api::UsersController#show as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.29ms)
+Completed 200 OK in 9ms (Views: 1.8ms | ActiveRecord: 0.4ms | Allocations: 1557)
+
+
+Started GET "/api/me" for 127.0.0.1 at 2022-03-05 15:25:53 -0500
+Processing by Api::UsersController#show as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.77ms)
+Completed 200 OK in 12ms (Views: 2.5ms | ActiveRecord: 0.6ms | Allocations: 1557)
+
+
+Started GET "/api/me" for 127.0.0.1 at 2022-03-05 15:27:47 -0500
+Processing by Api::UsersController#show as */*
+  [1m[36mUser Load (6.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.59ms)
+Completed 200 OK in 58ms (Views: 1.9ms | ActiveRecord: 6.5ms | Allocations: 1560)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 15:27:48 -0500
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (5.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (14.3ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.46ms)
+Completed 200 OK in 63ms (Views: 10.5ms | ActiveRecord: 19.7ms | Allocations: 2160)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 18:16:09 -0500
+Started GET "/api/me" for 127.0.0.1 at 2022-03-05 18:16:09 -0500
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::JourneysController#index as */*
+Processing by Api::UsersController#show as */*
+  [1m[36mUser Load (5.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.2ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 76ms (Views: 3.6ms | ActiveRecord: 32.7ms | Allocations: 13919)
+
+
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (20.3ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.28ms)
+Completed 200 OK in 112ms (Views: 7.1ms | ActiveRecord: 91.5ms | Allocations: 22432)
+
+
+Started GET "/api/me" for 127.0.0.1 at 2022-03-05 18:17:36 -0500
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 18:17:36 -0500
+Processing by Api::UsersController#show as */*
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (15.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.28ms)
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 36ms (Views: 2.2ms | ActiveRecord: 15.6ms | Allocations: 2099)
+
+
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (0.7ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.41ms)
+Completed 200 OK in 51ms (Views: 14.3ms | ActiveRecord: 2.6ms | Allocations: 3941)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 18:18:26 -0500
+Started GET "/api/me" for 127.0.0.1 at 2022-03-05 18:18:26 -0500
+Processing by Api::UsersController#show as */*
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (5.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (6.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.17ms)
+Completed 200 OK in 39ms (Views: 3.8ms | ActiveRecord: 6.2ms | Allocations: 2828)
+
+
+  [1m[36mJourney Load (23.5ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.56ms)
+Completed 200 OK in 54ms (Views: 9.1ms | ActiveRecord: 29.4ms | Allocations: 3888)
+
+
+Started GET "/api/me" for 127.0.0.1 at 2022-03-05 18:20:01 -0500
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 18:20:01 -0500
+Processing by Api::JourneysController#index as */*
+Processing by Api::UsersController#show as */*
+  [1m[36mUser Load (6.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mUser Load (3.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.15ms)
+Completed 200 OK in 70ms (Views: 6.3ms | ActiveRecord: 3.3ms | Allocations: 2623)
+
+
+  [1m[36mJourney Load (24.6ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.21ms)
+Completed 200 OK in 92ms (Views: 5.7ms | ActiveRecord: 31.4ms | Allocations: 4031)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 18:20:12 -0500
+Started GET "/api/me" for 127.0.0.1 at 2022-03-05 18:20:12 -0500
+Processing by Api::JourneysController#index as */*
+Processing by Api::UsersController#show as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (4.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (2.26ms)
+Completed 200 OK in 25ms (Views: 8.6ms | ActiveRecord: 4.0ms | Allocations: 2629)
+
+
+  [1m[36mJourney Load (25.0ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.21ms)
+Completed 200 OK in 53ms (Views: 15.4ms | ActiveRecord: 25.4ms | Allocations: 4047)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 18:26:07 -0500
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (86.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (6.0ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.53ms)
+Completed 200 OK in 156ms (Views: 20.3ms | ActiveRecord: 92.6ms | Allocations: 2155)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 18:28:05 -0500
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (11.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (19.3ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.52ms)
+Completed 200 OK in 89ms (Views: 2.2ms | ActiveRecord: 31.0ms | Allocations: 2170)
+
+
+Started GET "/api/me" for 127.0.0.1 at 2022-03-05 18:29:15 -0500
+Processing by Api::UsersController#show as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.93ms)
+Completed 200 OK in 64ms (Views: 4.5ms | ActiveRecord: 0.3ms | Allocations: 1564)
+
+
+Started GET "/api/me" for 127.0.0.1 at 2022-03-05 18:29:15 -0500
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 18:29:15 -0500
+Processing by Api::UsersController#show as */*
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (8.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.11ms)
+Completed 200 OK in 21ms (Views: 1.6ms | ActiveRecord: 8.1ms | Allocations: 2319)
+
+
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (1.0ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.71ms)
+Completed 200 OK in 103ms (Views: 11.0ms | ActiveRecord: 39.2ms | Allocations: 6043)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 18:30:31 -0500
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (23.2ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.32ms)
+Completed 200 OK in 124ms (Views: 2.5ms | ActiveRecord: 23.9ms | Allocations: 2161)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 18:30:51 -0500
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (0.1ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.8ms)
+Completed 200 OK in 6ms (Views: 2.9ms | ActiveRecord: 1.3ms | Allocations: 2157)
+
+
+Started GET "/api/me" for 127.0.0.1 at 2022-03-05 18:31:09 -0500
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 18:31:09 -0500
+Processing by Api::UsersController#show as */*
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.49ms)
+Completed 200 OK in 11ms (Views: 4.9ms | ActiveRecord: 1.7ms | Allocations: 2029)
+
+
+  [1m[36mUser Load (6.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (21.2ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.2ms)
+Completed 200 OK in 36ms (Views: 3.8ms | ActiveRecord: 27.5ms | Allocations: 3828)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 18:35:51 -0500
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (18.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (0.9ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.29ms)
+Completed 200 OK in 71ms (Views: 4.6ms | ActiveRecord: 19.1ms | Allocations: 2159)
+
+
+Started GET "/api/me" for 127.0.0.1 at 2022-03-05 18:40:20 -0500
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 18:40:20 -0500
+Processing by Api::JourneysController#index as */*
+Processing by Api::UsersController#show as */*
+  [1m[36mUser Load (16.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (22.8ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (3.86ms)
+Completed 200 OK in 104ms (Views: 14.0ms | ActiveRecord: 39.5ms | Allocations: 2573)
+
+
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (2.38ms)
+Completed 200 OK in 218ms (Views: 4.9ms | ActiveRecord: 61.0ms | Allocations: 5962)
+
+
+Started GET "/api/me" for 127.0.0.1 at 2022-03-05 18:44:03 -0500
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 18:44:03 -0500
+Processing by Api::UsersController#show as */*
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (5.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (0.8ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.88ms)
+Completed 200 OK in 45ms (Views: 11.1ms | ActiveRecord: 6.7ms | Allocations: 2203)
+
+
+  [1m[36mUser Load (42.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.15ms)
+Completed 200 OK in 97ms (Views: 1.6ms | ActiveRecord: 42.7ms | Allocations: 4346)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 18:44:22 -0500
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (6.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (1.4ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.64ms)
+Completed 200 OK in 48ms (Views: 34.0ms | ActiveRecord: 8.1ms | Allocations: 2200)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 18:46:19 -0500
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (8.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (0.3ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.64ms)
+Completed 200 OK in 38ms (Views: 4.5ms | ActiveRecord: 8.7ms | Allocations: 2151)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 18:49:26 -0500
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (45.1ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.33ms)
+Completed 200 OK in 104ms (Views: 4.0ms | ActiveRecord: 45.5ms | Allocations: 2152)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 18:49:52 -0500
+Started GET "/api/me" for 127.0.0.1 at 2022-03-05 18:49:52 -0500
+Processing by Api::JourneysController#index as */*
+Processing by Api::UsersController#show as */*
+  [1m[36mUser Load (33.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (0.3ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.72ms)
+Completed 200 OK in 71ms (Views: 10.4ms | ActiveRecord: 33.4ms | Allocations: 2590)
+
+
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.44ms)
+Completed 200 OK in 238ms (Views: 1.4ms | ActiveRecord: 66.4ms | Allocations: 5969)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 18:50:00 -0500
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (0.9ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.22ms)
+Completed 200 OK in 22ms (Views: 9.4ms | ActiveRecord: 1.2ms | Allocations: 2200)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 18:51:17 -0500
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (0.2ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.74ms)
+Completed 200 OK in 41ms (Views: 7.7ms | ActiveRecord: 0.5ms | Allocations: 2159)
+
+
+Started GET "/api/me" for 127.0.0.1 at 2022-03-05 18:53:05 -0500
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 18:53:05 -0500
+Processing by Api::UsersController#show as */*
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (1.0ms)
+Completed 200 OK in 16ms (Views: 5.6ms | ActiveRecord: 0.4ms | Allocations: 1749)
+
+
+  [1m[36mUser Load (44.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (9.3ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.3ms)
+Completed 200 OK in 60ms (Views: 2.4ms | ActiveRecord: 53.2ms | Allocations: 3854)
+
+
+Started GET "/enneadrink/journal/babel/parser/lib/index.js" for 127.0.0.1 at 2022-03-05 19:00:55 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/enneadrink/journal/babel/parser/lib/index.js"):
+  
+Started GET "/enneadrink/journal/babel/parser/lib/index.js" for 127.0.0.1 at 2022-03-05 19:00:56 -0500
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 19:00:56 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/enneadrink/journal/babel/parser/lib/index.js"):
+  
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (0.8ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.46ms)
+Completed 200 OK in 5794ms (Views: 12.2ms | ActiveRecord: 582.1ms | Allocations: 4313)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 19:01:04 -0500
+Started GET "/api/me" for 127.0.0.1 at 2022-03-05 19:01:04 -0500
+Processing by Api::UsersController#show as */*
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (47.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.2ms)
+Completed 200 OK in 176ms (Views: 1.0ms | ActiveRecord: 47.6ms | Allocations: 2238)
+
+
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (0.4ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.24ms)
+Completed 200 OK in 304ms (Views: 2.5ms | ActiveRecord: 16.9ms | Allocations: 6004)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 19:03:13 -0500
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (31.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (0.3ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.25ms)
+Completed 200 OK in 101ms (Views: 6.9ms | ActiveRecord: 32.0ms | Allocations: 2169)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 19:03:30 -0500
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (22.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (0.3ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.35ms)
+Completed 200 OK in 41ms (Views: 4.4ms | ActiveRecord: 23.2ms | Allocations: 2151)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 19:04:43 -0500
+Started GET "/api/me" for 127.0.0.1 at 2022-03-05 19:04:43 -0500
+Processing by Api::UsersController#show as */*
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.71ms)
+Completed 200 OK in 44ms (Views: 4.7ms | ActiveRecord: 1.8ms | Allocations: 1718)
+
+
+  [1m[36mUser Load (6.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (19.8ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.24ms)
+Completed 200 OK in 265ms (Views: 22.2ms | ActiveRecord: 26.7ms | Allocations: 3857)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 19:05:55 -0500
+Started GET "/api/me" for 127.0.0.1 at 2022-03-05 19:05:55 -0500
+Processing by Api::JourneysController#index as */*
+Processing by Api::UsersController#show as */*
+  [1m[36mUser Load (22.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.55ms)
+Completed 200 OK in 56ms (Views: 4.2ms | ActiveRecord: 22.8ms | Allocations: 1553)
+
+
+  [1m[36mUser Load (93.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (0.3ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.19ms)
+Completed 200 OK in 202ms (Views: 11.8ms | ActiveRecord: 94.0ms | Allocations: 4319)
+
+
+Started GET "/api/me" for 127.0.0.1 at 2022-03-05 19:05:59 -0500
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 19:05:59 -0500
+Processing by Api::UsersController#show as */*
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (1.7ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.95ms)
+Completed 200 OK in 89ms (Views: 7.1ms | ActiveRecord: 0.9ms | Allocations: 3933)
+
+
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.81ms)
+Completed 200 OK in 78ms (Views: 16.7ms | ActiveRecord: 2.3ms | Allocations: 3810)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 19:06:29 -0500
+Started GET "/api/me" for 127.0.0.1 at 2022-03-05 19:06:29 -0500
+Processing by Api::JourneysController#index as */*
+Processing by Api::UsersController#show as */*
+  [1m[36mUser Load (98.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (107.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (1.53ms)
+Completed 200 OK in 588ms (Views: 15.4ms | ActiveRecord: 107.3ms | Allocations: 2638)
+
+
+  [1m[36mJourney Load (8.6ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.22ms)
+Completed 200 OK in 602ms (Views: 415.6ms | ActiveRecord: 107.1ms | Allocations: 4063)
+
+
+Started GET "/api/me" for 127.0.0.1 at 2022-03-05 19:07:08 -0500
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 19:07:08 -0500
+Processing by Api::UsersController#show as */*
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (47.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.87ms)
+Completed 200 OK in 68ms (Views: 5.0ms | ActiveRecord: 47.8ms | Allocations: 1770)
+
+
+  [1m[36mUser Load (68.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (0.4ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.92ms)
+Completed 200 OK in 100ms (Views: 5.6ms | ActiveRecord: 69.3ms | Allocations: 3871)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 19:08:38 -0500
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (47.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (10.6ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.48ms)
+Completed 200 OK in 147ms (Views: 7.5ms | ActiveRecord: 57.7ms | Allocations: 2165)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 19:08:42 -0500
+Started GET "/api/me" for 127.0.0.1 at 2022-03-05 19:08:42 -0500
+Processing by Api::JourneysController#index as */*
+Processing by Api::UsersController#show as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.38ms)
+Completed 200 OK in 16ms (Views: 2.2ms | ActiveRecord: 0.6ms | Allocations: 1553)
+
+
+  [1m[36mUser Load (25.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (0.5ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (3.28ms)
+Completed 200 OK in 101ms (Views: 16.5ms | ActiveRecord: 25.5ms | Allocations: 4326)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 19:11:53 -0500
+Started GET "/api/me" for 127.0.0.1 at 2022-03-05 19:11:53 -0500
+Processing by Api::JourneysController#index as */*
+Processing by Api::UsersController#show as */*
+  [1m[36mUser Load (66.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (26.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.37ms)
+Completed 200 OK in 111ms (Views: 6.5ms | ActiveRecord: 26.6ms | Allocations: 2638)
+
+
+  [1m[36mJourney Load (7.7ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.05ms)
+Completed 200 OK in 152ms (Views: 24.5ms | ActiveRecord: 74.3ms | Allocations: 4338)
+
+
+Started GET "/api/me" for 127.0.0.1 at 2022-03-05 19:11:56 -0500
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 19:11:56 -0500
+Processing by Api::UsersController#show as */*
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (3.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (19.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.35ms)
+Completed 200 OK in 103ms (Views: 22.1ms | ActiveRecord: 3.3ms | Allocations: 2806)
+
+
+  [1m[36mJourney Load (106.1ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.43ms)
+Completed 200 OK in 202ms (Views: 38.6ms | ActiveRecord: 125.2ms | Allocations: 3861)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 19:13:17 -0500
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (102.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (2.5ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (7.17ms)
+Completed 200 OK in 210ms (Views: 33.8ms | ActiveRecord: 105.4ms | Allocations: 2167)
+
+
+Started GET "/api/me" for 127.0.0.1 at 2022-03-05 19:13:45 -0500
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 19:13:45 -0500
+Processing by Api::UsersController#show as */*
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (476.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (477.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (1.0ms)
+Completed 200 OK in 1524ms (Views: 7.0ms | ActiveRecord: 476.1ms | Allocations: 2804)
+
+
+  [1m[36mJourney Load (28.9ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.19ms)
+Completed 200 OK in 1554ms (Views: 20.1ms | ActiveRecord: 506.8ms | Allocations: 3870)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 19:13:48 -0500
+Started GET "/api/me" for 127.0.0.1 at 2022-03-05 19:13:48 -0500
+Processing by Api::JourneysController#index as */*
+Processing by Api::UsersController#show as */*
+  [1m[36mUser Load (326.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mUser Load (359.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (1.04ms)
+Completed 200 OK in 1286ms (Views: 11.0ms | ActiveRecord: 359.4ms | Allocations: 2638)
+
+
+  [1m[36mJourney Load (123.3ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.97ms)
+Completed 200 OK in 1419ms (Views: 14.8ms | ActiveRecord: 449.9ms | Allocations: 4341)
+
+
+Started GET "/api/me" for 127.0.0.1 at 2022-03-05 19:14:13 -0500
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 19:14:13 -0500
+Processing by Api::UsersController#show as */*
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (45.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.8ms)
+Completed 200 OK in 134ms (Views: 2.1ms | ActiveRecord: 45.7ms | Allocations: 1781)
+
+
+  [1m[36mUser Load (71.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (0.4ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.52ms)
+Completed 200 OK in 176ms (Views: 7.5ms | ActiveRecord: 71.8ms | Allocations: 3870)
+
+
+Started GET "/api/me" for 127.0.0.1 at 2022-03-05 19:14:27 -0500
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 19:14:27 -0500
+Processing by Api::JourneysController#index as */*
+Processing by Api::UsersController#show as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mJourney Load (10.3ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (1.19ms)
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.88ms)
+Completed 200 OK in 54ms (Views: 17.1ms | ActiveRecord: 0.4ms | Allocations: 3505)
+
+
+Completed 200 OK in 59ms (Views: 36.4ms | ActiveRecord: 10.7ms | Allocations: 4025)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 19:14:30 -0500
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (0.2ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.63ms)
+Completed 200 OK in 26ms (Views: 3.8ms | ActiveRecord: 0.9ms | Allocations: 2159)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 19:14:34 -0500
+Started GET "/api/me" for 127.0.0.1 at 2022-03-05 19:14:34 -0500
+Processing by Api::JourneysController#index as */*
+Processing by Api::UsersController#show as */*
+  [1m[36mUser Load (9.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mJourney Load (2.1ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.24ms)
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.27ms)
+Completed 200 OK in 41ms (Views: 8.8ms | ActiveRecord: 3.6ms | Allocations: 3500)
+
+
+Completed 200 OK in 44ms (Views: 20.7ms | ActiveRecord: 11.4ms | Allocations: 3733)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 19:15:05 -0500
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (7.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (1.5ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.28ms)
+Completed 200 OK in 96ms (Views: 23.3ms | ActiveRecord: 9.2ms | Allocations: 2159)
+
+
+Started GET "/api/me" for 127.0.0.1 at 2022-03-05 19:16:11 -0500
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 19:16:11 -0500
+Processing by Api::UsersController#show as */*
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (62.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (74.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.32ms)
+Completed 200 OK in 188ms (Views: 16.9ms | ActiveRecord: 74.5ms | Allocations: 3083)
+
+
+  [1m[36mJourney Load (51.1ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.25ms)
+Completed 200 OK in 203ms (Views: 16.5ms | ActiveRecord: 113.9ms | Allocations: 3867)
+
+
+Started GET "/api/me" for 127.0.0.1 at 2022-03-05 19:17:04 -0500
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 19:17:04 -0500
+Processing by Api::JourneysController#index as */*
+Processing by Api::UsersController#show as */*
+  [1m[36mUser Load (26.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (5.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.17ms)
+Completed 200 OK in 99ms (Views: 7.9ms | ActiveRecord: 5.9ms | Allocations: 2635)
+
+
+  [1m[36mJourney Load (7.0ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.25ms)
+Completed 200 OK in 119ms (Views: 17.0ms | ActiveRecord: 33.3ms | Allocations: 4058)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 19:17:08 -0500
+Processing by Api::JourneysController#index as */*
+Started GET "/api/me" for 127.0.0.1 at 2022-03-05 19:17:08 -0500
+Processing by Api::UsersController#show as */*
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (1.98ms)
+Completed 200 OK in 264ms (Views: 4.7ms | ActiveRecord: 0.6ms | Allocations: 2631)
+
+
+  [1m[36mJourney Load (23.3ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.0ms)
+Completed 200 OK in 300ms (Views: 7.9ms | ActiveRecord: 26.1ms | Allocations: 4730)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 19:17:51 -0500
+Started GET "/api/me" for 127.0.0.1 at 2022-03-05 19:17:51 -0500
+Processing by Api::UsersController#show as */*
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (21.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (1.24ms)
+Completed 200 OK in 64ms (Views: 9.4ms | ActiveRecord: 21.0ms | Allocations: 2033)
+
+
+  [1m[36mUser Load (45.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (0.4ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.23ms)
+Completed 200 OK in 108ms (Views: 17.8ms | ActiveRecord: 45.7ms | Allocations: 3865)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 19:17:52 -0500
+Started GET "/api/me" for 127.0.0.1 at 2022-03-05 19:17:52 -0500
+Processing by Api::UsersController#show as */*
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (33.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.45ms)
+Completed 200 OK in 111ms (Views: 15.2ms | ActiveRecord: 33.5ms | Allocations: 2804)
+
+
+  [1m[36mJourney Load (31.8ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (6.3ms)
+Completed 200 OK in 138ms (Views: 43.4ms | ActiveRecord: 32.7ms | Allocations: 3859)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 19:18:22 -0500
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (7.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (21.4ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.02ms)
+Completed 200 OK in 71ms (Views: 18.5ms | ActiveRecord: 29.1ms | Allocations: 2171)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 19:18:45 -0500
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (0.4ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (8.39ms)
+Completed 200 OK in 68ms (Views: 13.4ms | ActiveRecord: 2.9ms | Allocations: 2157)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 19:18:59 -0500
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (23.6ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (3.91ms)
+Completed 200 OK in 51ms (Views: 16.7ms | ActiveRecord: 24.1ms | Allocations: 2163)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 19:20:34 -0500
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (43.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (23.0ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (23.56ms)
+Completed 200 OK in 227ms (Views: 85.8ms | ActiveRecord: 66.3ms | Allocations: 2156)
+
+
+Started GET "/api/me" for 127.0.0.1 at 2022-03-05 19:20:46 -0500
+Processing by Api::UsersController#show as */*
+  [1m[36mUser Load (19.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.95ms)
+Completed 200 OK in 32ms (Views: 2.6ms | ActiveRecord: 19.3ms | Allocations: 1551)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 19:20:47 -0500
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (0.2ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.03ms)
+Completed 200 OK in 18ms (Views: 10.5ms | ActiveRecord: 0.4ms | Allocations: 2157)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 19:24:32 -0500
+Started GET "/api/me" for 127.0.0.1 at 2022-03-05 19:24:32 -0500
+Processing by Api::JourneysController#index as */*
+Processing by Api::UsersController#show as */*
+  [1m[36mUser Load (22.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (0.4ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.63ms)
+Completed 200 OK in 130ms (Views: 21.1ms | ActiveRecord: 23.3ms | Allocations: 2928)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 19:24:32 -0500
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (14.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (21.4ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.43ms)
+Completed 200 OK in 197ms (Views: 8.1ms | ActiveRecord: 35.6ms | Allocations: 2158)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 19:24:32 -0500
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (0.2ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.05ms)
+Completed 200 OK in 9ms (Views: 5.0ms | ActiveRecord: 0.3ms | Allocations: 2157)
+
+
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.47ms)
+Completed 200 OK in 573ms (Views: 1.6ms | ActiveRecord: 126.8ms | Allocations: 12379)
+
+
+Started GET "/api/me" for 127.0.0.1 at 2022-03-05 19:24:32 -0500
+Processing by Api::UsersController#show as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.19ms)
+Completed 200 OK in 9ms (Views: 1.3ms | ActiveRecord: 0.4ms | Allocations: 1553)
+
+
+Started GET "/api/me" for 127.0.0.1 at 2022-03-05 19:24:32 -0500
+Processing by Api::UsersController#show as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (10.95ms)
+Completed 200 OK in 20ms (Views: 12.2ms | ActiveRecord: 0.3ms | Allocations: 1553)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 19:24:52 -0500
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (2.0ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.31ms)
+Completed 200 OK in 59ms (Views: 46.4ms | ActiveRecord: 2.4ms | Allocations: 2204)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 19:25:27 -0500
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (0.3ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.68ms)
+Completed 200 OK in 19ms (Views: 4.7ms | ActiveRecord: 1.0ms | Allocations: 2158)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 19:26:08 -0500
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (0.3ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.56ms)
+Completed 200 OK in 21ms (Views: 4.9ms | ActiveRecord: 1.7ms | Allocations: 2157)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 19:38:22 -0500
+Started GET "/api/me" for 127.0.0.1 at 2022-03-05 19:38:22 -0500
+Processing by Api::JourneysController#index as */*
+Processing by Api::UsersController#show as */*
+  [1m[36mUser Load (8.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (9.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.53ms)
+Completed 200 OK in 1536ms (Views: 7.5ms | ActiveRecord: 86.1ms | Allocations: 6578)
+
+
+  [1m[36mJourney Load (5.7ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.88ms)
+Completed 200 OK in 1565ms (Views: 15.2ms | ActiveRecord: 92.8ms | Allocations: 8285)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 19:40:59 -0500
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (12.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (0.3ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.38ms)
+Completed 200 OK in 62ms (Views: 11.9ms | ActiveRecord: 13.0ms | Allocations: 2161)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 19:41:05 -0500
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (22.7ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.38ms)
+Completed 200 OK in 46ms (Views: 8.9ms | ActiveRecord: 23.5ms | Allocations: 2159)
+
+
+Started GET "/api/me" for 127.0.0.1 at 2022-03-05 19:41:08 -0500
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 19:41:08 -0500
+Processing by Api::UsersController#show as */*
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (1.29ms)
+Completed 200 OK in 18ms (Views: 9.4ms | ActiveRecord: 1.7ms | Allocations: 2013)
+
+
+  [1m[36mUser Load (21.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (4.0ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.97ms)
+Completed 200 OK in 108ms (Views: 43.4ms | ActiveRecord: 25.5ms | Allocations: 3913)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 19:41:33 -0500
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (10.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (1.8ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.26ms)
+Completed 200 OK in 57ms (Views: 11.2ms | ActiveRecord: 12.5ms | Allocations: 2155)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 19:41:35 -0500
+Started GET "/api/me" for 127.0.0.1 at 2022-03-05 19:41:35 -0500
+Processing by Api::JourneysController#index as */*
+Processing by Api::UsersController#show as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mUser Load (4.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (1.7ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.82ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 23ms (Views: 13.9ms | ActiveRecord: 2.3ms | Allocations: 3497)
+
+
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (1.5ms)
+Completed 200 OK in 27ms (Views: 12.1ms | ActiveRecord: 4.4ms | Allocations: 3873)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 19:41:48 -0500
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (45.0ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.6ms)
+Completed 200 OK in 72ms (Views: 8.2ms | ActiveRecord: 45.4ms | Allocations: 2151)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 19:41:56 -0500
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (53.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (22.7ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.16ms)
+Completed 200 OK in 169ms (Views: 17.2ms | ActiveRecord: 76.4ms | Allocations: 2154)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 19:42:51 -0500
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (42.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (0.4ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.69ms)
+Completed 200 OK in 116ms (Views: 25.6ms | ActiveRecord: 42.7ms | Allocations: 2161)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 19:43:08 -0500
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (0.1ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.33ms)
+Completed 200 OK in 10ms (Views: 5.2ms | ActiveRecord: 0.3ms | Allocations: 2157)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 19:43:17 -0500
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (0.2ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.27ms)
+Completed 200 OK in 25ms (Views: 18.9ms | ActiveRecord: 0.4ms | Allocations: 2163)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 19:43:39 -0500
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (7.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (0.3ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.0ms)
+Completed 200 OK in 49ms (Views: 15.9ms | ActiveRecord: 8.3ms | Allocations: 2155)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 19:43:54 -0500
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (0.8ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.2ms)
+Completed 200 OK in 26ms (Views: 9.1ms | ActiveRecord: 1.2ms | Allocations: 2167)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 19:43:57 -0500
+Processing by Api::JourneysController#index as */*
+Started GET "/api/me" for 127.0.0.1 at 2022-03-05 19:43:57 -0500
+Processing by Api::UsersController#show as */*
+  [1m[36mUser Load (4.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (0.2ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.37ms)
+Completed 200 OK in 22ms (Views: 8.8ms | ActiveRecord: 4.4ms | Allocations: 2873)
+
+
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (2.0ms)
+Completed 200 OK in 94ms (Views: 5.1ms | ActiveRecord: 1.2ms | Allocations: 3859)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 19:44:47 -0500
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (6.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (11.9ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.7ms)
+Completed 200 OK in 94ms (Views: 11.5ms | ActiveRecord: 18.6ms | Allocations: 2164)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 19:45:29 -0500
+Started GET "/api/me" for 127.0.0.1 at 2022-03-05 19:45:29 -0500
+Processing by Api::JourneysController#index as */*
+Processing by Api::UsersController#show as */*
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (0.4ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.15ms)
+Completed 200 OK in 52ms (Views: 10.1ms | ActiveRecord: 1.9ms | Allocations: 2644)
+
+
+  [1m[36mUser Load (36.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (1.18ms)
+Completed 200 OK in 70ms (Views: 2.7ms | ActiveRecord: 36.1ms | Allocations: 3870)
+
+
+Started GET "/api/me" for 127.0.0.1 at 2022-03-05 19:45:51 -0500
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 19:45:51 -0500
+Processing by Api::UsersController#show as */*
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.18ms)
+Completed 200 OK in 23ms (Views: 7.1ms | ActiveRecord: 0.8ms | Allocations: 3089)
+
+
+  [1m[36mJourney Load (2.2ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.78ms)
+Completed 200 OK in 20ms (Views: 10.8ms | ActiveRecord: 3.2ms | Allocations: 3836)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 19:49:48 -0500
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (64.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (11.8ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.31ms)
+Completed 200 OK in 197ms (Views: 15.3ms | ActiveRecord: 75.8ms | Allocations: 2156)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 19:53:09 -0500
+Started GET "/api/me" for 127.0.0.1 at 2022-03-05 19:53:09 -0500
+Processing by Api::JourneysController#index as */*
+Processing by Api::UsersController#show as */*
+  [1m[36mUser Load (201.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (111.5ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (3.16ms)
+Completed 200 OK in 1175ms (Views: 39.8ms | ActiveRecord: 312.5ms | Allocations: 2882)
+
+
+  [1m[36mUser Load (6.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.51ms)
+Completed 200 OK in 2024ms (Views: 3.2ms | ActiveRecord: 100.2ms | Allocations: 5971)
+
+
+Started PATCH "/api/journeys/3" for 127.0.0.1 at 2022-03-05 19:55:34 -0500
+Processing by Api::JourneysController#update as */*
+  Parameters: {"date"=>"2022-03-05", "drink"=>"espresso", "level"=>4, "entry"=>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", "id"=>"3", "journey"=>{"date"=>"2022-03-05", "entry"=>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", "drink"=>"espresso", "level"=>4}}
+  [1m[36mUser Load (10.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (10.9ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:32:in `find_journey'
+[31mUnpermitted parameters: :id, :journey[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/journeys_controller.rb:19:in `update'
+  [1m[36mJourney Update (22.8ms)[0m  [1m[33mUPDATE "journeys" SET "entry" = $1, "updated_at" = $2 WHERE "journeys"."id" = $3[0m  [["entry", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."], ["updated_at", "2022-03-06 00:55:35.319292"], ["id", 3]]
+  ↳ app/controllers/api/journeys_controller.rb:19:in `update'
+  [1m[36mTRANSACTION (14.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/journeys_controller.rb:19:in `update'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered JourneySerializer with ActiveModelSerializers::Adapter::Attributes (1.17ms)
+Completed 200 OK in 393ms (Views: 3.1ms | ActiveRecord: 59.9ms | Allocations: 3788)
+
+
+Started PATCH "/api/journeys/3" for 127.0.0.1 at 2022-03-05 19:55:44 -0500
+Processing by Api::JourneysController#update as */*
+  Parameters: {"date"=>"2022-03-05", "drink"=>"espresso", "level"=>4, "entry"=>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. ", "id"=>"3", "journey"=>{"date"=>"2022-03-05", "entry"=>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. ", "drink"=>"espresso", "level"=>4}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (0.2ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:32:in `find_journey'
+[31mUnpermitted parameters: :id, :journey[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/journeys_controller.rb:19:in `update'
+  [1m[36mJourney Update (0.4ms)[0m  [1m[33mUPDATE "journeys" SET "entry" = $1, "updated_at" = $2 WHERE "journeys"."id" = $3[0m  [["entry", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. "], ["updated_at", "2022-03-06 00:55:44.706138"], ["id", 3]]
+  ↳ app/controllers/api/journeys_controller.rb:19:in `update'
+  [1m[36mTRANSACTION (10.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/journeys_controller.rb:19:in `update'
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered JourneySerializer with ActiveModelSerializers::Adapter::Attributes (0.29ms)
+Completed 200 OK in 33ms (Views: 2.9ms | ActiveRecord: 12.8ms | Allocations: 3436)
+
+
+Started DELETE "/api/journeys/3" for 127.0.0.1 at 2022-03-05 19:55:54 -0500
+Processing by Api::JourneysController#destroy as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (0.4ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:32:in `find_journey'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/journeys_controller.rb:25:in `destroy'
+  [1m[36mJourney Destroy (0.3ms)[0m  [1m[31mDELETE FROM "journeys" WHERE "journeys"."id" = $1[0m  [["id", 3]]
+  ↳ app/controllers/api/journeys_controller.rb:25:in `destroy'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/journeys_controller.rb:25:in `destroy'
+Completed 204 No Content in 92ms (ActiveRecord: 2.7ms | Allocations: 2348)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 19:56:07 -0500
+Started GET "/api/me" for 127.0.0.1 at 2022-03-05 19:56:07 -0500
+Processing by Api::JourneysController#index as */*
+Processing by Api::UsersController#show as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (20.8ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.63ms)
+Completed 200 OK in 33ms (Views: 5.3ms | ActiveRecord: 21.1ms | Allocations: 2206)
+
+
+  [1m[36mUser Load (3.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.38ms)
+Completed 200 OK in 58ms (Views: 0.9ms | ActiveRecord: 3.9ms | Allocations: 3746)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 19:58:43 -0500
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (17.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (6.8ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.89ms)
+Completed 200 OK in 57ms (Views: 5.3ms | ActiveRecord: 24.6ms | Allocations: 2011)
+
+
+Started PATCH "/api/journeys/4" for 127.0.0.1 at 2022-03-05 19:59:02 -0500
+Processing by Api::JourneysController#update as */*
+  Parameters: {"date"=>"2022-03-05", "drink"=>"latte", "level"=>5, "entry"=>"Alright, ready to add new features!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", "id"=>"4", "journey"=>{"date"=>"2022-03-05", "entry"=>"Alright, ready to add new features!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", "drink"=>"latte", "level"=>5}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (32.9ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:32:in `find_journey'
+[31mUnpermitted parameters: :id, :journey[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/journeys_controller.rb:19:in `update'
+  [1m[36mJourney Update (20.9ms)[0m  [1m[33mUPDATE "journeys" SET "entry" = $1, "updated_at" = $2 WHERE "journeys"."id" = $3[0m  [["entry", "Alright, ready to add new features!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."], ["updated_at", "2022-03-06 00:59:03.121370"], ["id", 4]]
+  ↳ app/controllers/api/journeys_controller.rb:19:in `update'
+  [1m[36mTRANSACTION (7.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/journeys_controller.rb:19:in `update'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered JourneySerializer with ActiveModelSerializers::Adapter::Attributes (0.53ms)
+Completed 200 OK in 209ms (Views: 2.2ms | ActiveRecord: 62.0ms | Allocations: 3456)
+
+
+Started POST "/api/journeys" for 127.0.0.1 at 2022-03-05 19:59:16 -0500
+Processing by Api::JourneysController#create as */*
+  Parameters: {"date"=>"2022-03-05", "drink"=>"tea", "level"=>"4", "entry"=>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", "month"=>"march", "year"=>"2022", "drink_id"=>2, "journey"=>{"date"=>"2022-03-05", "drink_id"=>2, "entry"=>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", "month"=>"march", "year"=>"2022", "drink"=>"tea", "level"=>"4"}}
+  [1m[36mUser Load (23.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[31mUnpermitted parameter: :journey[0m
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/journeys_controller.rb:13:in `create'
+  [1m[36mJourney Create (44.3ms)[0m  [1m[32mINSERT INTO "journeys" ("user_id", "date", "drink_id", "entry", "month", "year", "created_at", "updated_at", "drink", "level") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["user_id", 1], ["date", "2022-03-05"], ["drink_id", 2], ["entry", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."], ["month", "march"], ["year", 2022], ["created_at", "2022-03-06 00:59:16.596121"], ["updated_at", "2022-03-06 00:59:16.596121"], ["drink", "tea"], ["level", 4]]
+  ↳ app/controllers/api/journeys_controller.rb:13:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/journeys_controller.rb:13:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered JourneySerializer with ActiveModelSerializers::Adapter::Attributes (0.13ms)
+Completed 201 Created in 118ms (Views: 20.3ms | ActiveRecord: 69.2ms | Allocations: 3449)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 19:59:17 -0500
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (3.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (0.2ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.24ms)
+Completed 200 OK in 48ms (Views: 26.7ms | ActiveRecord: 3.6ms | Allocations: 2153)
+
+
+Started PATCH "/api/journeys/6" for 127.0.0.1 at 2022-03-05 19:59:34 -0500
+Processing by Api::JourneysController#update as */*
+  Parameters: {"date"=>"2022-03-05", "drink"=>"tea", "level"=>4, "entry"=>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", "id"=>"6", "journey"=>{"date"=>"2022-03-05", "entry"=>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", "drink"=>"tea", "level"=>4}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (0.4ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:32:in `find_journey'
+[31mUnpermitted parameters: :id, :journey[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/journeys_controller.rb:19:in `update'
+  [1m[36mJourney Update (22.5ms)[0m  [1m[33mUPDATE "journeys" SET "entry" = $1, "updated_at" = $2 WHERE "journeys"."id" = $3[0m  [["entry", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."], ["updated_at", "2022-03-06 00:59:34.390828"], ["id", 6]]
+  ↳ app/controllers/api/journeys_controller.rb:19:in `update'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/journeys_controller.rb:19:in `update'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered JourneySerializer with ActiveModelSerializers::Adapter::Attributes (0.64ms)
+Completed 200 OK in 56ms (Views: 4.1ms | ActiveRecord: 23.9ms | Allocations: 3437)
+
+
+Started POST "/api/journeys" for 127.0.0.1 at 2022-03-05 19:59:52 -0500
+Processing by Api::JourneysController#create as */*
+  Parameters: {"date"=>"2022-02-15", "drink"=>"tea", "level"=>"9", "entry"=>"dsgka", "month"=>"february", "year"=>"2022", "drink_id"=>2, "journey"=>{"date"=>"2022-02-15", "drink_id"=>2, "entry"=>"dsgka", "month"=>"february", "year"=>"2022", "drink"=>"tea", "level"=>"9"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[31mUnpermitted parameter: :journey[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/journeys_controller.rb:13:in `create'
+  [1m[36mJourney Create (7.9ms)[0m  [1m[32mINSERT INTO "journeys" ("user_id", "date", "drink_id", "entry", "month", "year", "created_at", "updated_at", "drink", "level") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["user_id", 1], ["date", "2022-02-15"], ["drink_id", 2], ["entry", "dsgka"], ["month", "february"], ["year", 2022], ["created_at", "2022-03-06 00:59:52.218269"], ["updated_at", "2022-03-06 00:59:52.218269"], ["drink", "tea"], ["level", 9]]
+  ↳ app/controllers/api/journeys_controller.rb:13:in `create'
+  [1m[36mTRANSACTION (10.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/journeys_controller.rb:13:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered JourneySerializer with ActiveModelSerializers::Adapter::Attributes (0.89ms)
+Completed 201 Created in 38ms (Views: 4.1ms | ActiveRecord: 19.3ms | Allocations: 3394)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 19:59:53 -0500
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (0.6ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.32ms)
+Completed 200 OK in 33ms (Views: 6.2ms | ActiveRecord: 0.9ms | Allocations: 2306)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 20:02:23 -0500
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (28.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (0.3ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.0ms)
+Completed 200 OK in 123ms (Views: 8.2ms | ActiveRecord: 28.4ms | Allocations: 2302)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 20:02:23 -0500
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (0.2ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (13.33ms)
+Completed 200 OK in 22ms (Views: 17.8ms | ActiveRecord: 0.3ms | Allocations: 2302)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 20:02:41 -0500
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (14.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (0.2ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.63ms)
+Completed 200 OK in 43ms (Views: 5.9ms | ActiveRecord: 14.7ms | Allocations: 2302)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 20:03:12 -0500
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (46.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (39.6ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.43ms)
+Completed 200 OK in 174ms (Views: 9.3ms | ActiveRecord: 86.5ms | Allocations: 2299)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 20:03:51 -0500
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (8.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (30.3ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.56ms)
+Completed 200 OK in 169ms (Views: 8.9ms | ActiveRecord: 39.2ms | Allocations: 2308)
+
+
+Started GET "/api/me" for 127.0.0.1 at 2022-03-05 20:04:26 -0500
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 20:04:26 -0500
+Processing by Api::UsersController#show as */*
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (14.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (6.82ms)
+Completed 200 OK in 204ms (Views: 15.0ms | ActiveRecord: 14.6ms | Allocations: 2067)
+
+
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (0.6ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.34ms)
+Completed 200 OK in 901ms (Views: 12.5ms | ActiveRecord: 566.7ms | Allocations: 6163)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 20:05:08 -0500
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (13.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (23.4ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.8ms)
+Completed 200 OK in 161ms (Views: 48.2ms | ActiveRecord: 36.4ms | Allocations: 2305)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 20:05:22 -0500
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (8.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (22.1ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.62ms)
+Completed 200 OK in 284ms (Views: 13.5ms | ActiveRecord: 30.5ms | Allocations: 2306)
+
+
+Started GET "/api/me" for 127.0.0.1 at 2022-03-05 20:05:24 -0500
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 20:05:24 -0500
+Processing by Api::UsersController#show as */*
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (47.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mUser Load (25.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mJourney Load (5.0ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.96ms)
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.56ms)
+Completed 200 OK in 86ms (Views: 12.6ms | ActiveRecord: 25.6ms | Allocations: 4101)
+
+
+Completed 200 OK in 69ms (Views: 13.1ms | ActiveRecord: 52.4ms | Allocations: 3694)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 20:08:21 -0500
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (122.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (35.2ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.77ms)
+Completed 200 OK in 712ms (Views: 29.3ms | ActiveRecord: 157.6ms | Allocations: 2313)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 20:09:44 -0500
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (31.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (122.8ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.09ms)
+Completed 200 OK in 751ms (Views: 29.1ms | ActiveRecord: 154.2ms | Allocations: 2311)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 20:10:04 -0500
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (50.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (12.4ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.07ms)
+Completed 200 OK in 165ms (Views: 11.9ms | ActiveRecord: 62.9ms | Allocations: 2305)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 20:10:22 -0500
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (56.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (0.4ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (8.29ms)
+Completed 200 OK in 159ms (Views: 27.7ms | ActiveRecord: 56.3ms | Allocations: 2302)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 20:11:01 -0500
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (0.3ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.0ms)
+Completed 200 OK in 48ms (Views: 4.3ms | ActiveRecord: 1.2ms | Allocations: 2301)
+
+
+Started GET "/enneadrink/journal/babel/parser/lib/index.js" for 127.0.0.1 at 2022-03-05 20:11:10 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/enneadrink/journal/babel/parser/lib/index.js"):
+  
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 20:11:11 -0500
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (16.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (0.2ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.71ms)
+Completed 200 OK in 264ms (Views: 7.2ms | ActiveRecord: 16.9ms | Allocations: 2301)
+
+
+Started GET "/api/journeys" for 127.0.0.1 at 2022-03-05 20:11:52 -0500
+Processing by Api::JourneysController#index as */*
+  [1m[36mUser Load (21.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mJourney Load (0.2ms)[0m  [1m[34mSELECT "journeys".* FROM "journeys" WHERE "journeys"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/api/journeys_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.66ms)
+Completed 200 OK in 56ms (Views: 8.7ms | ActiveRecord: 21.9ms | Allocations: 2315)
+
+
