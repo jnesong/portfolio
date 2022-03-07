@@ -40,3 +40,38 @@
     font-size: 30px;
     font-family: "Andale mono", serif;
   }
+
+  .each-input {
+    border: none;
+    border-bottom: 2px solid black;
+    font-family: "Andale mono", serif;
+    font-size: 20px;
+    text-align:center
+  }
+
+  .each-input:focus {
+    outline:none;
+  }
+
+  .each-input:hover {
+    color: white
+  }
+
+  .is-decreased {
+    font-size:20px;
+    font-family: "Andale mono", serif;
+    color:red;
+    padding: 10px
+  }
+
+  .interfer {
+    font-size:15px;
+    font-family: "Andale mono", serif;
+    color:rgb(196, 214, 252);
+    padding: 10px
+  }
+
+  .list-reasons {
+    font-family: "Optima", sans-serif;
+    font-size: 25px;
+  }

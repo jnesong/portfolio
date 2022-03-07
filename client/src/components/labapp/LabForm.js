@@ -2,10 +2,10 @@
 import LabInput from './LabInput';
 import Labs from './LabBank';
 
-function LabForm ( {makeAbnormNorm, makeHistory}) {
+function LabForm({ makeAbnormNorm, makeHistory }) {
     let resultData = {};
 
-    function makeInputs( inputObj ) {
+    function makeInputs(inputObj) {
         resultData[inputObj.title] = inputObj
     }
 
@@ -16,10 +16,10 @@ function LabForm ( {makeAbnormNorm, makeHistory}) {
     }
 
     const listLabInputs = Labs.map((lab) => (
-        <Input
-        key={lab.id}
-        lab={lab}
-        makeInputs={makeInputs}
+        <LabInput
+            key={lab.id}
+            lab={lab}
+            makeInputs={makeInputs}
         />
     ))
 
@@ -31,7 +31,7 @@ function LabForm ( {makeAbnormNorm, makeHistory}) {
             </h1>
 
             <form onSubmit={handleLabSubmit}>
-                <div  style={{ display: "inline-flex" }}>
+                <div style={{ display: "inline-flex" }}>
                     {listLabInputs}
                 </div>
 
