@@ -1,0 +1,18 @@
+#top-form, #bottom-results {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 50vh;
+    min-height: 400px;
+}
+
+#top-form {
+    background-color: rgb(205, 218, 245);
+}
+
+#enter-labs {
+  font-family: "Andale mono", serif;
+  padding: 30px
+}
