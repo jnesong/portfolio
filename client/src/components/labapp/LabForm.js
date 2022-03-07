@@ -27,8 +27,18 @@ function LabForm ( {makeAbnormNorm, makeHistory}) {
         <div id="top-form">
 
             <h1 id="enter-labs">
-                
+                enter labs
             </h1>
+
+            <form onSubmit={handleLabSubmit}>
+                <div  style={{ display: "inline-flex" }}>
+                    {listLabInputs}
+                </div>
+
+                <div style={{ alignItems: "center" }}>
+                    <button id="button-lab-submit" type="submit"> submit </button>
+                </div>
+            </form>
 
         </div>
     )
