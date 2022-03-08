@@ -54,7 +54,7 @@ function AbnormLabCard({ lab }) {
             </Card.Content>
             <Card.Content extra>
                 <div className='ui two buttons'>
-                    <Button basic color='green' onClick={onFlipClickHandle}>
+                    <Button basic color='green' onClick={onFlipClick}>
                         Flip
                     </Button>
                 </div>

@@ -17,10 +17,10 @@ function Projects() {
 
     const projectBank = [
         {
-            title: "Triage",
+            title: "Lab",
             gif: lab,
-            path: "/triage",
-            description: "This Triage App was my second coding project, made during week 5 of my semester at Flatiron School’s software engineering boot camp. It was inspired by my 4 years working as an oncology and acute care nurse. Because cancer has the horrible knack for drastically affecting multiple organs at once, people with cancer often present with a multitude of symptoms. One of the first steps in the differential diagnosis is to compare labs. Once the labs result, its up to healthcare professionals to triage the results from most critical to least and understand what the root issues are. In this process, I frequently thought it would be more efficient, and less prone to human error, to have a single page where healthcare professionals could compare the causes of abnormal lab results (rather than rely on their memory or the slow process of looking up each lab in a lab manual). To demonstrate the utility of this app, I chose 6 lab tests people may be familiar with. A challenge with this app was finding a free API of lab data, so all of the lab data is pulled from a hard copy of Mosby's Diagnostic and Laboratory Test Reference. Triage is built with a React frontend."
+            path: "/lab",
+            description: "This Lab App was my second coding project, made during week 5 of my semester at Flatiron School’s software engineering boot camp. It was inspired by my 4 years working as an oncology and acute care nurse. Because cancer has the horrible knack for drastically affecting multiple organs at once, people with cancer often present with a multitude of symptoms. One of the first steps in the differential diagnosis is to compare labs. Once the labs result, its up to healthcare professionals to triage the results from most critical to least and understand what the root issues are. In this process, I frequently thought it would be more efficient, and less prone to human error, to have a single page where healthcare professionals could compare the causes of abnormal lab results (rather than rely on their memory or the slow process of looking up each lab in a lab manual). To demonstrate the utility of this app, I chose 6 lab tests people may be familiar with. A challenge with this app was finding a free API of lab data, so all of the lab data is pulled from a hard copy of Mosby's Diagnostic and Laboratory Test Reference. Triage is built with a React frontend."
         },
         {
             title: "Enneadrink",

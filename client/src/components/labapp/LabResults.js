@@ -1,13 +1,13 @@
 //libraries
-import { Route } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
 
 //components
 import AbnormLabCard from "./AbnormLabCard";
 import NormCard from "./NormCard";
 import Patho from "./Patho";
-import NormVSAbnormResults from "./NormVSAbnorm";
-import LabHistory from "./History";
-import LabNavBar from "./NavBar";
+import NormVSAbnormResults from "./NormVSAbnormResults";
+import LabHistory from "./LabHistory";
+import LabNavBar from "./LabNavBar";
 //graphics
 import blood from './blood.gif';
 
@@ -24,7 +24,7 @@ function LabResults({ goldLabs, normals, abnormals, unentered, labHistory, setLa
         lab={labObj}
     />)
 
-    const abnormalLabList = abnormals.map((labObj) => <LabCard
+    const abnormalLabList = abnormals.map((labObj) => <AbnormLabCard
         key={labObj.id}
         lab={labObj}
     />)
@@ -41,16 +41,10 @@ function LabResults({ goldLabs, normals, abnormals, unentered, labHistory, setLa
 
             <img className="blood" src={blood} alt="blood gif" />
 
-            <Route path="pathophysiology"> <Patho allLabsList={allLabsList} /> </Route>
-
-            <Route path="history"> <LabHistory labHistory={labHistory} setLabHistory={setLabHistory} /> </Route>
-
-            <Route exact path="/lab"> <NormVSAbnormResults abnormalLabList={abnormalLabList} normalLabList={normalLabList} unenteredLabList={unenteredLabList}/> </Route>
-
-            <Route path="*"> <h1>404 page not found 🥲</h1> </Route>
+            <Outlet/>
 
         </div>
     );
 }
 
-export default Results;
+export default LabResults;

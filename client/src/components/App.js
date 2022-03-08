@@ -21,6 +21,8 @@ import EnneadrinkIndex from "./enneadrink/EnneadrinkIndex";
 import EnneaHomeIndex from "./enneadrink/EnneaHomeIndex";
 import NewEntry from "./enneadrink/user/journal/NewEntry";
 import History from "./enneadrink/user/journal/History";
+// lab components
+import LabHome from "./labapp/LabHome"
 
 function App() {
 
@@ -70,7 +72,11 @@ function App() {
           <Route path="history" element={<History />} />
         </Route>
 
-        <Route path="lab" element={<LabHome />} />
+        <Route path="lab/*" element={<LabHome />}>
+          <Route path="pathophysiology"> <Patho allLabsList={allLabsList} /> </Route>
+          <Route path="history"> <LabHistory labHistory={labHistory} setLabHistory={setLabHistory} /> </Route>
+          <Route exact path="/lab"> <NormVSAbnormResults abnormalLabList={abnormalLabList} normalLabList={normalLabList} unenteredLabList={unenteredLabList} /> </Route>
+        </Route>
 
       </Routes>
 

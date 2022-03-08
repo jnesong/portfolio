@@ -3,7 +3,7 @@ import { Card } from 'semantic-ui-react';
 
 function LabHistory( { labHistory, setLabHistory} ) {
 
-    const historyList = history.map(record => {
+    const historyList = labHistory.map(record => {
         function handleDeleteClick() {
             fetch(`/api/records/${record.id}`, 
             {method: "DELETE"})
@@ -30,7 +30,7 @@ function LabHistory( { labHistory, setLabHistory} ) {
                     {<br />}  
                     </Card.Description>
                     <Card.Content extra>
-                    <button className="ui icon button" onClick={handleOnClick}>
+                    <button className="ui icon button" onClick={handleDeleteClick}>
                     <i className="trash alternate outline icon"></i>
                     </button>
                 </Card.Content>

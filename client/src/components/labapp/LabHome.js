@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 //components
 import LabForm from './LabForm';
-import LabResults from './Results';
+import LabResults from './LabResults';
 import Labs from './LabBank';
 
 function LabHome() {
@@ -65,7 +65,7 @@ function LabHome() {
             body: JSON.stringify(resultData)
         })
             .then(r => r.json())
-            .then(data => setLabHistory([...history, data]))
+            .then(data => setLabHistory([...labHistory, data]))
     } //end of makeHistory function
 
     return (

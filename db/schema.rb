@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_03_05_162522) do
+ActiveRecord::Schema.define(version: 2022_03_08_021823) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -57,6 +57,17 @@ ActiveRecord::Schema.define(version: 2022_03_05_162522) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["enneadrink_id"], name: "index_practices_on_enneadrink_id"
+  end
+
+  create_table "records", force: :cascade do |t|
+    t.text "hemoglobin"
+    t.text "wbc"
+    t.text "glucose"
+    t.text "sodium"
+    t.text "potassium"
+    t.text "calcium"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "users", force: :cascade do |t|
