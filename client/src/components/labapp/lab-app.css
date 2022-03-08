@@ -75,3 +75,29 @@
     font-family: "Optima", sans-serif;
     font-size: 25px;
   }
+
+  .lab-nav{
+    display: inline-block;
+    margin: 30px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Andale mono", serif;
+    color: rgb(205, 218, 245);
+    border-bottom: none;
+  }
+
+  .lab-nav:hover{
+    color: black;
+    border-bottom: none;
+  }
+
+  .blood {
+    position: relative;
+    overflow: hidden;
+    border-radius: 100%;
+  }
+
+  h2 {
+  font-family: "Optima", sans-serif;
+  font-size: 25px
+  }

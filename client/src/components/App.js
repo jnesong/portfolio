@@ -70,6 +70,8 @@ function App() {
           <Route path="history" element={<History />} />
         </Route>
 
+        <Route path="lab" element={<LabHome />} />
+
       </Routes>
 
     </>

@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 import { Button, Card } from 'semantic-ui-react';
 
-function LabCard({ lab }) {
+function AbnormLabCard({ lab }) {
 
     const [isDecreased, setIsDecreased] = useState(true);
     const [displayInterfer, setDisplayInterfer] = useState(true);
@@ -63,4 +63,4 @@ function LabCard({ lab }) {
     )
 }
 
-export default LabCard
+export default AbnormLabCard

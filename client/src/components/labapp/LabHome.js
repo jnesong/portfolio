@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 //components
 import LabForm from './LabForm';
-import Results from './Results';
+import LabResults from './Results';
 import Labs from './LabBank';
 
 function LabHome() {
@@ -70,12 +70,12 @@ function LabHome() {
 
     return (
         <>
-            <Form
+            <LabForm
                 makeAbnormNorm={makeAbnormNorm}
                 makeHistory={makeHistory}
             />
 
-            <Results
+            <LabResults
                 goldLabs={goldLabs}
                 normals={normals}
                 abnormals={abnormals}
