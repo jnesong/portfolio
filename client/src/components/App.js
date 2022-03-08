@@ -23,6 +23,12 @@ import NewEntry from "./enneadrink/user/journal/NewEntry";
 import History from "./enneadrink/user/journal/History";
 // lab components
 import LabHome from "./labapp/LabHome"
+// import AbnormLabCard from "./labapp/AbnormLabCard";
+// import NormCard from "./labapp/NormCard";
+// import Patho from "./labapp/Patho";
+import NormVSAbnormResults from "./labapp/NormVSAbnormResults";
+// import LabHistory from "./labapp/LabHistory";
+// import LabNavBar from "./labapp/LabNavBar";
 
 function App() {
 
@@ -73,9 +79,7 @@ function App() {
         </Route>
 
         <Route path="lab/*" element={<LabHome />}>
-          <Route path="pathophysiology"> <Patho allLabsList={allLabsList} /> </Route>
-          <Route path="history"> <LabHistory labHistory={labHistory} setLabHistory={setLabHistory} /> </Route>
-          <Route exact path="/lab"> <NormVSAbnormResults abnormalLabList={abnormalLabList} normalLabList={normalLabList} unenteredLabList={unenteredLabList} /> </Route>
+          <Route index element={<NormVSAbnormResults />} />
         </Route>
 
       </Routes>

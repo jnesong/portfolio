@@ -43,9 +43,8 @@
 
   .each-input {
     border: none;
-    border-bottom: 2px solid black;
     font-family: "Andale mono", serif;
-    font-size: 20px;
+    font-size: 18px;
     text-align:center
   }
 
@@ -55,6 +54,10 @@
 
   .each-input:hover {
     color: white
+  }
+
+  .input-line{
+    padding: 25px;
   }
 
   .is-decreased {
@@ -95,6 +98,7 @@
     position: relative;
     overflow: hidden;
     border-radius: 100%;
+    width: 160px;
   }
 
   h2 {

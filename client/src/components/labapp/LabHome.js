@@ -4,6 +4,8 @@ import { useState, useEffect } from 'react';
 import LabForm from './LabForm';
 import LabResults from './LabResults';
 import Labs from './LabBank';
+//styling
+import './lab-app.css'
 
 function LabHome() {
 

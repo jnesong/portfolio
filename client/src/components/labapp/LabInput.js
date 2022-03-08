@@ -31,13 +31,14 @@ function LabInput({ lab, makeInputs }) {
                     { event.preventDefault(); }
                 }
                 }
-                className="input"
+                className="input-line"
                 type="text"
                 onChange={handleLabChange}
                 value={patientLab}
             />
             {<br />}
             <label>{lab.title} ({lab.unit})</label>
+            {<br />}
             {<br />}
             <p className="mono">{lab.id}</p>
         </div>

@@ -1,6 +1,8 @@
 //components
 import LabInput from './LabInput';
 import Labs from './LabBank';
+//styling
+import './lab-app.css'
 
 function LabForm({ makeAbnormNorm, makeHistory }) {
     let resultData = {};

@@ -1,6 +1,5 @@
 //libraries
-import { Outlet } from 'react-router-dom';
-
+import { Routes, Route } from 'react-router-dom';
 //components
 import AbnormLabCard from "./AbnormLabCard";
 import NormCard from "./NormCard";
@@ -8,6 +7,8 @@ import Patho from "./Patho";
 import NormVSAbnormResults from "./NormVSAbnormResults";
 import LabHistory from "./LabHistory";
 import LabNavBar from "./LabNavBar";
+//styling
+import './lab-app.css'
 //graphics
 import blood from './blood.gif';
 
@@ -38,10 +39,12 @@ function LabResults({ goldLabs, normals, abnormals, unentered, labHistory, setLa
     return (
         <div id="bottom-results">
             <LabNavBar />
-
             <img className="blood" src={blood} alt="blood gif" />
-
-            <Outlet/>
+            <Routes>
+                <Route path="results" element={<NormVSAbnormResults abnormalLabList={abnormalLabList} normalLabList={normalLabList} unenteredLabList={unenteredLabList} />} />
+                <Route path="pathophysiology" element={<Patho allLabsList={allLabsList} />} />
+                <Route path="history" element={<LabHistory labHistory={labHistory} setLabHistory={setLabHistory} />} />
+            </Routes>
 
         </div>
     );
