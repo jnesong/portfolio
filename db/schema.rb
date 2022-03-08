@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_03_08_021823) do
+ActiveRecord::Schema.define(version: 2022_03_08_192004) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -60,12 +60,12 @@ ActiveRecord::Schema.define(version: 2022_03_08_021823) do
   end
 
   create_table "records", force: :cascade do |t|
-    t.text "hemoglobin"
-    t.text "wbc"
-    t.text "glucose"
-    t.text "sodium"
-    t.text "potassium"
-    t.text "calcium"
+    t.float "hemoglobin"
+    t.float "wbc"
+    t.float "glucose"
+    t.float "sodium"
+    t.float "potassium"
+    t.float "calcium"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

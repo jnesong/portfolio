@@ -8840,3 +8840,53 @@ Processing by Api::RecordsController#create as */*
 Completed 201 Created in 9ms (Views: 3.1ms | ActiveRecord: 1.4ms | Allocations: 2606)
 
 
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4373051316486144390)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to ChangeRecordFromTextToFloat (20220308192004)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (7.5ms)[0m  [1m[35mALTER TABLE "records" ALTER COLUMN "potassium" TYPE float[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(4373051316486144390)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4373051316486144390)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to ChangeRecordFromTextToFloat (20220308192004)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (19.2ms)[0m  [1m[35mALTER TABLE "records" ALTER COLUMN "hemoglobin" TYPE float USING hemoglobin::float[0m
+  [1m[35m (3.8ms)[0m  [1m[35mALTER TABLE "records" ALTER COLUMN "wbc" TYPE float USING wbc::float[0m
+  [1m[35m (3.8ms)[0m  [1m[35mALTER TABLE "records" ALTER COLUMN "glucose" TYPE float USING glucose::float[0m
+  [1m[35m (2.6ms)[0m  [1m[35mALTER TABLE "records" ALTER COLUMN "sodium" TYPE float USING sodium::float[0m
+  [1m[35m (3.5ms)[0m  [1m[35mALTER TABLE "records" ALTER COLUMN "potassium" TYPE float USING potassium::float[0m
+  [1m[35m (2.3ms)[0m  [1m[35mALTER TABLE "records" ALTER COLUMN "calcium" TYPE float USING calcium::float[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220308192004"]]
+  [1m[36mTRANSACTION (5.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (6.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(4373051316486144390)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/api/records" for 127.0.0.1 at 2022-03-08 15:12:45 -0500
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::RecordsController#index as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mRecord Load (5.4ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  ↳ app/controllers/api/records_controller.rb:5:in `index'
+No serializer found for resource: #<Record id: 9, hemoglobin: 0.0, wbc: 0.0, glucose: 0.0, sodium: 0.0, potassium: 0.0, calcium: 0.0, created_at: "2022-03-08 19:07:40.953082000 +0000", updated_at: "2022-03-08 19:07:40.953082000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Record::ActiveRecord_Relation (0.49ms)
+Completed 200 OK in 31ms (Views: 14.3ms | ActiveRecord: 13.9ms | Allocations: 11772)
+
+
+Started POST "/api/records" for 127.0.0.1 at 2022-03-08 15:13:06 -0500
+Processing by Api::RecordsController#create as */*
+  Parameters: {"hemoglobin"=>"12", "wbc"=>"4", "sodium"=>"100", "potassium"=>"6", "calcium"=>"12", "glucose"=>"100", "record"=>{"hemoglobin"=>"12", "wbc"=>"4", "glucose"=>"100", "sodium"=>"100", "potassium"=>"6", "calcium"=>"12"}}
+[31mUnpermitted parameter: :record[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mRecord Create (0.7ms)[0m  [1m[32mINSERT INTO "records" ("hemoglobin", "wbc", "glucose", "sodium", "potassium", "calcium", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["hemoglobin", 12.0], ["wbc", 4.0], ["glucose", 100.0], ["sodium", 100.0], ["potassium", 6.0], ["calcium", 12.0], ["created_at", "2022-03-08 20:13:06.557956"], ["updated_at", "2022-03-08 20:13:06.557956"]]
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Record (0.42ms)
+Completed 201 Created in 28ms (Views: 17.8ms | ActiveRecord: 2.3ms | Allocations: 4513)
+
+
