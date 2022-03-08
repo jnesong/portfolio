@@ -38,7 +38,7 @@ const Labs = [
         ]
     },
     {
-        title: "white blood cells",
+        title: "wbc",
         id: "🍊",
         unit: "K/uL",
         min: 4.5,
@@ -201,7 +201,7 @@ const Labs = [
         ]
     },
     {
-        title: "blood glucose",
+        title: "glucose",
         id: "🍭",
         unit:"mg/dL",
         min: 70,

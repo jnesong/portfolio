@@ -3,6 +3,8 @@ import { Card } from 'semantic-ui-react';
 
 function LabHistory( { labHistory, setLabHistory} ) {
 
+    console.log(labHistory)
+
     const historyList = labHistory.map(record => {
         function handleDeleteClick() {
             fetch(`/api/records/${record.id}`, 
@@ -15,17 +17,17 @@ function LabHistory( { labHistory, setLabHistory} ) {
                 <Card.Content>
                     <Card.Header> Entry ID: {record.id} </Card.Header>
                     <Card.Description> 
-                    hemoglobin: {record.hemoglobin.userInput}
+                    hemoglobin: {record.hemoglobin}
                     {<br />}
-                    white blood cells: {record["white blood cells"].userInput}
+                    white blood cells: {record.wbc}
                     {<br />}
-                    sodium: {record.sodium.userInput}
+                    sodium: {record.sodium}
                     {<br />}
-                    potassium: {record.potassium.userInput}
+                    potassium: {record.potassium}
                     {<br />}
-                    calcium: {record.calcium.userInput}
+                    calcium: {record.calcium}
                     {<br />}
-                    blood glucose: {record["blood glucose"].userInput}
+                    blood glucose: {record.glucose}
                     {<br />}
                     {<br />}  
                     </Card.Description>

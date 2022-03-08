@@ -1,10 +1,7 @@
 #top-form, #bottom-results {
     display: block;
-    align-items: center;
     justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    height: 50vh;
+    height: auto;
     min-height: 400px;
 }
 
@@ -14,14 +11,15 @@
 
 #enter-labs {
   font-family: "Andale mono", serif;
-  padding: 30px
+  padding: 30px;
+  padding-top: 50px;
 }
 
 #button-lab-submit {
     text-align: center;
     font-family: "Andale mono", serif;
     border: none;
-    background-color:transparent;
+    background-color:  rgb(205, 218, 245);
     color: black;
     padding: 40px;
     font-size: 20px;
@@ -41,10 +39,16 @@
     font-family: "Andale mono", serif;
   }
 
+  #lab-form-div {
+    display:inline-flex;
+    flex-wrap: wrap;
+    background-color: rgb(205, 218, 245);
+    }
+
   .each-input {
     border: none;
     font-family: "Andale mono", serif;
-    font-size: 18px;
+    font-size: 16px;
     text-align:center
   }
 
@@ -57,7 +61,7 @@
   }
 
   .input-line{
-    padding: 25px;
+    padding: 10px;
   }
 
   .is-decreased {
@@ -70,13 +74,13 @@
   .interfer {
     font-size:15px;
     font-family: "Andale mono", serif;
-    color:rgb(196, 214, 252);
+    color: rgb(162, 181, 220);
     padding: 10px
   }
 
   .list-reasons {
     font-family: "Optima", sans-serif;
-    font-size: 25px;
+    font-size: 16px;
   }
 
   .lab-nav{
@@ -85,7 +89,7 @@
     text-decoration: none;
     font-size: 20px;
     font-family: "Andale mono", serif;
-    color: rgb(205, 218, 245);
+    color: rgb(191, 206, 237);
     border-bottom: none;
   }
 

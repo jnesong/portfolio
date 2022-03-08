@@ -8,7 +8,7 @@ function LabForm({ makeAbnormNorm, makeHistory }) {
     let resultData = {};
 
     function makeInputs(inputObj) {
-        resultData[inputObj.title] = inputObj
+        resultData[inputObj.title] = inputObj.userInput
     }
 
     function handleLabSubmit(e) {
@@ -33,7 +33,7 @@ function LabForm({ makeAbnormNorm, makeHistory }) {
             </h1>
 
             <form onSubmit={handleLabSubmit}>
-                <div style={{ display: "inline-flex" }}>
+                <div id="lab-form-div">
                     {listLabInputs}
                 </div>
 

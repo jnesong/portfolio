@@ -19,33 +19,32 @@ function LabHome() {
 
     function makeAbnormNorm(resultData) {
         console.log(resultData)
-
         let abnorm = {}
         let norm = {}
         let zeros = {}
-        let potassiumObj = resultData["potassium"]
-        let calciumObj = resultData["calcium"]
-        let sodiumObj = resultData["sodium"]
-        let hemoglobinObj = resultData["hemoglobin"]
-        let glucoseObj = resultData["blood glucose"]
-        let wbcObj = resultData["white blood cells"]
+        // let potassiumObj = resultData["potassium"]
+        // let calciumObj = resultData["calcium"]
+        // let sodiumObj = resultData["sodium"]
+        // let hemoglobinObj = resultData["hemoglobin"]
+        // let glucoseObj = resultData["blood glucose"]
+        // let wbcObj = resultData["white blood cells"]
 
-        function sortEachLab(labObj) {
+        function sortEachLab(labObj, lab) {
             if (labObj.userInput === 0) {
-                zeros[labObj.title] = labObj
+                zeros[lab.title] = lab
             }
-            else if ((labObj.userInput > labObj.max) || (labObj.userInput < labObj.min)) {
-                abnorm[labObj.title] = labObj
+            else if ((labObj.userInput > lab.max) || (lab.userInput < lab.min)) {
+                abnorm[lab.title] = lab
             }
-            else { norm[labObj.title] = labObj }
+            else { norm[lab.title] = lab }
         }
 
-        sortEachLab(potassiumObj)
-        sortEachLab(calciumObj)
-        sortEachLab(sodiumObj)
-        sortEachLab(hemoglobinObj)
-        sortEachLab(glucoseObj)
-        sortEachLab(wbcObj)
+        sortEachLab(Number(resultData.hemoglobin), goldLabs[0])
+        sortEachLab(resultData.wbc, goldLabs[1])
+        sortEachLab(resultData.sodium, goldLabs[2])
+        sortEachLab(resultData.potassium, goldLabs[3])
+        sortEachLab(resultData.calcium, goldLabs[4])
+        sortEachLab(resultData.glucose, goldLabs[5])
 
         setNormals(Object.values(norm))
         setAbnormals(Object.values(abnorm))

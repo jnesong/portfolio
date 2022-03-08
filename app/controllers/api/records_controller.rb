@@ -5,11 +5,6 @@ class Api::RecordsController < ApplicationController
         render json: Record.all
     end
 
-    def show 
-        record = find_record
-        render json: record
-    end
-
     def create
         new_record = Record.create!(record_params)
         render json: new_record, status: :created 

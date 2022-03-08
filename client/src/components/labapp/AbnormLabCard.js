@@ -5,7 +5,7 @@ import { Button, Card } from 'semantic-ui-react';
 function AbnormLabCard({ lab }) {
 
     const [isDecreased, setIsDecreased] = useState(true);
-    const [displayInterfer, setDisplayInterfer] = useState(true);
+    const [displayInterfer, setDisplayInterfer] = useState(false);
 
     useEffect(() => {
         if (lab.userInput > lab.max) { setIsDecreased(false) }

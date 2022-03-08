@@ -11,13 +11,6 @@ function LabInput({ lab, makeInputs }) {
     let inputObj = {
         title: lab.title,
         userInput: patientLab,
-        id: lab.id,
-        min: lab.min,
-        max: lab.max,
-        increased: lab.increased,
-        decreased: lab.decreased,
-        patho: lab.patho,
-        interfer: lab.interfer
     }
 
     makeInputs(inputObj)
@@ -37,8 +30,9 @@ function LabInput({ lab, makeInputs }) {
                 value={patientLab}
             />
             {<br />}
-            <label>{lab.title} ({lab.unit})</label>
+            <label>{lab.title}</label> 
             {<br />}
+            <label> ({lab.unit})</label>
             {<br />}
             <p className="mono">{lab.id}</p>
         </div>

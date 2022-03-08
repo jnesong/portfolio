@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   namespace :api do  
     resources :journeys, only: [:index, :show, :create, :update, :destroy]
     resources :enneadrinks, only: [:index, :show]
-    resources :records, only: [:index, :show, :create, :update, :destroy]
+    resources :records, only: [:index, :create, :update, :destroy]
 
     get "/me", to: "users#show"
     post "/signup", to: "users#create"
