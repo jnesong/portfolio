@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import LabForm from './LabForm';
 import LabResults from './LabResults';
 import Labs from './LabBank';
+import LabToPortNav from './LabToPortNav'
 //styling
 import './lab-app.css'
 
@@ -21,12 +22,6 @@ function LabHome() {
         let abnorm = {}
         let norm = {}
         let zeros = {}
-        // let potassiumObj = resultData["potassium"]
-        // let calciumObj = resultData["calcium"]
-        // let sodiumObj = resultData["sodium"]
-        // let hemoglobinObj = resultData["hemoglobin"]
-        // let glucoseObj = resultData["blood glucose"]
-        // let wbcObj = resultData["white blood cells"]
 
         function sortEachLab(labString, lab) {
             let labNum = parseFloat(labString)
@@ -36,7 +31,10 @@ function LabHome() {
             else if ((labNum > lab.max) || (labNum < lab.min)) {
                 abnorm[lab.title] = lab
             }
-            else { norm[lab.title] = lab }
+            else if ((labNum <= lab.max) && (labNum >= lab.min)) {
+                norm[lab.title] = lab
+            }
+            else { zeros[lab.title] = lab }
         }
 
         sortEachLab(resultData.hemoglobin, goldLabs[0])
@@ -69,11 +67,19 @@ function LabHome() {
             .then(data => setLabHistory([...labHistory, data]))
     } //end of makeHistory function
 
+    const [isFormOpen, setIsFormOpen] = useState(true);
+
+
     return (
         <>
-            <LabForm
+            {isFormOpen && <LabForm
                 makeAbnormNorm={makeAbnormNorm}
                 makeHistory={makeHistory}
+            />}
+
+            <LabToPortNav 
+            setIsFormOpen={setIsFormOpen}
+            isFormOpen={isFormOpen}
             />
 
             <LabResults

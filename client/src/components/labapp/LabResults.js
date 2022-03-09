@@ -16,24 +16,15 @@ import blood from './blood.gif';
 function LabResults({ goldLabs, normals, abnormals, unentered, labHistory, setLabHistory }) {
 
     let lastLab = labHistory[labHistory.length-1]
-    console.log(lastLab)
-    console.log(abnormals)
+    
 
-    // I want to push the value from the lastLab object
-    //into the corresponding object in the abnormals array
-    //so I need to loop through the lastLab object, nondestructively taking the key that matches the title and push into into that object
-    // as userInput key
     abnormals.map( eachLab => addUserInputToLab(eachLab))
     function addUserInputToLab (eachLabP) {
-        console.log(eachLabP)
         let x = eachLabP.title
         console.log(x)
         let y = lastLab[x]
-        console.log(y)
         eachLabP['userInput'] = y
-        console.log(eachLabP.userInput)
     }
-    console.log(abnormals)
 
     const allLabsList = goldLabs.map((labObj) => <NormCard
         key={labObj.id}

@@ -5,6 +5,10 @@
     min-height: 400px;
 }
 
+#bottom-results{
+  padding: 25px;
+}
+
 #top-form {
     background-color: rgb(205, 218, 245);
 }
@@ -81,6 +85,24 @@
   .list-reasons {
     font-family: "Optima", sans-serif;
     font-size: 16px;
+  }
+
+  .portfolio-lab-button, .toggle-form {
+    font-family: "Optima", sans-serif;
+    border: none;
+    background-color:transparent;
+    color: rgb(7, 36, 21);
+    padding: 20px;
+    padding-bottom: 0px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    display:block;
+    margin-right: 40px;
+    margin-left: auto;
+    }
+
+  .portfolio-lab-button:hover, .toggle-form:hover {
+    color: rgb(191, 206, 237);
   }
 
   .lab-nav{

@@ -1,3 +1,6 @@
+//libraries
+import { useNavigate } from 'react-router-dom';
+import { useState } from 'react';
 //components
 import LabInput from './LabInput';
 import Labs from './LabBank';
@@ -6,6 +9,8 @@ import './lab-app.css'
 
 function LabForm({ makeAbnormNorm, makeHistory }) {
     let resultData = {};
+    const navigate = useNavigate();
+    const [infoLab, setInfoLab] = useState("ℹ️")
 
     function makeInputs(inputObj) {
         resultData[inputObj.title] = inputObj.userInput
@@ -15,6 +20,7 @@ function LabForm({ makeAbnormNorm, makeHistory }) {
         e.preventDefault()
         makeAbnormNorm(resultData)
         makeHistory(resultData)
+        setTimeout(() => { navigate("results") }, 400);
     }
 
     const listLabInputs = Labs.map((lab) => (
@@ -41,6 +47,13 @@ function LabForm({ makeAbnormNorm, makeHistory }) {
                     <button id="button-lab-submit" type="submit"> submit </button>
                 </div>
             </form>
+
+            <p
+                className="info"
+                onMouseEnter={() => setInfoLab("ℹ️: Lab values left as 0 will be interpreted as unentered")}
+                onMouseLeave={() => setInfoLab("ℹ️")}
+            > {infoLab}
+            </p>
 
         </div>
     )
