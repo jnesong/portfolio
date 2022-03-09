@@ -24,9 +24,8 @@ function AbnormLabCard({ lab }) {
 
     const resultsDisplay =
         <Card.Description>
-            <strong> {lab.id} </strong>
             <p className="is-decreased">
-                {isDecreased ? "LOW" : "ELEVATED"}
+                {isDecreased ? "LOW 🔻" : "ELEVATED 🔺"}
             </p>
             Causes:
             {<br />}
@@ -35,18 +34,16 @@ function AbnormLabCard({ lab }) {
 
     const interferDisplay =
         <Card.Description>
-            <strong>{lab.id}</strong>
             <p className="interfer">
                 Interfering Factors:
             </p>
-            {<br />}
             {interferList}
         </Card.Description>
 
     return (
         <Card>
             <Card.Content>
-                <Card.Header>{lab.title}</Card.Header>
+                <Card.Header>{lab.title} {lab.id}</Card.Header>
                 <Card.Meta>{lab.min} - {lab.max} {lab.unit}</Card.Meta>
 
                 {displayInterfer ? interferDisplay : resultsDisplay}

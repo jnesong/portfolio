@@ -18,7 +18,6 @@ function LabHome() {
     useEffect(() => { setGoldLabs(Labs) }, []);
 
     function makeAbnormNorm(resultData) {
-        console.log(resultData)
         let abnorm = {}
         let norm = {}
         let zeros = {}
@@ -29,17 +28,18 @@ function LabHome() {
         // let glucoseObj = resultData["blood glucose"]
         // let wbcObj = resultData["white blood cells"]
 
-        function sortEachLab(labObj, lab) {
-            if (labObj.userInput === 0) {
+        function sortEachLab(labString, lab) {
+            let labNum = parseFloat(labString)
+            if (labNum === 0) {
                 zeros[lab.title] = lab
             }
-            else if ((labObj.userInput > lab.max) || (lab.userInput < lab.min)) {
+            else if ((labNum > lab.max) || (labNum < lab.min)) {
                 abnorm[lab.title] = lab
             }
             else { norm[lab.title] = lab }
         }
 
-        sortEachLab(Number(resultData.hemoglobin), goldLabs[0])
+        sortEachLab(resultData.hemoglobin, goldLabs[0])
         sortEachLab(resultData.wbc, goldLabs[1])
         sortEachLab(resultData.sodium, goldLabs[2])
         sortEachLab(resultData.potassium, goldLabs[3])

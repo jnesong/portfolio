@@ -3,8 +3,6 @@ import { Card } from 'semantic-ui-react';
 
 function LabHistory( { labHistory, setLabHistory} ) {
 
-    console.log(labHistory)
-
     const historyList = labHistory.map(record => {
         function handleDeleteClick() {
             fetch(`/api/records/${record.id}`, 

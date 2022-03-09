@@ -8890,3 +8890,822 @@ Processing by Api::RecordsController#create as */*
 Completed 201 Created in 28ms (Views: 17.8ms | ActiveRecord: 2.3ms | Allocations: 4513)
 
 
+Started GET "/api/records" for 127.0.0.1 at 2022-03-09 10:26:15 -0500
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::RecordsController#index as */*
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mRecord Load (6.5ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  ↳ app/controllers/api/records_controller.rb:5:in `index'
+No serializer found for resource: #<Record id: 9, hemoglobin: 0.0, wbc: 0.0, glucose: 0.0, sodium: 0.0, potassium: 0.0, calcium: 0.0, created_at: "2022-03-08 19:07:40.953082000 +0000", updated_at: "2022-03-08 19:07:40.953082000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Record::ActiveRecord_Relation (0.55ms)
+Completed 200 OK in 38ms (Views: 15.4ms | ActiveRecord: 19.0ms | Allocations: 11875)
+
+
+Started DELETE "/api/records/9" for 127.0.0.1 at 2022-03-09 10:26:26 -0500
+Processing by Api::RecordsController#destroy as */*
+  Parameters: {"id"=>"9"}
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/api/records_controller.rb:28:in `find_record'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/records_controller.rb:21:in `destroy'
+  [1m[36mRecord Destroy (1.3ms)[0m  [1m[31mDELETE FROM "records" WHERE "records"."id" = $1[0m  [["id", 9]]
+  ↳ app/controllers/api/records_controller.rb:21:in `destroy'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/records_controller.rb:21:in `destroy'
+Completed 204 No Content in 8ms (ActiveRecord: 2.6ms | Allocations: 1908)
+
+
+Started DELETE "/api/records/10" for 127.0.0.1 at 2022-03-09 10:26:27 -0500
+Processing by Api::RecordsController#destroy as */*
+  Parameters: {"id"=>"10"}
+  [1m[36mRecord Load (0.5ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/api/records_controller.rb:28:in `find_record'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/records_controller.rb:21:in `destroy'
+  [1m[36mRecord Destroy (0.8ms)[0m  [1m[31mDELETE FROM "records" WHERE "records"."id" = $1[0m  [["id", 10]]
+  ↳ app/controllers/api/records_controller.rb:21:in `destroy'
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/records_controller.rb:21:in `destroy'
+Completed 204 No Content in 9ms (ActiveRecord: 4.1ms | Allocations: 1750)
+
+
+Started DELETE "/api/records/11" for 127.0.0.1 at 2022-03-09 10:26:27 -0500
+Processing by Api::RecordsController#destroy as */*
+  Parameters: {"id"=>"11"}
+  [1m[36mRecord Load (0.5ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/records_controller.rb:28:in `find_record'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/records_controller.rb:21:in `destroy'
+  [1m[36mRecord Destroy (1.3ms)[0m  [1m[31mDELETE FROM "records" WHERE "records"."id" = $1[0m  [["id", 11]]
+  ↳ app/controllers/api/records_controller.rb:21:in `destroy'
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/records_controller.rb:21:in `destroy'
+Completed 204 No Content in 8ms (ActiveRecord: 3.7ms | Allocations: 1750)
+
+
+Started DELETE "/api/records/12" for 127.0.0.1 at 2022-03-09 10:26:28 -0500
+Processing by Api::RecordsController#destroy as */*
+  Parameters: {"id"=>"12"}
+  [1m[36mRecord Load (0.4ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/api/records_controller.rb:28:in `find_record'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/records_controller.rb:21:in `destroy'
+  [1m[36mRecord Destroy (0.4ms)[0m  [1m[31mDELETE FROM "records" WHERE "records"."id" = $1[0m  [["id", 12]]
+  ↳ app/controllers/api/records_controller.rb:21:in `destroy'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/records_controller.rb:21:in `destroy'
+Completed 204 No Content in 7ms (ActiveRecord: 1.6ms | Allocations: 1750)
+
+
+Started DELETE "/api/records/13" for 127.0.0.1 at 2022-03-09 10:26:29 -0500
+Processing by Api::RecordsController#destroy as */*
+  Parameters: {"id"=>"13"}
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/api/records_controller.rb:28:in `find_record'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/records_controller.rb:21:in `destroy'
+  [1m[36mRecord Destroy (0.4ms)[0m  [1m[31mDELETE FROM "records" WHERE "records"."id" = $1[0m  [["id", 13]]
+  ↳ app/controllers/api/records_controller.rb:21:in `destroy'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/records_controller.rb:21:in `destroy'
+Completed 204 No Content in 6ms (ActiveRecord: 2.0ms | Allocations: 1729)
+
+
+Started DELETE "/api/records/14" for 127.0.0.1 at 2022-03-09 10:26:29 -0500
+Processing by Api::RecordsController#destroy as */*
+  Parameters: {"id"=>"14"}
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/api/records_controller.rb:28:in `find_record'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/records_controller.rb:21:in `destroy'
+  [1m[36mRecord Destroy (1.6ms)[0m  [1m[31mDELETE FROM "records" WHERE "records"."id" = $1[0m  [["id", 14]]
+  ↳ app/controllers/api/records_controller.rb:21:in `destroy'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/records_controller.rb:21:in `destroy'
+Completed 204 No Content in 8ms (ActiveRecord: 2.7ms | Allocations: 1728)
+
+
+Started DELETE "/api/records/15" for 127.0.0.1 at 2022-03-09 10:26:30 -0500
+Processing by Api::RecordsController#destroy as */*
+  Parameters: {"id"=>"15"}
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/api/records_controller.rb:28:in `find_record'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/records_controller.rb:21:in `destroy'
+  [1m[36mRecord Destroy (0.5ms)[0m  [1m[31mDELETE FROM "records" WHERE "records"."id" = $1[0m  [["id", 15]]
+  ↳ app/controllers/api/records_controller.rb:21:in `destroy'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/records_controller.rb:21:in `destroy'
+Completed 204 No Content in 11ms (ActiveRecord: 1.6ms | Allocations: 1728)
+
+
+Started DELETE "/api/records/16" for 127.0.0.1 at 2022-03-09 10:26:31 -0500
+Processing by Api::RecordsController#destroy as */*
+  Parameters: {"id"=>"16"}
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/api/records_controller.rb:28:in `find_record'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/records_controller.rb:21:in `destroy'
+  [1m[36mRecord Destroy (0.4ms)[0m  [1m[31mDELETE FROM "records" WHERE "records"."id" = $1[0m  [["id", 16]]
+  ↳ app/controllers/api/records_controller.rb:21:in `destroy'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/records_controller.rb:21:in `destroy'
+Completed 204 No Content in 12ms (ActiveRecord: 1.4ms | Allocations: 1728)
+
+
+Started DELETE "/api/records/17" for 127.0.0.1 at 2022-03-09 10:26:31 -0500
+Processing by Api::RecordsController#destroy as */*
+  Parameters: {"id"=>"17"}
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/api/records_controller.rb:28:in `find_record'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/records_controller.rb:21:in `destroy'
+  [1m[36mRecord Destroy (0.5ms)[0m  [1m[31mDELETE FROM "records" WHERE "records"."id" = $1[0m  [["id", 17]]
+  ↳ app/controllers/api/records_controller.rb:21:in `destroy'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/records_controller.rb:21:in `destroy'
+Completed 204 No Content in 11ms (ActiveRecord: 1.6ms | Allocations: 1728)
+
+
+Started POST "/api/records" for 127.0.0.1 at 2022-03-09 10:26:50 -0500
+Processing by Api::RecordsController#create as */*
+  Parameters: {"hemoglobin"=>"12", "wbc"=>"4", "sodium"=>"120", "potassium"=>"6", "calcium"=>"11", "glucose"=>"90", "record"=>{"hemoglobin"=>"12", "wbc"=>"4", "glucose"=>"90", "sodium"=>"120", "potassium"=>"6", "calcium"=>"11"}}
+[31mUnpermitted parameter: :record[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mRecord Create (3.0ms)[0m  [1m[32mINSERT INTO "records" ("hemoglobin", "wbc", "glucose", "sodium", "potassium", "calcium", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["hemoglobin", 12.0], ["wbc", 4.0], ["glucose", 90.0], ["sodium", 120.0], ["potassium", 6.0], ["calcium", 11.0], ["created_at", "2022-03-09 15:26:50.105750"], ["updated_at", "2022-03-09 15:26:50.105750"]]
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Record (0.25ms)
+Completed 201 Created in 32ms (Views: 17.1ms | ActiveRecord: 4.2ms | Allocations: 4457)
+
+
+Started POST "/api/records" for 127.0.0.1 at 2022-03-09 10:28:07 -0500
+Processing by Api::RecordsController#create as */*
+  Parameters: {"hemoglobin"=>"12", "wbc"=>"4", "sodium"=>"120", "potassium"=>"6", "calcium"=>"11", "glucose"=>"90", "record"=>{"hemoglobin"=>"12", "wbc"=>"4", "glucose"=>"90", "sodium"=>"120", "potassium"=>"6", "calcium"=>"11"}}
+[31mUnpermitted parameter: :record[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mRecord Create (0.5ms)[0m  [1m[32mINSERT INTO "records" ("hemoglobin", "wbc", "glucose", "sodium", "potassium", "calcium", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["hemoglobin", 12.0], ["wbc", 4.0], ["glucose", 90.0], ["sodium", 120.0], ["potassium", 6.0], ["calcium", 11.0], ["created_at", "2022-03-09 15:28:07.099411"], ["updated_at", "2022-03-09 15:28:07.099411"]]
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Record (0.14ms)
+Completed 201 Created in 11ms (Views: 2.3ms | ActiveRecord: 1.2ms | Allocations: 2595)
+
+
+Started POST "/api/records" for 127.0.0.1 at 2022-03-09 10:29:56 -0500
+Processing by Api::RecordsController#create as */*
+  Parameters: {"hemoglobin"=>"12", "wbc"=>"4", "sodium"=>"120", "potassium"=>"6", "calcium"=>"11", "glucose"=>"90", "record"=>{"hemoglobin"=>"12", "wbc"=>"4", "glucose"=>"90", "sodium"=>"120", "potassium"=>"6", "calcium"=>"11"}}
+[31mUnpermitted parameter: :record[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mRecord Create (0.3ms)[0m  [1m[32mINSERT INTO "records" ("hemoglobin", "wbc", "glucose", "sodium", "potassium", "calcium", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["hemoglobin", 12.0], ["wbc", 4.0], ["glucose", 90.0], ["sodium", 120.0], ["potassium", 6.0], ["calcium", 11.0], ["created_at", "2022-03-09 15:29:56.575087"], ["updated_at", "2022-03-09 15:29:56.575087"]]
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Record (1.03ms)
+Completed 201 Created in 10ms (Views: 3.2ms | ActiveRecord: 1.2ms | Allocations: 2592)
+
+
+Started POST "/api/records" for 127.0.0.1 at 2022-03-09 10:31:20 -0500
+Processing by Api::RecordsController#create as */*
+  Parameters: {"hemoglobin"=>"12", "wbc"=>"4", "sodium"=>"120", "potassium"=>"6", "calcium"=>"11", "glucose"=>"90", "record"=>{"hemoglobin"=>"12", "wbc"=>"4", "glucose"=>"90", "sodium"=>"120", "potassium"=>"6", "calcium"=>"11"}}
+[31mUnpermitted parameter: :record[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mRecord Create (1.0ms)[0m  [1m[32mINSERT INTO "records" ("hemoglobin", "wbc", "glucose", "sodium", "potassium", "calcium", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["hemoglobin", 12.0], ["wbc", 4.0], ["glucose", 90.0], ["sodium", 120.0], ["potassium", 6.0], ["calcium", 11.0], ["created_at", "2022-03-09 15:31:20.737873"], ["updated_at", "2022-03-09 15:31:20.737873"]]
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Record (0.18ms)
+Completed 201 Created in 22ms (Views: 6.9ms | ActiveRecord: 2.2ms | Allocations: 2594)
+
+
+Started GET "/api/records" for 127.0.0.1 at 2022-03-09 10:31:26 -0500
+Processing by Api::RecordsController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  ↳ app/controllers/api/records_controller.rb:5:in `index'
+No serializer found for resource: #<Record id: 18, hemoglobin: 12.0, wbc: 4.0, glucose: 90.0, sodium: 120.0, potassium: 6.0, calcium: 11.0, created_at: "2022-03-09 15:26:50.105750000 +0000", updated_at: "2022-03-09 15:26:50.105750000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Record::ActiveRecord_Relation (0.3ms)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.5ms | Allocations: 1859)
+
+
+Started POST "/api/records" for 127.0.0.1 at 2022-03-09 10:31:28 -0500
+Processing by Api::RecordsController#create as */*
+  Parameters: {"hemoglobin"=>"0", "wbc"=>"0", "sodium"=>"0", "potassium"=>"0", "calcium"=>"0", "glucose"=>"0", "record"=>{"hemoglobin"=>"0", "wbc"=>"0", "glucose"=>"0", "sodium"=>"0", "potassium"=>"0", "calcium"=>"0"}}
+[31mUnpermitted parameter: :record[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mRecord Create (0.4ms)[0m  [1m[32mINSERT INTO "records" ("hemoglobin", "wbc", "glucose", "sodium", "potassium", "calcium", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["hemoglobin", 0.0], ["wbc", 0.0], ["glucose", 0.0], ["sodium", 0.0], ["potassium", 0.0], ["calcium", 0.0], ["created_at", "2022-03-09 15:31:28.099187"], ["updated_at", "2022-03-09 15:31:28.099187"]]
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Record (0.23ms)
+Completed 201 Created in 8ms (Views: 2.1ms | ActiveRecord: 1.1ms | Allocations: 2590)
+
+
+Started POST "/api/records" for 127.0.0.1 at 2022-03-09 10:32:02 -0500
+Processing by Api::RecordsController#create as */*
+  Parameters: {"hemoglobin"=>"7", "wbc"=>"6", "sodium"=>"90", "potassium"=>"6", "calcium"=>"11", "glucose"=>"100", "record"=>{"hemoglobin"=>"7", "wbc"=>"6", "glucose"=>"100", "sodium"=>"90", "potassium"=>"6", "calcium"=>"11"}}
+[31mUnpermitted parameter: :record[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mRecord Create (0.4ms)[0m  [1m[32mINSERT INTO "records" ("hemoglobin", "wbc", "glucose", "sodium", "potassium", "calcium", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["hemoglobin", 7.0], ["wbc", 6.0], ["glucose", 100.0], ["sodium", 90.0], ["potassium", 6.0], ["calcium", 11.0], ["created_at", "2022-03-09 15:32:02.131066"], ["updated_at", "2022-03-09 15:32:02.131066"]]
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Record (0.26ms)
+Completed 201 Created in 8ms (Views: 2.3ms | ActiveRecord: 1.6ms | Allocations: 2588)
+
+
+Started POST "/api/records" for 127.0.0.1 at 2022-03-09 10:33:09 -0500
+Processing by Api::RecordsController#create as */*
+  Parameters: {"hemoglobin"=>"0", "wbc"=>"6", "sodium"=>"90", "potassium"=>"6", "calcium"=>"11", "glucose"=>"100", "record"=>{"hemoglobin"=>"0", "wbc"=>"6", "glucose"=>"100", "sodium"=>"90", "potassium"=>"6", "calcium"=>"11"}}
+[31mUnpermitted parameter: :record[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mRecord Create (0.9ms)[0m  [1m[32mINSERT INTO "records" ("hemoglobin", "wbc", "glucose", "sodium", "potassium", "calcium", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["hemoglobin", 0.0], ["wbc", 6.0], ["glucose", 100.0], ["sodium", 90.0], ["potassium", 6.0], ["calcium", 11.0], ["created_at", "2022-03-09 15:33:09.739580"], ["updated_at", "2022-03-09 15:33:09.739580"]]
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Record (0.23ms)
+Completed 201 Created in 8ms (Views: 2.1ms | ActiveRecord: 1.5ms | Allocations: 2588)
+
+
+Started GET "/api/records" for 127.0.0.1 at 2022-03-09 10:33:36 -0500
+Processing by Api::RecordsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mRecord Load (0.1ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  ↳ app/controllers/api/records_controller.rb:5:in `index'
+No serializer found for resource: #<Record id: 18, hemoglobin: 12.0, wbc: 4.0, glucose: 90.0, sodium: 120.0, potassium: 6.0, calcium: 11.0, created_at: "2022-03-09 15:26:50.105750000 +0000", updated_at: "2022-03-09 15:26:50.105750000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Record::ActiveRecord_Relation (0.41ms)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.3ms | Allocations: 2166)
+
+
+Started DELETE "/api/records/24" for 127.0.0.1 at 2022-03-09 10:33:53 -0500
+Processing by Api::RecordsController#destroy as */*
+  Parameters: {"id"=>"24"}
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/api/records_controller.rb:28:in `find_record'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/records_controller.rb:21:in `destroy'
+  [1m[36mRecord Destroy (0.5ms)[0m  [1m[31mDELETE FROM "records" WHERE "records"."id" = $1[0m  [["id", 24]]
+  ↳ app/controllers/api/records_controller.rb:21:in `destroy'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/records_controller.rb:21:in `destroy'
+Completed 204 No Content in 6ms (ActiveRecord: 1.5ms | Allocations: 1728)
+
+
+Started DELETE "/api/records/18" for 127.0.0.1 at 2022-03-09 10:33:55 -0500
+Processing by Api::RecordsController#destroy as */*
+  Parameters: {"id"=>"18"}
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/api/records_controller.rb:28:in `find_record'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/records_controller.rb:21:in `destroy'
+  [1m[36mRecord Destroy (1.4ms)[0m  [1m[31mDELETE FROM "records" WHERE "records"."id" = $1[0m  [["id", 18]]
+  ↳ app/controllers/api/records_controller.rb:21:in `destroy'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/records_controller.rb:21:in `destroy'
+Completed 204 No Content in 8ms (ActiveRecord: 2.9ms | Allocations: 1728)
+
+
+Started DELETE "/api/records/19" for 127.0.0.1 at 2022-03-09 10:33:55 -0500
+Processing by Api::RecordsController#destroy as */*
+  Parameters: {"id"=>"19"}
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/api/records_controller.rb:28:in `find_record'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/records_controller.rb:21:in `destroy'
+  [1m[36mRecord Destroy (0.5ms)[0m  [1m[31mDELETE FROM "records" WHERE "records"."id" = $1[0m  [["id", 19]]
+  ↳ app/controllers/api/records_controller.rb:21:in `destroy'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/records_controller.rb:21:in `destroy'
+Completed 204 No Content in 6ms (ActiveRecord: 1.7ms | Allocations: 1728)
+
+
+Started DELETE "/api/records/20" for 127.0.0.1 at 2022-03-09 10:33:55 -0500
+Processing by Api::RecordsController#destroy as */*
+  Parameters: {"id"=>"20"}
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/api/records_controller.rb:28:in `find_record'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/records_controller.rb:21:in `destroy'
+  [1m[36mRecord Destroy (3.0ms)[0m  [1m[31mDELETE FROM "records" WHERE "records"."id" = $1[0m  [["id", 20]]
+  ↳ app/controllers/api/records_controller.rb:21:in `destroy'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/records_controller.rb:21:in `destroy'
+Completed 204 No Content in 9ms (ActiveRecord: 4.0ms | Allocations: 1728)
+
+
+Started DELETE "/api/records/21" for 127.0.0.1 at 2022-03-09 10:33:59 -0500
+Processing by Api::RecordsController#destroy as */*
+  Parameters: {"id"=>"21"}
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/api/records_controller.rb:28:in `find_record'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/records_controller.rb:21:in `destroy'
+  [1m[36mRecord Destroy (0.6ms)[0m  [1m[31mDELETE FROM "records" WHERE "records"."id" = $1[0m  [["id", 21]]
+  ↳ app/controllers/api/records_controller.rb:21:in `destroy'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/records_controller.rb:21:in `destroy'
+Completed 204 No Content in 7ms (ActiveRecord: 1.8ms | Allocations: 1728)
+
+
+Started DELETE "/api/records/22" for 127.0.0.1 at 2022-03-09 10:33:59 -0500
+Processing by Api::RecordsController#destroy as */*
+  Parameters: {"id"=>"22"}
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/api/records_controller.rb:28:in `find_record'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/records_controller.rb:21:in `destroy'
+  [1m[36mRecord Destroy (0.3ms)[0m  [1m[31mDELETE FROM "records" WHERE "records"."id" = $1[0m  [["id", 22]]
+  ↳ app/controllers/api/records_controller.rb:21:in `destroy'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/records_controller.rb:21:in `destroy'
+Completed 204 No Content in 6ms (ActiveRecord: 1.5ms | Allocations: 1728)
+
+
+Started DELETE "/api/records/23" for 127.0.0.1 at 2022-03-09 10:34:00 -0500
+Processing by Api::RecordsController#destroy as */*
+  Parameters: {"id"=>"23"}
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/api/records_controller.rb:28:in `find_record'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/records_controller.rb:21:in `destroy'
+  [1m[36mRecord Destroy (0.7ms)[0m  [1m[31mDELETE FROM "records" WHERE "records"."id" = $1[0m  [["id", 23]]
+  ↳ app/controllers/api/records_controller.rb:21:in `destroy'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/records_controller.rb:21:in `destroy'
+Completed 204 No Content in 6ms (ActiveRecord: 1.7ms | Allocations: 1728)
+
+
+Started POST "/api/records" for 127.0.0.1 at 2022-03-09 10:34:03 -0500
+Processing by Api::RecordsController#create as */*
+  Parameters: {"hemoglobin"=>"0", "wbc"=>"6", "sodium"=>"90", "potassium"=>"6", "calcium"=>"11", "glucose"=>"100", "record"=>{"hemoglobin"=>"0", "wbc"=>"6", "glucose"=>"100", "sodium"=>"90", "potassium"=>"6", "calcium"=>"11"}}
+[31mUnpermitted parameter: :record[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mRecord Create (0.8ms)[0m  [1m[32mINSERT INTO "records" ("hemoglobin", "wbc", "glucose", "sodium", "potassium", "calcium", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["hemoglobin", 0.0], ["wbc", 6.0], ["glucose", 100.0], ["sodium", 90.0], ["potassium", 6.0], ["calcium", 11.0], ["created_at", "2022-03-09 15:34:03.849000"], ["updated_at", "2022-03-09 15:34:03.849000"]]
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Record (0.39ms)
+Completed 201 Created in 11ms (Views: 3.2ms | ActiveRecord: 1.8ms | Allocations: 2588)
+
+
+Started POST "/api/records" for 127.0.0.1 at 2022-03-09 10:38:46 -0500
+Processing by Api::RecordsController#create as */*
+  Parameters: {"hemoglobin"=>"0", "wbc"=>"6", "sodium"=>"90", "potassium"=>"6", "calcium"=>"11", "glucose"=>"100", "record"=>{"hemoglobin"=>"0", "wbc"=>"6", "glucose"=>"100", "sodium"=>"90", "potassium"=>"6", "calcium"=>"11"}}
+[31mUnpermitted parameter: :record[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mRecord Create (0.4ms)[0m  [1m[32mINSERT INTO "records" ("hemoglobin", "wbc", "glucose", "sodium", "potassium", "calcium", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["hemoglobin", 0.0], ["wbc", 6.0], ["glucose", 100.0], ["sodium", 90.0], ["potassium", 6.0], ["calcium", 11.0], ["created_at", "2022-03-09 15:38:46.841112"], ["updated_at", "2022-03-09 15:38:46.841112"]]
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Record (0.26ms)
+Completed 201 Created in 12ms (Views: 2.3ms | ActiveRecord: 1.4ms | Allocations: 2588)
+
+
+Started GET "/api/records" for 127.0.0.1 at 2022-03-09 10:38:51 -0500
+Processing by Api::RecordsController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mRecord Load (3.5ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  ↳ app/controllers/api/records_controller.rb:5:in `index'
+No serializer found for resource: #<Record id: 25, hemoglobin: 0.0, wbc: 6.0, glucose: 100.0, sodium: 90.0, potassium: 6.0, calcium: 11.0, created_at: "2022-03-09 15:34:03.849000000 +0000", updated_at: "2022-03-09 15:34:03.849000000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Record::ActiveRecord_Relation (0.16ms)
+Completed 200 OK in 7ms (Views: 3.4ms | ActiveRecord: 3.6ms | Allocations: 1651)
+
+
+Started POST "/api/records" for 127.0.0.1 at 2022-03-09 10:38:53 -0500
+Processing by Api::RecordsController#create as */*
+  Parameters: {"hemoglobin"=>"0", "wbc"=>"0", "sodium"=>"0", "potassium"=>"0", "calcium"=>"0", "glucose"=>"0", "record"=>{"hemoglobin"=>"0", "wbc"=>"0", "glucose"=>"0", "sodium"=>"0", "potassium"=>"0", "calcium"=>"0"}}
+[31mUnpermitted parameter: :record[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mRecord Create (0.7ms)[0m  [1m[32mINSERT INTO "records" ("hemoglobin", "wbc", "glucose", "sodium", "potassium", "calcium", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["hemoglobin", 0.0], ["wbc", 0.0], ["glucose", 0.0], ["sodium", 0.0], ["potassium", 0.0], ["calcium", 0.0], ["created_at", "2022-03-09 15:38:53.020191"], ["updated_at", "2022-03-09 15:38:53.020191"]]
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Record (0.31ms)
+Completed 201 Created in 11ms (Views: 2.8ms | ActiveRecord: 1.8ms | Allocations: 2590)
+
+
+Started POST "/api/records" for 127.0.0.1 at 2022-03-09 10:38:54 -0500
+Processing by Api::RecordsController#create as */*
+  Parameters: {"hemoglobin"=>"0", "wbc"=>"0", "sodium"=>"0", "potassium"=>"0", "calcium"=>"0", "glucose"=>"0", "record"=>{"hemoglobin"=>"0", "wbc"=>"0", "glucose"=>"0", "sodium"=>"0", "potassium"=>"0", "calcium"=>"0"}}
+[31mUnpermitted parameter: :record[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mRecord Create (0.5ms)[0m  [1m[32mINSERT INTO "records" ("hemoglobin", "wbc", "glucose", "sodium", "potassium", "calcium", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["hemoglobin", 0.0], ["wbc", 0.0], ["glucose", 0.0], ["sodium", 0.0], ["potassium", 0.0], ["calcium", 0.0], ["created_at", "2022-03-09 15:38:54.370750"], ["updated_at", "2022-03-09 15:38:54.370750"]]
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Record (0.4ms)
+Completed 201 Created in 9ms (Views: 2.7ms | ActiveRecord: 1.4ms | Allocations: 2588)
+
+
+Started POST "/api/records" for 127.0.0.1 at 2022-03-09 10:39:23 -0500
+Processing by Api::RecordsController#create as */*
+  Parameters: {"hemoglobin"=>"10", "wbc"=>"12", "sodium"=>"600", "potassium"=>"3", "calcium"=>"12", "glucose"=>"400", "record"=>{"hemoglobin"=>"10", "wbc"=>"12", "glucose"=>"400", "sodium"=>"600", "potassium"=>"3", "calcium"=>"12"}}
+[31mUnpermitted parameter: :record[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mRecord Create (0.7ms)[0m  [1m[32mINSERT INTO "records" ("hemoglobin", "wbc", "glucose", "sodium", "potassium", "calcium", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["hemoglobin", 10.0], ["wbc", 12.0], ["glucose", 400.0], ["sodium", 600.0], ["potassium", 3.0], ["calcium", 12.0], ["created_at", "2022-03-09 15:39:23.036164"], ["updated_at", "2022-03-09 15:39:23.036164"]]
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Record (0.29ms)
+Completed 201 Created in 9ms (Views: 2.5ms | ActiveRecord: 1.8ms | Allocations: 2588)
+
+
+Started POST "/api/records" for 127.0.0.1 at 2022-03-09 10:42:11 -0500
+Processing by Api::RecordsController#create as */*
+  Parameters: {"hemoglobin"=>"10", "wbc"=>"12", "sodium"=>"600", "potassium"=>"3", "calcium"=>"12", "glucose"=>"400", "record"=>{"hemoglobin"=>"10", "wbc"=>"12", "glucose"=>"400", "sodium"=>"600", "potassium"=>"3", "calcium"=>"12"}}
+[31mUnpermitted parameter: :record[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mRecord Create (0.3ms)[0m  [1m[32mINSERT INTO "records" ("hemoglobin", "wbc", "glucose", "sodium", "potassium", "calcium", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["hemoglobin", 10.0], ["wbc", 12.0], ["glucose", 400.0], ["sodium", 600.0], ["potassium", 3.0], ["calcium", 12.0], ["created_at", "2022-03-09 15:42:11.114014"], ["updated_at", "2022-03-09 15:42:11.114014"]]
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Record (0.24ms)
+Completed 201 Created in 7ms (Views: 2.1ms | ActiveRecord: 0.9ms | Allocations: 2589)
+
+
+Started GET "/api/records" for 127.0.0.1 at 2022-03-09 10:42:47 -0500
+Processing by Api::RecordsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  ↳ app/controllers/api/records_controller.rb:5:in `index'
+No serializer found for resource: #<Record id: 25, hemoglobin: 0.0, wbc: 6.0, glucose: 100.0, sodium: 90.0, potassium: 6.0, calcium: 11.0, created_at: "2022-03-09 15:34:03.849000000 +0000", updated_at: "2022-03-09 15:34:03.849000000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Record::ActiveRecord_Relation (0.54ms)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.4ms | Allocations: 2064)
+
+
+Started GET "/api/records" for 127.0.0.1 at 2022-03-09 10:43:19 -0500
+Processing by Api::RecordsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  ↳ app/controllers/api/records_controller.rb:5:in `index'
+No serializer found for resource: #<Record id: 25, hemoglobin: 0.0, wbc: 6.0, glucose: 100.0, sodium: 90.0, potassium: 6.0, calcium: 11.0, created_at: "2022-03-09 15:34:03.849000000 +0000", updated_at: "2022-03-09 15:34:03.849000000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Record::ActiveRecord_Relation (0.36ms)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.3ms | Allocations: 2063)
+
+
+Started DELETE "/api/records/25" for 127.0.0.1 at 2022-03-09 10:47:54 -0500
+Processing by Api::RecordsController#destroy as */*
+  Parameters: {"id"=>"25"}
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  ↳ app/controllers/api/records_controller.rb:28:in `find_record'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/records_controller.rb:21:in `destroy'
+  [1m[36mRecord Destroy (0.3ms)[0m  [1m[31mDELETE FROM "records" WHERE "records"."id" = $1[0m  [["id", 25]]
+  ↳ app/controllers/api/records_controller.rb:21:in `destroy'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/records_controller.rb:21:in `destroy'
+Completed 204 No Content in 5ms (ActiveRecord: 1.0ms | Allocations: 1728)
+
+
+Started DELETE "/api/records/26" for 127.0.0.1 at 2022-03-09 10:47:54 -0500
+Processing by Api::RecordsController#destroy as */*
+  Parameters: {"id"=>"26"}
+  [1m[36mRecord Load (0.5ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/api/records_controller.rb:28:in `find_record'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/records_controller.rb:21:in `destroy'
+  [1m[36mRecord Destroy (0.3ms)[0m  [1m[31mDELETE FROM "records" WHERE "records"."id" = $1[0m  [["id", 26]]
+  ↳ app/controllers/api/records_controller.rb:21:in `destroy'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/records_controller.rb:21:in `destroy'
+Completed 204 No Content in 6ms (ActiveRecord: 1.7ms | Allocations: 1728)
+
+
+Started DELETE "/api/records/27" for 127.0.0.1 at 2022-03-09 10:47:55 -0500
+Processing by Api::RecordsController#destroy as */*
+  Parameters: {"id"=>"27"}
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  ↳ app/controllers/api/records_controller.rb:28:in `find_record'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/records_controller.rb:21:in `destroy'
+  [1m[36mRecord Destroy (0.6ms)[0m  [1m[31mDELETE FROM "records" WHERE "records"."id" = $1[0m  [["id", 27]]
+  ↳ app/controllers/api/records_controller.rb:21:in `destroy'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/records_controller.rb:21:in `destroy'
+Completed 204 No Content in 7ms (ActiveRecord: 1.5ms | Allocations: 1728)
+
+
+Started DELETE "/api/records/28" for 127.0.0.1 at 2022-03-09 10:47:56 -0500
+Processing by Api::RecordsController#destroy as */*
+  Parameters: {"id"=>"28"}
+  [1m[36mRecord Load (0.5ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  ↳ app/controllers/api/records_controller.rb:28:in `find_record'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/records_controller.rb:21:in `destroy'
+  [1m[36mRecord Destroy (0.4ms)[0m  [1m[31mDELETE FROM "records" WHERE "records"."id" = $1[0m  [["id", 28]]
+  ↳ app/controllers/api/records_controller.rb:21:in `destroy'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/records_controller.rb:21:in `destroy'
+Completed 204 No Content in 7ms (ActiveRecord: 1.9ms | Allocations: 1728)
+
+
+Started DELETE "/api/records/29" for 127.0.0.1 at 2022-03-09 10:47:57 -0500
+Processing by Api::RecordsController#destroy as */*
+  Parameters: {"id"=>"29"}
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+  ↳ app/controllers/api/records_controller.rb:28:in `find_record'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/records_controller.rb:21:in `destroy'
+  [1m[36mRecord Destroy (0.4ms)[0m  [1m[31mDELETE FROM "records" WHERE "records"."id" = $1[0m  [["id", 29]]
+  ↳ app/controllers/api/records_controller.rb:21:in `destroy'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/records_controller.rb:21:in `destroy'
+Completed 204 No Content in 6ms (ActiveRecord: 1.4ms | Allocations: 1728)
+
+
+Started DELETE "/api/records/30" for 127.0.0.1 at 2022-03-09 10:47:57 -0500
+Processing by Api::RecordsController#destroy as */*
+  Parameters: {"id"=>"30"}
+  [1m[36mRecord Load (0.2ms)[0m  [1m[34mSELECT "records".* FROM "records" WHERE "records"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ app/controllers/api/records_controller.rb:28:in `find_record'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/records_controller.rb:21:in `destroy'
+  [1m[36mRecord Destroy (0.8ms)[0m  [1m[31mDELETE FROM "records" WHERE "records"."id" = $1[0m  [["id", 30]]
+  ↳ app/controllers/api/records_controller.rb:21:in `destroy'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/records_controller.rb:21:in `destroy'
+Completed 204 No Content in 7ms (ActiveRecord: 1.8ms | Allocations: 1728)
+
+
+Started POST "/api/records" for 127.0.0.1 at 2022-03-09 10:47:59 -0500
+Processing by Api::RecordsController#create as */*
+  Parameters: {"hemoglobin"=>"10", "wbc"=>"12", "sodium"=>"600", "potassium"=>"3", "calcium"=>"12", "glucose"=>"400", "record"=>{"hemoglobin"=>"10", "wbc"=>"12", "glucose"=>"400", "sodium"=>"600", "potassium"=>"3", "calcium"=>"12"}}
+[31mUnpermitted parameter: :record[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mRecord Create (0.6ms)[0m  [1m[32mINSERT INTO "records" ("hemoglobin", "wbc", "glucose", "sodium", "potassium", "calcium", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["hemoglobin", 10.0], ["wbc", 12.0], ["glucose", 400.0], ["sodium", 600.0], ["potassium", 3.0], ["calcium", 12.0], ["created_at", "2022-03-09 15:47:59.351745"], ["updated_at", "2022-03-09 15:47:59.351745"]]
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Record (0.25ms)
+Completed 201 Created in 9ms (Views: 2.4ms | ActiveRecord: 1.4ms | Allocations: 2588)
+
+
+Started GET "/api/records" for 127.0.0.1 at 2022-03-09 10:48:11 -0500
+Processing by Api::RecordsController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mRecord Load (0.7ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  ↳ app/controllers/api/records_controller.rb:5:in `index'
+No serializer found for resource: #<Record id: 31, hemoglobin: 10.0, wbc: 12.0, glucose: 400.0, sodium: 600.0, potassium: 3.0, calcium: 12.0, created_at: "2022-03-09 15:47:59.351745000 +0000", updated_at: "2022-03-09 15:47:59.351745000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Record::ActiveRecord_Relation (0.1ms)
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.9ms | Allocations: 1547)
+
+
+Started POST "/api/records" for 127.0.0.1 at 2022-03-09 10:51:08 -0500
+Processing by Api::RecordsController#create as */*
+  Parameters: {"hemoglobin"=>"0", "wbc"=>"0", "sodium"=>"0", "potassium"=>"0", "calcium"=>"0", "glucose"=>"0", "record"=>{"hemoglobin"=>"0", "wbc"=>"0", "glucose"=>"0", "sodium"=>"0", "potassium"=>"0", "calcium"=>"0"}}
+[31mUnpermitted parameter: :record[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mRecord Create (0.6ms)[0m  [1m[32mINSERT INTO "records" ("hemoglobin", "wbc", "glucose", "sodium", "potassium", "calcium", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["hemoglobin", 0.0], ["wbc", 0.0], ["glucose", 0.0], ["sodium", 0.0], ["potassium", 0.0], ["calcium", 0.0], ["created_at", "2022-03-09 15:51:08.011654"], ["updated_at", "2022-03-09 15:51:08.011654"]]
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Record (0.27ms)
+Completed 201 Created in 10ms (Views: 2.9ms | ActiveRecord: 1.8ms | Allocations: 2588)
+
+
+Started POST "/api/records" for 127.0.0.1 at 2022-03-09 10:51:27 -0500
+Processing by Api::RecordsController#create as */*
+  Parameters: {"hemoglobin"=>"9", "wbc"=>"3", "sodium"=>"100", "potassium"=>"6", "calcium"=>"10", "glucose"=>"300", "record"=>{"hemoglobin"=>"9", "wbc"=>"3", "glucose"=>"300", "sodium"=>"100", "potassium"=>"6", "calcium"=>"10"}}
+[31mUnpermitted parameter: :record[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mRecord Create (0.3ms)[0m  [1m[32mINSERT INTO "records" ("hemoglobin", "wbc", "glucose", "sodium", "potassium", "calcium", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["hemoglobin", 9.0], ["wbc", 3.0], ["glucose", 300.0], ["sodium", 100.0], ["potassium", 6.0], ["calcium", 10.0], ["created_at", "2022-03-09 15:51:27.306535"], ["updated_at", "2022-03-09 15:51:27.306535"]]
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mUser Load (26.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Record (0.19ms)
+Completed 201 Created in 34ms (Views: 2.3ms | ActiveRecord: 27.6ms | Allocations: 2588)
+
+
+Started POST "/api/records" for 127.0.0.1 at 2022-03-09 10:51:55 -0500
+Processing by Api::RecordsController#create as */*
+  Parameters: {"hemoglobin"=>"9", "wbc"=>"3", "sodium"=>"100", "potassium"=>"6", "calcium"=>"10", "glucose"=>"300", "record"=>{"hemoglobin"=>"9", "wbc"=>"3", "glucose"=>"300", "sodium"=>"100", "potassium"=>"6", "calcium"=>"10"}}
+[31mUnpermitted parameter: :record[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mRecord Create (0.3ms)[0m  [1m[32mINSERT INTO "records" ("hemoglobin", "wbc", "glucose", "sodium", "potassium", "calcium", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["hemoglobin", 9.0], ["wbc", 3.0], ["glucose", 300.0], ["sodium", 100.0], ["potassium", 6.0], ["calcium", 10.0], ["created_at", "2022-03-09 15:51:55.401855"], ["updated_at", "2022-03-09 15:51:55.401855"]]
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Record (0.23ms)
+Completed 201 Created in 7ms (Views: 2.0ms | ActiveRecord: 1.2ms | Allocations: 2588)
+
+
+Started POST "/api/records" for 127.0.0.1 at 2022-03-09 10:54:04 -0500
+Processing by Api::RecordsController#create as */*
+  Parameters: {"hemoglobin"=>"9", "wbc"=>"3", "sodium"=>"100", "potassium"=>"6", "calcium"=>"10", "glucose"=>"300", "record"=>{"hemoglobin"=>"9", "wbc"=>"3", "glucose"=>"300", "sodium"=>"100", "potassium"=>"6", "calcium"=>"10"}}
+[31mUnpermitted parameter: :record[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mRecord Create (0.3ms)[0m  [1m[32mINSERT INTO "records" ("hemoglobin", "wbc", "glucose", "sodium", "potassium", "calcium", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["hemoglobin", 9.0], ["wbc", 3.0], ["glucose", 300.0], ["sodium", 100.0], ["potassium", 6.0], ["calcium", 10.0], ["created_at", "2022-03-09 15:54:04.427408"], ["updated_at", "2022-03-09 15:54:04.427408"]]
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Record (0.26ms)
+Completed 201 Created in 6ms (Views: 2.0ms | ActiveRecord: 0.9ms | Allocations: 2588)
+
+
+Started GET "/api/records" for 127.0.0.1 at 2022-03-09 11:00:30 -0500
+Processing by Api::RecordsController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mRecord Load (0.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  ↳ app/controllers/api/records_controller.rb:5:in `index'
+No serializer found for resource: #<Record id: 31, hemoglobin: 10.0, wbc: 12.0, glucose: 400.0, sodium: 600.0, potassium: 3.0, calcium: 12.0, created_at: "2022-03-09 15:47:59.351745000 +0000", updated_at: "2022-03-09 15:47:59.351745000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Record::ActiveRecord_Relation (0.35ms)
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 4.8ms | Allocations: 4168)
+
+
+Started GET "/api/records" for 127.0.0.1 at 2022-03-09 11:13:08 -0500
+Processing by Api::RecordsController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mRecord Load (0.4ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  ↳ app/controllers/api/records_controller.rb:5:in `index'
+No serializer found for resource: #<Record id: 31, hemoglobin: 10.0, wbc: 12.0, glucose: 400.0, sodium: 600.0, potassium: 3.0, calcium: 12.0, created_at: "2022-03-09 15:47:59.351745000 +0000", updated_at: "2022-03-09 15:47:59.351745000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Record::ActiveRecord_Relation (0.39ms)
+Completed 200 OK in 17ms (Views: 16.7ms | ActiveRecord: 6.5ms | Allocations: 4092)
+
+
+Started POST "/api/records" for 127.0.0.1 at 2022-03-09 11:14:08 -0500
+Processing by Api::RecordsController#create as */*
+  Parameters: {"hemoglobin"=>"10", "wbc"=>"12", "sodium"=>"600", "potassium"=>"4", "calcium"=>"15", "glucose"=>"250", "record"=>{"hemoglobin"=>"10", "wbc"=>"12", "glucose"=>"250", "sodium"=>"600", "potassium"=>"4", "calcium"=>"15"}}
+[31mUnpermitted parameter: :record[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mRecord Create (0.9ms)[0m  [1m[32mINSERT INTO "records" ("hemoglobin", "wbc", "glucose", "sodium", "potassium", "calcium", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["hemoglobin", 10.0], ["wbc", 12.0], ["glucose", 250.0], ["sodium", 600.0], ["potassium", 4.0], ["calcium", 15.0], ["created_at", "2022-03-09 16:14:08.419848"], ["updated_at", "2022-03-09 16:14:08.419848"]]
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Record (0.42ms)
+Completed 201 Created in 11ms (Views: 2.6ms | ActiveRecord: 2.1ms | Allocations: 2591)
+
+
+Started GET "/api/records" for 127.0.0.1 at 2022-03-09 11:14:48 -0500
+Processing by Api::RecordsController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mRecord Load (1.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  ↳ app/controllers/api/records_controller.rb:5:in `index'
+No serializer found for resource: #<Record id: 31, hemoglobin: 10.0, wbc: 12.0, glucose: 400.0, sodium: 600.0, potassium: 3.0, calcium: 12.0, created_at: "2022-03-09 15:47:59.351745000 +0000", updated_at: "2022-03-09 15:47:59.351745000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Record::ActiveRecord_Relation (0.71ms)
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 1.5ms | Allocations: 2063)
+
+
+Started POST "/api/records" for 127.0.0.1 at 2022-03-09 11:15:28 -0500
+Processing by Api::RecordsController#create as */*
+  Parameters: {"hemoglobin"=>"10", "wbc"=>"2", "sodium"=>"9", "potassium"=>"4", "calcium"=>"19", "glucose"=>"200", "record"=>{"hemoglobin"=>"10", "wbc"=>"2", "glucose"=>"200", "sodium"=>"9", "potassium"=>"4", "calcium"=>"19"}}
+[31mUnpermitted parameter: :record[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mRecord Create (0.5ms)[0m  [1m[32mINSERT INTO "records" ("hemoglobin", "wbc", "glucose", "sodium", "potassium", "calcium", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["hemoglobin", 10.0], ["wbc", 2.0], ["glucose", 200.0], ["sodium", 9.0], ["potassium", 4.0], ["calcium", 19.0], ["created_at", "2022-03-09 16:15:28.363679"], ["updated_at", "2022-03-09 16:15:28.363679"]]
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Record (0.17ms)
+Completed 201 Created in 19ms (Views: 1.7ms | ActiveRecord: 2.4ms | Allocations: 2591)
+
+
+Started POST "/api/records" for 127.0.0.1 at 2022-03-09 11:16:00 -0500
+Processing by Api::RecordsController#create as */*
+  Parameters: {"hemoglobin"=>"10", "wbc"=>"2", "sodium"=>"9", "potassium"=>"4", "calcium"=>"19", "glucose"=>"200", "record"=>{"hemoglobin"=>"10", "wbc"=>"2", "glucose"=>"200", "sodium"=>"9", "potassium"=>"4", "calcium"=>"19"}}
+[31mUnpermitted parameter: :record[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mRecord Create (0.4ms)[0m  [1m[32mINSERT INTO "records" ("hemoglobin", "wbc", "glucose", "sodium", "potassium", "calcium", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["hemoglobin", 10.0], ["wbc", 2.0], ["glucose", 200.0], ["sodium", 9.0], ["potassium", 4.0], ["calcium", 19.0], ["created_at", "2022-03-09 16:16:00.173249"], ["updated_at", "2022-03-09 16:16:00.173249"]]
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Record (0.25ms)
+Completed 201 Created in 9ms (Views: 2.6ms | ActiveRecord: 1.4ms | Allocations: 2588)
+
+
+Started POST "/api/records" for 127.0.0.1 at 2022-03-09 11:21:03 -0500
+Processing by Api::RecordsController#create as */*
+  Parameters: {"hemoglobin"=>"5", "wbc"=>"1", "sodium"=>"4.5", "potassium"=>"2", "calcium"=>"8.5", "glucose"=>"100", "record"=>{"hemoglobin"=>"5", "wbc"=>"1", "glucose"=>"100", "sodium"=>"4.5", "potassium"=>"2", "calcium"=>"8.5"}}
+[31mUnpermitted parameter: :record[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mRecord Create (0.4ms)[0m  [1m[32mINSERT INTO "records" ("hemoglobin", "wbc", "glucose", "sodium", "potassium", "calcium", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["hemoglobin", 5.0], ["wbc", 1.0], ["glucose", 100.0], ["sodium", 4.5], ["potassium", 2.0], ["calcium", 8.5], ["created_at", "2022-03-09 16:21:03.524122"], ["updated_at", "2022-03-09 16:21:03.524122"]]
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Record (0.18ms)
+Completed 201 Created in 7ms (Views: 1.7ms | ActiveRecord: 1.1ms | Allocations: 2588)
+
+
+Started POST "/api/records" for 127.0.0.1 at 2022-03-09 11:21:22 -0500
+Processing by Api::RecordsController#create as */*
+  Parameters: {"hemoglobin"=>"5", "wbc"=>"1", "sodium"=>"4.5", "potassium"=>"2", "calcium"=>"8.5", "glucose"=>"600", "record"=>{"hemoglobin"=>"5", "wbc"=>"1", "glucose"=>"600", "sodium"=>"4.5", "potassium"=>"2", "calcium"=>"8.5"}}
+[31mUnpermitted parameter: :record[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mRecord Create (0.3ms)[0m  [1m[32mINSERT INTO "records" ("hemoglobin", "wbc", "glucose", "sodium", "potassium", "calcium", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["hemoglobin", 5.0], ["wbc", 1.0], ["glucose", 600.0], ["sodium", 4.5], ["potassium", 2.0], ["calcium", 8.5], ["created_at", "2022-03-09 16:21:22.242985"], ["updated_at", "2022-03-09 16:21:22.242985"]]
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Record (0.29ms)
+Completed 201 Created in 9ms (Views: 2.3ms | ActiveRecord: 1.6ms | Allocations: 2588)
+
+
+Started POST "/api/records" for 127.0.0.1 at 2022-03-09 11:21:35 -0500
+Processing by Api::RecordsController#create as */*
+  Parameters: {"hemoglobin"=>"18", "wbc"=>"1", "sodium"=>"4.5", "potassium"=>"2", "calcium"=>"20", "glucose"=>"600", "record"=>{"hemoglobin"=>"18", "wbc"=>"1", "glucose"=>"600", "sodium"=>"4.5", "potassium"=>"2", "calcium"=>"20"}}
+[31mUnpermitted parameter: :record[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mRecord Create (0.4ms)[0m  [1m[32mINSERT INTO "records" ("hemoglobin", "wbc", "glucose", "sodium", "potassium", "calcium", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["hemoglobin", 18.0], ["wbc", 1.0], ["glucose", 600.0], ["sodium", 4.5], ["potassium", 2.0], ["calcium", 20.0], ["created_at", "2022-03-09 16:21:35.225077"], ["updated_at", "2022-03-09 16:21:35.225077"]]
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Record (0.31ms)
+Completed 201 Created in 10ms (Views: 3.1ms | ActiveRecord: 1.6ms | Allocations: 2588)
+
+
+Started POST "/api/records" for 127.0.0.1 at 2022-03-09 11:23:48 -0500
+Processing by Api::RecordsController#create as */*
+  Parameters: {"hemoglobin"=>"18", "wbc"=>"20", "sodium"=>"4.5", "potassium"=>"2", "calcium"=>"20", "glucose"=>"600", "record"=>{"hemoglobin"=>"18", "wbc"=>"20", "glucose"=>"600", "sodium"=>"4.5", "potassium"=>"2", "calcium"=>"20"}}
+[31mUnpermitted parameter: :record[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mRecord Create (0.4ms)[0m  [1m[32mINSERT INTO "records" ("hemoglobin", "wbc", "glucose", "sodium", "potassium", "calcium", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["hemoglobin", 18.0], ["wbc", 20.0], ["glucose", 600.0], ["sodium", 4.5], ["potassium", 2.0], ["calcium", 20.0], ["created_at", "2022-03-09 16:23:48.577860"], ["updated_at", "2022-03-09 16:23:48.577860"]]
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Record (0.38ms)
+Completed 201 Created in 8ms (Views: 2.9ms | ActiveRecord: 1.3ms | Allocations: 2588)
+
+
