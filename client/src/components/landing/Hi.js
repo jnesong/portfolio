@@ -24,7 +24,7 @@ function Hi() {
 
             <p className="hi">
                 Hi, I'm Jenny, a fullstack software developer,
-                born, raised, and living in Northern Virginia's Fairfax County.
+                born, raised, and living in Northern Virginia.
             </p>
             <p className="thankyou">
                 Thank you for checking out my portfolio!
