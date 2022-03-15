@@ -76,7 +76,7 @@ function Projects() {
 
             <p
                 className="info"
-                onMouseEnter={() => setInfoProjects("ℹ️: click center arrow to open project, click left and right arrows to view more projects.")}
+                onMouseEnter={() => setInfoProjects("ℹ️: click center arrow to launch project, click left and right arrows to view more projects.")}
                 onMouseLeave={() => setInfoProjects("ℹ️")}
             > {infoProjects} </p>
 
