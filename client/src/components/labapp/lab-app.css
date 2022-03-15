@@ -1,0 +1,133 @@
+#top-form, #bottom-results {
+    display: block;
+    justify-content: center;
+    height: auto;
+    min-height: 400px;
+}
+
+#bottom-results{
+  padding: 25px;
+}
+
+#top-form {
+    background-color: rgb(205, 218, 245);
+}
+
+#enter-labs {
+  font-family: "Andale mono", serif;
+  padding: 30px;
+  padding-top: 50px;
+}
+
+#button-lab-submit {
+    text-align: center;
+    font-family: "Andale mono", serif;
+    border: none;
+    background-color:  rgb(205, 218, 245);
+    color: black;
+    padding: 40px;
+    font-size: 20px;
+    display: block;
+    transition-duration: 0.4s;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #button-lab-submit:hover {
+    background-color:  rgb(205, 218, 245);
+    color: white;
+  }
+
+  p.mono {
+    font-size: 30px;
+    font-family: "Andale mono", serif;
+  }
+
+  #lab-form-div {
+    display:inline-flex;
+    flex-wrap: wrap;
+    background-color: rgb(205, 218, 245);
+    }
+
+  .each-input {
+    border: none;
+    font-family: "Andale mono", serif;
+    font-size: 16px;
+    text-align:center
+  }
+
+  .each-input:focus {
+    outline:none;
+  }
+
+  .each-input:hover {
+    color: white
+  }
+
+  .input-line{
+    padding: 10px;
+  }
+
+  .is-decreased {
+    font-size:20px;
+    font-family: "Andale mono", serif;
+    color:red;
+    padding: 10px
+  }
+
+  .interfer {
+    font-size:15px;
+    font-family: "Andale mono", serif;
+    color: rgb(162, 181, 220);
+    padding: 10px
+  }
+
+  .list-reasons {
+    font-family: "Optima", sans-serif;
+    font-size: 16px;
+  }
+
+  .portfolio-lab-button, .toggle-form {
+    font-family: "Optima", sans-serif;
+    border: none;
+    background-color:transparent;
+    color: rgb(7, 36, 21);
+    padding: 20px;
+    padding-bottom: 0px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    display:block;
+    margin-right: 40px;
+    margin-left: auto;
+    }
+
+  .portfolio-lab-button:hover, .toggle-form:hover {
+    color: rgb(191, 206, 237);
+  }
+
+  .lab-nav{
+    display: inline-block;
+    margin: 30px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Andale mono", serif;
+    color: rgb(191, 206, 237);
+    border-bottom: none;
+  }
+
+  .lab-nav:hover{
+    color: black;
+    border-bottom: none;
+  }
+
+  .blood {
+    position: relative;
+    overflow: hidden;
+    border-radius: 100%;
+    width: 160px;
+  }
+
+  h2 {
+  font-family: "Optima", sans-serif;
+  font-size: 25px
+  }

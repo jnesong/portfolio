@@ -1,0 +1,56 @@
+.column {
+    position: relative;
+    float: left;
+    width: 400px;
+    padding: 10px;
+    padding-top: 5px;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.horizontal {
+    display: flexbox;
+    margin: 0 auto;
+    width: 900px;
+}
+
+#cup {
+    height: 510px;
+    width: 350px;
+    margin-top: -155px;
+    z-index: -1;
+}
+
+#smoke {
+    height: 450px;
+    width: auto;
+    margin-right: 30px;
+}
+
+#checkboxes{
+    display: block;
+    position: relative;
+    left: -5px;
+    margin-top: -345px;
+}
+
+.cup-link {
+    height: 55px;
+    width: auto;
+    padding: 5px;
+    transition: transform .4s;
+}
+
+.cup-link:hover {
+    transform: scale(1.2); 
+}
+
+/* @media screen and (max-width: 400px) {
+    .column-left {
+      width: 100%;
+    }
+    .column-right {
+        width: 100%;
+      }
+} */

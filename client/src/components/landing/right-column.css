@@ -1,0 +1,145 @@
+.landing-greeting {
+    font-size: 18px;
+    font-family: Optima;
+    color: black;
+    line-height: 38px;
+    letter-spacing: 2px;
+    padding: 40px;
+    width: 400px;
+}
+
+.hi {
+    font-size: 16px;
+    font-family: Optima;
+    color: black;
+    line-height: 38px;
+    letter-spacing: 2px;
+    padding: 20px;
+    padding-bottom: 0px;
+    margin-top: 5px;
+    text-indent: 10px;
+}
+
+.thankyou {
+    font-size: 16px;
+    font-family: Optima;
+    color: black;
+    line-height: 38px;
+    letter-spacing: 2px;
+    padding: 15px;
+    width: 400px;
+}
+
+#hi-div {
+    margin-top: 190px;
+}
+
+.hi-list {
+    list-style: none;
+    font-size: 16px;
+    font-family: Optima;
+    color: black;
+    line-height: 38px;
+    letter-spacing: 2px;
+    text-align: left;
+    text-indent: 35px;
+}
+
+.hi-image {
+    border-radius: 50%;
+    height: 150px;
+    width: auto;
+}
+
+.remus-pic {
+    width: 280px;
+    height:auto;
+}
+
+.dog-text {
+    margin-top: 160px;
+    font-size: 16px;
+    font-family: Optima;
+    color: black;
+    line-height: 38px;
+    letter-spacing: 2px;
+    padding: 10px;
+    text-indent: 10px;
+}
+
+.project-gif {
+    width: 402px;
+    height:auto;
+}
+
+.project-description {
+    font-size: 16px;
+    font-family: Optima;
+    color: black;
+    line-height: 38px;
+    letter-spacing: 2px;
+    padding: 5px;
+    text-indent: 15px;
+    text-align: center;
+    width: 400px;
+}
+
+.project-title {
+    font-size: 18px;
+    font-family: Optima;
+    color: black;
+    line-height: 38px;
+    letter-spacing: 3px;
+    padding: 5px;
+    width: 400px;
+}
+
+.projects-div {
+    width: 405px;
+    height: auto;
+    display:block;
+    margin-top: 70px;
+    margin-left:auto;
+    margin-right:auto;
+    border-style: ridge;
+    border-width: 2px;
+}
+
+.controls-row {
+    display: inline-flex;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+.icon {
+    width: 40px;
+    height: auto;
+    margin: 20px;
+}
+
+.icon-open{
+    width: 60px;
+    height: auto;
+    margin: 20px;
+}
+
+.info {
+    font-size: 14px;
+    font-family: Optima;
+    color: black;
+    line-height: 18px;
+    letter-spacing: 2px;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+.icon-button {
+    background:none;
+    border: none;
+    cursor: pointer;
+}
+
+.dog-index-div {
+    margin-top: 290px;
+}
