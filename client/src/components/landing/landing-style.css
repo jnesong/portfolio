@@ -1,7 +1,7 @@
 .column {
     position: relative;
     float: left;
-    width: 400px;
+    width: 500px;
     padding: 10px;
     padding-top: 5px;
     text-align: center;
@@ -12,7 +12,7 @@
 .horizontal {
     display: flexbox;
     margin: 0 auto;
-    width: 900px;
+    width: 1000px;
 }
 
 #cup {
@@ -32,18 +32,18 @@
     display: block;
     position: relative;
     left: -5px;
-    margin-top: -345px;
+    margin-top: -335px;
 }
 
 .cup-link {
-    height: 55px;
+    height: 60px;
     width: auto;
     padding: 5px;
-    transition: transform .4s;
+    transition: transform .2s;
 }
 
 .cup-link:hover {
-    transform: scale(1.2); 
+    transform: scale(1.25); 
 }
 
 /* @media screen and (max-width: 400px) {

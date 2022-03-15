@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 // graphics
 import lab from '../graphics/lab.gif'
 import quiz from '../graphics/quiz.gif'
-import portfolio from '../graphics/portfolio.gif'
+import mixtape from '../graphics/mixtape.gif'
 import back from '../graphics/back.png'
 import open from '../graphics/open.png'
 import next from '../graphics/next.png'
@@ -26,13 +26,13 @@ function Projects() {
             title: "Enneadrink",
             gif: quiz,
             path: "/enneadrink",
-            description: "Enneadrink was inspired by the enneagram personality types. My goal for this project was to create a personality quiz that could be taken quickly, but still yield accurate results. There is a 20 question quiz bank, but each time you take the quiz it will only give you 5 questions because the quiz determines the next question based on the previous answer. It was designed to avoid over-choice and therefore encourage a calm process of personal reflection, that could be done daily. It's clean, but nested, navigation, to explore the nine personalities and their health levels, was built with React Router version 6, on a React frontend and Rails backend. It is almost entirely custom CSS, except for a journal editing modal which uses the semantic UI library, however I also added custom styling to those library features to match the rest of the application. The images are my own doodles. 🤗"
+            description: "Enneadrink was inspired by the enneagram personality types. My goal for this project was to create a personality quiz that could be taken quickly, but still yield accurate results. There is a 20 question quiz bank, but each time you take the quiz it will only give you 5 questions because the quiz determines the next question based on the previous answer. It was designed to avoid over-choice and therefore encourage a calm process of personal reflection, that could be done daily. Its clean and nested navigation, to explore the nine personalities and their health levels, was built with React Router version 6, on a React frontend and Rails backend. It is almost entirely custom CSS, except for a journal editing modal which uses the semantic UI library, however I also added custom styling to those library features to match the rest of the application. The images are my own doodles. 🤗"
         },
         {
-            title: "Portfolio",
-            gif: portfolio,
+            title: "MixTape",
+            gif: mixtape,
             path: "/",
-            description: "In process..."
+            description: "MixTape is my next project. So far, I've setup OAuth 2.0, to authenticate users and set users' approval of my app's authorization scope to their Spotify account. I'd like to compare playlist or top artists/tracks likeness, as a relationship compatibility test, and create a mixtape gift component, but overall the project idea is in process...."
         }
     ]
 
