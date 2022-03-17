@@ -3,7 +3,7 @@ import { Outlet } from "react-router-dom";
 // components
 import CupNav from "./CupNav";
 // graphics
-import FebResume from './FebResume.pdf';
+import MarchResume from './Jenny_C_March_22_Resume_with_York.pdf';
 import cup from '../graphics/cup.png'
 import smoke from '../graphics/smoke.gif'
 import resume from '../graphics/resume.png'
@@ -27,7 +27,7 @@ function Landing() {
 
                 <CupNav />
 
-                <a className="resume-link"  target="_blank" rel="noopener noreferrer" href={FebResume}>
+                <a className="resume-link"  target="_blank" rel="noopener noreferrer" href={MarchResume}>
                     <img className="cup-link" src={resume} alt="resume graphic" />
                 </a>
 

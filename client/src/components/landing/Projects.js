@@ -62,6 +62,12 @@ function Projects() {
                 <img className="project-gif" src={projectBank[projectID].gif} alt="gif of project UX/UI" />
             </div>
 
+            <p
+                className="info"
+                onMouseEnter={() => setInfoProjects("ℹ️: click center arrow to launch project, click left and right arrows to view more projects.")}
+                onMouseLeave={() => setInfoProjects("ℹ️")}
+            > {infoProjects} </p>
+
             <div className="controls-row">
                 <button onClick={handleBackClick} className="icon-button">
                     <img className="icon" src={back} alt="back button" />
@@ -73,12 +79,6 @@ function Projects() {
                     <img onClick={handleNextClick} className="icon" src={next} alt="next button" />
                 </button>
             </div>
-
-            <p
-                className="info"
-                onMouseEnter={() => setInfoProjects("ℹ️: click center arrow to launch project, click left and right arrows to view more projects.")}
-                onMouseLeave={() => setInfoProjects("ℹ️")}
-            > {infoProjects} </p>
 
             <p className="project-title"> {projectBank[projectID].title} </p>
 

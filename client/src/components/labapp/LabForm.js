@@ -11,6 +11,7 @@ function LabForm({ makeAbnormNorm, makeHistory }) {
     let resultData = {};
     const navigate = useNavigate();
     const [infoLab, setInfoLab] = useState("ℹ️")
+    const [buttonSubmitToggle, setButtonSubmitToggle] = useState(true);
 
     function makeInputs(inputObj) {
         resultData[inputObj.title] = inputObj.userInput
@@ -20,7 +21,9 @@ function LabForm({ makeAbnormNorm, makeHistory }) {
         e.preventDefault()
         makeAbnormNorm(resultData)
         makeHistory(resultData)
-        setTimeout(() => { navigate("results") }, 400);
+        setButtonSubmitToggle(!buttonSubmitToggle)
+        setTimeout(() => { navigate("results")}, 400);
+        setTimeout(() => { setButtonSubmitToggle(true)}, 900);
     }
 
     const listLabInputs = Labs.map((lab) => (
@@ -44,7 +47,7 @@ function LabForm({ makeAbnormNorm, makeHistory }) {
                 </div>
 
                 <div style={{ alignItems: "center" }}>
-                    <button id="button-lab-submit" type="submit"> submit </button>
+                    <button id="button-lab-submit" type="submit"> {buttonSubmitToggle ? "submit" : "✔ scroll down"} </button>
                 </div>
             </form>
 
