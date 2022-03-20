@@ -35,6 +35,19 @@ function Hi() {
                 <li> LinkedIn: {linkedInLink} </li>
                 <li> Blog: {blogLink} </li>
             </ul>
+
+            <p className="thankyou">
+            Transferrable skills from my nursing experience:
+            </p>
+
+            <ul className="hi-list">
+                <li> Resourceful:  </li>
+                <li> Efficiency:  </li>
+                <li> Perspective:  </li>
+                <li> Attention to detail:  </li>
+                <li> Collaboration:  </li>
+
+            </ul>
         </div>
     )
 }
