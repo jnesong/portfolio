@@ -3,7 +3,7 @@ import { Outlet } from "react-router-dom";
 // components
 import CupNav from "./CupNav";
 // graphics
-import MarchResume from './Jenny_C_March_22_Resume_with_York.pdf';
+import MarchResume from './JennyChau_VerticalMarch22.pdf';
 import cup from '../graphics/cup.png'
 import smoke from '../graphics/smoke.gif'
 import resume from '../graphics/resume.png'
