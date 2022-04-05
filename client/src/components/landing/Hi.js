@@ -61,7 +61,7 @@ function Hi() {
             </button>
 
             {isSkillBOpen && <div className="skill-div">
-                One of the first skills anyone develops as a nurse is thorough assessment- noticing details such as a person’s depth and rate of breathing to the temperature and elasticity of their skin. Through nursing, I have developed an attention to detail which translates into anticipating edge cases, picking up programming syntax, frontend design consistency, and productive debugging. In the end, time is saved.
+                One of the most important skills of a nurse is thorough assessment- noticing details such as a person’s depth and rate of breathing to the temperature and elasticity of their skin. Through nursing, I have developed a strong attention to detail which translates into anticipating edge cases, picking up programming syntax, frontend design consistency, and productive debugging. In the end, attention to detail saves time.
             </div>}
 
 
@@ -70,7 +70,7 @@ function Hi() {
             </button>
 
             {isSkillCOpen && <div className="skill-div">
-                Throughout my entire education and career in healthcare, it was drilled that communication breakdown is the number one cause of medical error. Therefore good communication is highly sought after and practiced. For example, nurses use SBAR (Situation, Background, Assessment, Recommendations) to methodically advocate patient needs.  Additionally, I’ve always highly valued concise documentation as essential, comprehensive evidence of patients’ history. I have taken my resourceful inclination towards reading others’ documentations and synthesizing valuable information, from healthcare, into software development. {<br />} {<br />} Furthermore, within my first year working in clinic, two nurses requested to orient with me. As a good listener and reader, with a strong work ethic, I am comfortable with balancing independent problem solving, seeking help, and offering help.
+                Throughout my entire education and career in healthcare, it was drilled that communication breakdown is the number one cause of medical errors. Therefore good communication is highly sought after and practiced. For example, nurses use SBAR (Situation, Background, Assessment, Recommendations) to methodically advocate patient needs.  Additionally, I’ve always highly valued concise documentation as essential, comprehensive evidence of a patient’s history. I have taken my resourceful inclination towards reading others’ documentation and synthesizing valuable information, from healthcare, into software development. {<br />} {<br />} Within my first year working at my most recent nursing job, two nurses asked to complete their orientation training with me. As a good listener with a strong work ethic, I am comfortable balancing independent problem solving, seeking help, and offering help.
 
             </div>}
 
