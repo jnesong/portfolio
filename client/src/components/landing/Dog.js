@@ -24,7 +24,7 @@ function Dog() {
     }, [])
 
     return (
-        <div className="dog-index-div">
+        <div className="dog-div">
             <p className="dog-text"> My friendly gentle giant 🐕‍🦺:</p>
 
             <img className="remus-pic" src={dogPic} alt="jenny's dog, at random" />
