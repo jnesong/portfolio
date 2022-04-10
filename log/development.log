@@ -12588,3 +12588,69 @@ No serializer found for resource: #<Record id: 65, hemoglobin: 10.0, wbc: 9.5, g
 Completed 200 OK in 32ms (Views: 11.7ms | ActiveRecord: 17.9ms | Allocations: 12268)
 
 
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2022-04-09 22:56:36 -0400
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/api/records" for 127.0.0.1 at 2022-04-09 22:59:36 -0400
+Processing by Api::RecordsController#index as */*
+  [1m[36mUser Load (6.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  [1m[36mRecord Load (16.3ms)[0m  [1m[34mSELECT "records".* FROM "records"[0m
+  ↳ app/controllers/api/records_controller.rb:5:in `index'
+No serializer found for resource: #<Record id: 65, hemoglobin: 10.0, wbc: 9.5, glucose: 200.0, sodium: 135.0, potassium: 3.5, calcium: 14.0, created_at: "2022-03-15 15:39:52.275095000 +0000", updated_at: "2022-03-15 15:39:52.275095000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Record::ActiveRecord_Relation (2.4ms)
+Completed 200 OK in 343ms (Views: 265.6ms | ActiveRecord: 63.7ms | Allocations: 12297)
+
+
+Started POST "/api/records" for 127.0.0.1 at 2022-04-09 22:59:41 -0400
+Processing by Api::RecordsController#create as */*
+  Parameters: {"hemoglobin"=>"0", "wbc"=>"0", "sodium"=>"0", "potassium"=>"10", "calcium"=>"0", "glucose"=>"0", "record"=>{"hemoglobin"=>"0", "wbc"=>"0", "glucose"=>"0", "sodium"=>"0", "potassium"=>"10", "calcium"=>"0"}}
+[31mUnpermitted parameter: :record[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mRecord Create (8.1ms)[0m  [1m[32mINSERT INTO "records" ("hemoglobin", "wbc", "glucose", "sodium", "potassium", "calcium", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["hemoglobin", 0.0], ["wbc", 0.0], ["glucose", 0.0], ["sodium", 0.0], ["potassium", 10.0], ["calcium", 0.0], ["created_at", "2022-04-10 02:59:41.611403"], ["updated_at", "2022-04-10 02:59:41.611403"]]
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (6.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/records_controller.rb:9:in `create'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Record (0.25ms)
+Completed 201 Created in 31ms (Views: 5.7ms | ActiveRecord: 15.3ms | Allocations: 3037)
+
+
+Started GET "/api/enneadrinks/6" for 127.0.0.1 at 2022-04-09 22:59:53 -0400
+Processing by Api::EnneadrinksController#show as */*
+  Parameters: {"id"=>"6"}
+  [1m[36mEnneadrink Load (5.9ms)[0m  [1m[34mSELECT "enneadrinks".* FROM "enneadrinks" WHERE "enneadrinks"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/api/enneadrinks_controller.rb:9:in `show'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers]   [1m[36mHealth Load (4.9ms)[0m  [1m[34mSELECT "healths".* FROM "healths" WHERE "healths"."enneadrink_id" = $1[0m  [["enneadrink_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/enneadrinks_controller.rb:11:in `show'
+[active_model_serializers] No serializer found for resource: #<Health id: 46, enneadrink_id: 6, level: 1, description: "Become self-affirming, trusting of self and others...", created_at: "2022-03-05 16:20:15.730842000 +0000", updated_at: "2022-03-05 16:20:15.730842000 +0000">
+[active_model_serializers]   [1m[36mPractice Load (13.8ms)[0m  [1m[34mSELECT "practices".* FROM "practices" WHERE "practices"."enneadrink_id" = $1[0m  [["enneadrink_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/enneadrinks_controller.rb:11:in `show'
+[active_model_serializers] No serializer found for resource: #<Practice id: 21, enneadrink_id: 6, title: "Memorizing grounding truths", description: "This practice challenges the anxious, busy minds o...", created_at: "2022-03-05 16:20:15.565128000 +0000", updated_at: "2022-03-05 16:20:15.565128000 +0000">
+[active_model_serializers] Rendered EnneadrinkSerializer with ActiveModelSerializers::Adapter::Attributes (66.69ms)
+Completed 200 OK in 178ms (Views: 54.8ms | ActiveRecord: 76.0ms | Allocations: 20946)
+
+
+Started GET "/api/enneadrinks/5" for 127.0.0.1 at 2022-04-09 22:59:55 -0400
+Processing by Api::EnneadrinksController#show as */*
+  Parameters: {"id"=>"5"}
+  [1m[36mEnneadrink Load (2.4ms)[0m  [1m[34mSELECT "enneadrinks".* FROM "enneadrinks" WHERE "enneadrinks"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/api/enneadrinks_controller.rb:9:in `show'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+[active_model_serializers]   [1m[36mHealth Load (0.3ms)[0m  [1m[34mSELECT "healths".* FROM "healths" WHERE "healths"."enneadrink_id" = $1[0m  [["enneadrink_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/enneadrinks_controller.rb:11:in `show'
+[active_model_serializers] No serializer found for resource: #<Health id: 37, enneadrink_id: 5, level: 1, description: "Become visionaries, broadly comprehending the worl...", created_at: "2022-03-05 16:20:15.710718000 +0000", updated_at: "2022-03-05 16:20:15.710718000 +0000">
+[active_model_serializers]   [1m[36mPractice Load (0.4ms)[0m  [1m[34mSELECT "practices".* FROM "practices" WHERE "practices"."enneadrink_id" = $1[0m  [["enneadrink_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/enneadrinks_controller.rb:11:in `show'
+[active_model_serializers] No serializer found for resource: #<Practice id: 17, enneadrink_id: 5, title: "Community service", description: "Lattes are prone to remain inside their heads, in ...", created_at: "2022-03-05 16:20:15.557400000 +0000", updated_at: "2022-03-05 16:20:15.557400000 +0000">
+[active_model_serializers] Rendered EnneadrinkSerializer with ActiveModelSerializers::Adapter::Attributes (9.09ms)
+Completed 200 OK in 20ms (Views: 11.1ms | ActiveRecord: 3.6ms | Allocations: 4613)
+
+

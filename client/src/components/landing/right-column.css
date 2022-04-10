@@ -172,6 +172,11 @@
     cursor: pointer;
 }
 
-.dog-index-div {
+.dog-div {
     margin-top: 300px;
+}
+
+.index-div {
+    margin-top: 250px;
+    width: 450px;
 }
