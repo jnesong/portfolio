@@ -49,7 +49,7 @@ function LandingIndex() {
 
             {isHxOpen && <div className="skill-div">
                 👩🏻‍💻 I'm Jenny! 🎓 I graduated from the University of Virginia with a <b> Bachelor of Science Degree </b> and gained <b> professional skills </b> as a nurse for four years. Throughout undergrad I stayed on the Dean’s List, aka I maxed out on credits every semester and maintained a high GPA. As a nurse, I was awarded multiple Spirit Awards, by colleagues and patients, for my noteworthy <b> enthusiasm to help others </b> and promote a positive team culture.
-                🩺  When I started classes at one of the top 10 Family Nurse Practitioner Programs in the US, I realized that even advanced practice nursing would not include the level of creative, logic-driven problem solving I hoped to pursue. I explored my options and ultimately found excitement in software engineering.
+                🩺  When I started classes at one of the top 10 Family Nurse Practitioner Programs in the US, I realized that even advanced practice nursing would not include the level of creative, dynamic problem solving I hoped to pursue. I explored my options and ultimately found excitement in software engineering.
                 ⏩ I completed &nbsp;
                 <a className="flatiron-link" target="_blank" rel="noopener noreferrer" href={FE}>
                     Flatiron School’s Software Engineering Live boot camp
